@@ -17,7 +17,7 @@ h1, h3, legend {
 	width: 80%;
 	margin: 0 auto;
 	padding: 1em;
-	display: flex;
+	display: block;
 	flex-flow: row nowrap;
 	background-color: #C69972;
 }
