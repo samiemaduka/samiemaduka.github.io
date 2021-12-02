@@ -251,3 +251,8 @@ html {
     margin-top: -1em;
     font-size: 1.8em;
 }
+@media (max-width: 568px){
+  .pimg1, .pimg2 {
+    background-attachment: scroll;
+  }
+}
