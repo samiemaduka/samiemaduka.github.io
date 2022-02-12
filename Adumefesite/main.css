@@ -225,7 +225,8 @@ nav a:hover {
 .services {
     width: 100%;
     margin: 0 auto;
-    background: #03549a url(../Adumefesite/img/gridbackground.jpg) right/cover no-repeat scroll;
+    background: #03549a url(../Adumefesite/img/gridbackground3.jpg) center/cover no-repeat scroll;
+    background-blend-mode: lighten;
 
 }
 .services h2, .services p {
@@ -294,18 +295,18 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 0;
-    background-color: #000;
+    background-color: #03549a;
 }
 .giveaway img{
     width: 100%;
     height: 60%;
     position: relative;
     z-index: 0;
-    filter: opacity(0.4);
     box-shadow: 1px 1px 5px 0px #000;
 }
 .text {
-    display: flex;
+    /*disabled giveaway sign*/
+    display: none;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -420,6 +421,7 @@ footer {
 .contact h4 {
     font-size: 1.8em;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 .contact p {
     font-size: 1.2em;
@@ -443,6 +445,7 @@ footer {
 .contact li a:hover {
     transform: scale(1.2);
     margin-bottom: 1em;
+    color: #03549a;
 }
 .contact li:hover {
     transform: scale(1.2);
