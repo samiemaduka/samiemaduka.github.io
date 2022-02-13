@@ -335,6 +335,7 @@
     .popup-form {
         width: 100%;
         font-size: 0.8em;
+        margin-top: 2em;
     }
     .popup-form button {
         font-size: 0.8em;
@@ -354,7 +355,7 @@
         line-height: 2em;
     }
     .about-popup i {
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .giveaway {
         width: 100%;
