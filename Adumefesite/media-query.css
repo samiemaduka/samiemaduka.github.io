@@ -87,7 +87,7 @@
         height: 60%;
     }
     .popup h2 {
-        font-size: 1em;
+        font-size: 0.8em;
         margin-top: 1em;
     }
     .popup p {
@@ -105,28 +105,28 @@
         width: 100%;
         font-size: 0.8em;
     }
-    .popup-form i {
-        font-size: 1.5em;
+    .popup i {
+        font-size: 1em;
     }
     .popup-form button {
         font-size: 0.8em;
-        width: 40%;
+        width: 45%;
         height: 2em;
         margin: 0 auto;
     }
     .something-else {
-        margin-top: 0.5em;
-        font-size: 1em;
+        margin-top: 0.2em;
+        font-size: 0.8em;
     }
     .popup-form input:not([type="checkbox"]) {
-        margin-bottom: 1em;
+        margin-bottom: 0.8em;
     }
     .about-popup {
         font-size: 0.6em;
         line-height: 2em;
     }
     .about-popup i {
-        font-size: 1em;
+        font-size: 2em;
     }
     .giveaway {
         width: 100%;
@@ -206,10 +206,6 @@
         padding-right: 2em;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
-    .created {
-        font-size: 1em;
-        margin-bottom: 1em;
     }
 
 }
@@ -318,12 +314,12 @@
         width: 60%;
         height: 60%;
     }
-    .popup-form i {
-        font-size: 1.5em;
+    .popup i {
+        font-size: 1em;
     }
     .popup h2 {
         font-size: 1em;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
     .popup p {
         font-size: 0.6em;
@@ -358,7 +354,7 @@
         line-height: 2em;
     }
     .about-popup i {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .giveaway {
         width: 100%;
@@ -434,10 +430,6 @@
         padding-right: 2em;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
-    .created {
-        font-size: 1em;
-        margin-bottom: 1em;
     }
 
     
