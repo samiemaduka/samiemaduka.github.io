@@ -275,6 +275,10 @@ nav a:hover {
 .service-grid div a:hover {
     color: whitesmoke;
     transition: 1s;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     border: 1px solid #03549a;
 }
 .service-grid div:hover {
@@ -409,6 +413,7 @@ footer {
     justify-content: center;
     align-items: flex-end;
     margin-right: 1em;
+    color: #fff;
 }
 .contact ul {
     display: flex;
@@ -433,7 +438,7 @@ footer {
 }
 .contact a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     transition: 1s;
     font-size: 2em;
 }
