@@ -1,0 +1,58 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    transition: 3s;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;    overflow: hidden;
+}
+.adumefe-logo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.adumefe-logo img {
+    width: 20%;
+    height: 30%;
+    text-align: center;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+  }
+  
+.disp {
+    position: absolute;
+    width: 200px;
+}
+.get-started p{
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 2em;
+    color: black;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+  
