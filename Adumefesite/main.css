@@ -14,50 +14,62 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #52BADF;
+    background-color: white;
 }
 .wrapper {
+    margin: 0 auto;
+    padding: 0;
+}
+#google_translate_element {
+    margin-left: 4em;
+}
+a {
+    text-decoration: none;
+}
+/*Nav bar*/
+nav header {
     margin-top: 0;
 }
-/*Navigation bar CSS*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    left: 0;
-    width: 100%;
-    height: 2.5em;
-    right: 0;
-    z-index: 9999;
-    box-shadow: 1px 1px 5px 0px #000;
+nav header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
 }
-nav h1 {
-    margin-left: 1em;
+nav header h1 a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+nav header h1 a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 1em;
     list-style: none;
-    overflow: hidden;
+    font-size: 1em;
 }
 nav ul li {
-    margin-right: 1em;
-    overflow: hidden;
+    margin: 2em 0;
+    padding: 0;
 }
-nav a {
+nav ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 1em;
-    transition: 250ms;
-    overflow: hidden;
+    transition: 500ms;
 }
-nav a:hover {
-    color: #03549a;
-    font-size: 1.1em;
+nav ul li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.nav-footer {
+    margin: 3em 0 0 0;
+}
+.contact h4 {
+    margin-left: 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact ul li a {
+    font-size: 2.5em;
 }
 
 /*About-popup form css*/
@@ -108,10 +120,11 @@ nav a:hover {
     background-color: #fff;
     transition: 1s;
 }
-/*About-popup form css*/
+/*About-popup form css end*/
 
 /*Popup form css*/
 .popup{
+    box-shadow: 1px 1px 5px 0px #000;
     width: 420px;
     padding: 30px 40px;
     position: fixed;
@@ -222,16 +235,23 @@ nav a:hover {
 .services {
     width: 100%;
     margin: 0 auto;
-    background: #03549a url(../Adumefesite/img/gridbackground3.jpg) center/cover no-repeat scroll;
-    background-blend-mode: lighten;
+    padding: 0 auto;
+    position: relative;
+    background: #fff url(../Adumefesite/img/social-media-2786261_1920_2.jpg) center/cover no-repeat scroll;
+    background-blend-mode: darken;
 
 }
-.services h2, .services p {
+.welcome h2, .welcome p {
     text-align: center;
-    text-transform: capitalize;
+    font-size: 1.2em;
+    margin: 0.2em auto;
+    width: 50%;
+
 }
-.services h2 {
-    padding-top: 4em;
+.welcome h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 0.5em;
 }
 .service-grid {
     display: grid;
@@ -256,6 +276,7 @@ nav a:hover {
 }
 .service-grid div a {
     background-color: #03549a;
+    box-shadow: 1px 1px 8px 0px #03549a;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -399,66 +420,75 @@ nav a:hover {
     font-size: 1.5em;
     font-weight: 300;
 }
-footer {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    margin: 1em;
-}
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin-right: 1em;
-    color: #fff;
-}
-.contact ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contact ul li {
-    margin: 1em;
-}
-.contact h4 {
-    font-size: 1.8em;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-.contact p {
-    font-size: 1.2em;
-    margin-top: 0.2em;
-}
-.contact h4, .contact p {
-    margin-bottom: 0;
-    margin-right: 1em;
-}
-.contact a {
-    text-decoration: none;
-    color: #fff;
-    transition: 1s;
-    font-size: 2em;
-}
-.contact li {
-    cursor: pointer;
-    transition: 1s;
-    list-style: none;
-}
-.contact li a:hover {
-    transform: scale(1.2);
-    margin-bottom: 1em;
-    color: #03549a;
-}
-.contact li:hover {
-    transform: scale(1.2);
-    margin-bottom: 1em;
-}
-
-
-
-
-
-
-
-
-
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  } 
+  @media all and (transform-3d), (-webkit-transform-3d) {
+      .carousel-fade .carousel-inner > .item.next,
+      .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+      .carousel-fade .carousel-inner > .item.prev,
+      .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+      .carousel-fade .carousel-inner > .item.next.left,
+      .carousel-fade .carousel-inner > .item.prev.right,
+      .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+  }
+      .carousel,
+      .carousel-inner,
+      .carousel-inner .item {
+        height: 100vh;
+      } 
+      .item:nth-child(1) {
+        background: url(../Adumefesite/img/Relax.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #A0CAE4;
+      }
+  
+      .item:nth-child(2) {
+        background: url(../Adumefesite/img/IMG-20220203-WA0011.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+      }
+  
+      .item:nth-child(3) {
+        background: url(../Adumefesite/img/Wearealwaysopen.jpg);
+        background-color: #2E439C;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+      }

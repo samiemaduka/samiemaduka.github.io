@@ -1,0 +1,1 @@
+$('#carouselFade').carousel();

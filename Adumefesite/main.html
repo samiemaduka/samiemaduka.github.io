@@ -13,6 +13,9 @@
      <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
      <!--.created font link end-->
     <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../Adumefesite/sidebar.css">
     <link rel="stylesheet" href="../Adumefesite/main.css">
     <link rel="stylesheet" href="../Adumefesite/media-query.css">
     <title>Socials Hub</title>
@@ -24,41 +27,72 @@
 
     <script type="text/javascript">
     function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    new google.translate.TranslateElement({pageLanguage: 'en-US'}, 'google_translate_element');
     }
     </script>
 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
-
-    <div class="wrapper animate__fadeIn animate__animated animate__faster" id="wrapper">
-
-            <!--Navigation bar HTML-->
-            <nav>
-                
-                    <h1><i class="fas fa-globe"></i> Social's Hub</h1>
-                
+    <input type="checkbox" id="navcheck" role="button" title="menu" class="sidebar-new">
+<label for="navcheck" aria-hidden="true" title="menu" class="new-label">
+	<span class="burger">
+		<span class="bar">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+</label>
+ <!--sidebar-->
+       <nav class="mobile-mediaquery" id="menu">
+        <div class="sidebar">
+            
+            <header> 
+                <h1>
+                <a href="../Adumefesite/index.html" class="logo">
+                <i class="fas fa-globe"></i>
+                Socials Hub
+                </a>
+                </h1>
+            </header>
+            
                 <ul>
-                <li>
-                    <a href="../Adumefesite/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#subs-dub" id="subs">Subscribe</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="#about" id="about">About</a>
-                </li>
+                    <li>
+                        <a href="../Adumefesite/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#subs-dub" id="subs">Subscribe</a>
+                    </li>
+                    <li>
+                        <a href="#about" id="about">About</a>
+                    </li>
                 </ul>
-            </nav> 
-    
+                
+                <footer class="nav-footer">
+
+                    <div class="contact" id="contact">
+                        <h4>Reach us on...</h4>
+                        
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+
+                                <li><a href=" https://wa.me/+2347069571401?text=I'm%20Experiencing%20some%20trouble%20on%20the%20site.%20Please%20help." target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                    </div>
+
+                </footer>
+        </div>
+    </nav>
+<main>
+    <div class="wrapper animate__fadeIn animate__animated animate__faster content" id="main">
+     
+
+
 
         <section class="services">
-            <h2>Lets help you build the media engagement you deserve</h2>
-            <p>We offer the following services:</p>
+            <div class="welcome">
+                <h2>Welcome to Socials Hub!</h2>
+            <p>Let's help you build the media engagement you deserve.<br> With our ever-ready livechat we are available to offer the following services:</p>
+            </div>
+            
         <div class="service-grid">
             <div> <a href="#servicess" id="services"> <i class="fab fa-instagram-square"></i> <p>Instagram services</p> </a> </div>
             <div> <a href="#servicess" id="services"> <i class="fab fa-facebook-square"></i> <p>Facebook services</p> </a>  </div>
@@ -78,17 +112,45 @@
         </div>
         </section>
 
-        <section class="giveaway">
-            
-            <img src="../Adumefesite/img/We are always open.jpg" alt="promo-image">
-
-            <div class="text">
-                <h3>Giveaway coming soon</h3>   <div class="first"><p>  .</p></div> <div class="second"><p>.</p></div> <div class="third"><p>.</p></div>
+        
+        
+            <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+        
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">  
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-        </section>
 
 
+    </div>
+</main>
         <!--Popup form HTML-->
         <div class="popup animate__animated animate__zoomIn animate__fast	800ms" id="subscribe">
             <i class="fas fa-globe"></i> 
@@ -136,21 +198,9 @@
         <!--About-popup form HTML-->
 
 
-        <footer>
-        
-
-        <div class="contact" id="contact">
-            <h4>Have any complaints?</h4>
-            <p>Reach us on...</p>
-            <ul>
-                <li><a href="#" target="_blank">Instagram<i class="fa-brands fa-instagram"></i>.</a></li>
-                <li><a href=" https://wa.me/+2347069571401?text=I'm%20Experiencing%20some%20trouble%20on%20the%20site.%20Please%20help." target="_blank">Whatsapp<i class="fa-brands fa-whatsapp"></i>.</a></li>
-            </ul>
-        </div>
-
-    </div>
     <script src="../Adumefesite/popup.js"></script>
     <script src="../Adumefesite/form.js"></script>
+    <script src="../Adumefesite/main.js"></script>
     
     <!--Start of Tawk.to Script
     <a href="#subs-dub" id="servicess">
