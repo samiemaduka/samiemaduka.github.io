@@ -235,7 +235,7 @@ nav ul li a:hover {
 .services {
     width: 100%;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 4em auto 0 auto;
     position: relative;
     background: #fff url(../Adumefesite/img/social-media-2786261_1920_2.jpg) center/cover no-repeat scroll;
     background-blend-mode: darken;
@@ -480,7 +480,7 @@ nav ul li a:hover {
   
       .item:nth-child(2) {
         background: url(../Adumefesite/img/IMG-20220203-WA0011.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
       }
