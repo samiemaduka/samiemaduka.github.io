@@ -13,6 +13,7 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 0;
+    text-shadow: 10px;
     font-family: 'Fjalla One', sans-serif;
     background-color: white;
 }
@@ -90,6 +91,12 @@ nav ul li a:hover {
     background: #000 url(../Adumefesite/img/pexels-cliford-mervil-2469122.jpg) center/cover no-repeat scroll;
     background-blend-mode: lighten;
 }
+.about {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+}
 .about-popup button{
     display: block;
     margin:  0 0 20px auto;
@@ -120,7 +127,6 @@ nav ul li a:hover {
     background-color: #fff;
     transition: 1s;
 }
-/*About-popup form css end*/
 
 /*Popup form css*/
 .popup{
@@ -189,6 +195,7 @@ nav ul li a:hover {
     border: none;
     padding: 0.2em 0.2em 0.2em 0.5em;
     font-size: 0.8em;
+    color: #000;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     border-radius: 10px;
 }
@@ -231,7 +238,9 @@ nav ul li a:hover {
 .popup a:hover {
     text-decoration: underline;
     transition: 2s;
-} 
+}
+
+/*Services provided css*/
 .services {
     width: 100%;
     margin: 0 auto;
@@ -310,185 +319,71 @@ nav ul li a:hover {
     font-size: 0.8em;
     text-align: center;
 }
-.giveaway {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    background-color: #03549a;
-}
-.giveaway img{
-    width: 100%;
-    height: 60%;
-    position: relative;
-    z-index: 0;
-    box-shadow: 1px 1px 5px 0px #000;
-}
-.text {
-    /*disabled giveaway sign*/
-    display: none;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: absolute;
-    font-size: 3em;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 0em;
-    z-index: 5;
-    margin-left: 1em;
-    left: 0;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-}
-.first {
-    animation-name: firstdot;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: infinite;
-}
-.second {
-    animation-name: seconddot;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: infinite;
-}
-.third {
-    animation-name: thirddot;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: infinite;
-}
-@keyframes firstdot {
-    0% {
-        visibility: hidden;
-    }
-    10% {
-        visibility: hidden;
-    }
-    25% {
-        visibility: visible;
-    }
-    50% {
-        visibility: visible;
-    }
-    75% {
-        visibility: visible;
-    }
-    100% {
-        visibility: hidden;
-    }
-}
-@keyframes seconddot {
-    0% {
-        visibility: hidden;
-    }
-    25% {
-        visibility: hidden;
-    }
-    50% {
-        visibility: visible;
-    }
-    75% {
-        visibility: visible;
-    }
-    100% {
-        visibility: hidden;
-    }
-}
-@keyframes thirddot {
-    0% {
-        visibility: hidden;
-    }
-    25% {
-        visibility: hidden;
-    }
-    50% {
-        visibility: hidden;
-    }
-    75% {
-        visibility: visible;
-    }
-    100% {
-        visibility: hidden;
-    }
-}
-.about {
-    width: 100%;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 300;
-}
+
+/*Slider css forked from dev.to*/
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     transition-property: opacity;
-  }
-  
-  .carousel-fade .carousel-inner .active {
+}
+.carousel-fade .carousel-inner .active {
     opacity: 1;
-  }
-  
-  .carousel-fade .carousel-inner .active.left,
-  .carousel-fade .carousel-inner .active.right {
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
     left: 0;
     opacity: 0;
     z-index: 1;
-  }
-  
-  .carousel-fade .carousel-inner .next.left,
-  .carousel-fade .carousel-inner .prev.right {
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
     opacity: 1;
-  }
+}
   
-  .carousel-fade .carousel-control {
+.carousel-fade .carousel-control {
     z-index: 2;
-  } 
-  @media all and (transform-3d), (-webkit-transform-3d) {
-      .carousel-fade .carousel-inner > .item.next,
-      .carousel-fade .carousel-inner > .item.active.right {
+} 
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
-      }
-      .carousel-fade .carousel-inner > .item.prev,
-      .carousel-fade .carousel-inner > .item.active.left {
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
-      }
-      .carousel-fade .carousel-inner > .item.next.left,
-      .carousel-fade .carousel-inner > .item.prev.right,
-      .carousel-fade .carousel-inner > .item.active {
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
-      }
-  }
-      .carousel,
-      .carousel-inner,
-      .carousel-inner .item {
-        height: 100vh;
-      } 
-      .item:nth-child(1) {
-        background: url(../Adumefesite/img/Relax.jpg);
+    }
+}
+.carousel, .carousel-inner, .carousel-inner .item {
+    height: 100vh;
+} 
+.item:nth-child(1) {
+    background: url(../Adumefesite/img/Relax.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #A0CAE4;
-      }
-  
-      .item:nth-child(2) {
-        background: url(../Adumefesite/img/IMG-20220203-WA0011.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-      }
-  
-      .item:nth-child(3) {
-        background: url(../Adumefesite/img/Wearealwaysopen.jpg);
-        background-color: #2E439C;
+}
+.item:nth-child(2) {
+    background: url(../Adumefesite/img/IMG-20220202-WA0005.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-      }
+    background-color: #000d53;
+}
+.item:nth-child(3) {
+    background: url(../Adumefesite/img/Wearealwaysopen.jpg);
+    background-color: #2E439C;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
