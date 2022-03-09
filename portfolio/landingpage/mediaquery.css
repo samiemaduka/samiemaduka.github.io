@@ -147,6 +147,7 @@
     .first a, .second a, .third a, .fourth a {
         padding: 25em 1em 1em 1em;
         font-size: 0.6em;
+        color: black;
         width: 70%;
     }
     .register h3{
