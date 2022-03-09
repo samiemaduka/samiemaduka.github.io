@@ -236,6 +236,9 @@
         margin: 0 auto;
         grid-gap: 0px;
       }
+      .footer-col li {
+        text-align: left;
+      }
       .footer-col h6 {
         font-size: 0.8em;
       }
