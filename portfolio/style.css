@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    background: #fff url(../homepage/img/pexels-artem-podrez-7232399.jpg)  center/cover no-repeat scroll;
+    background: #fff url(../portfolio/img/pexels-artem-podrez-7232399.jpg)  center/cover no-repeat scroll;
     overflow-x: hidden;
     padding: 0;
     scroll-behavior: smooth;
@@ -322,7 +322,7 @@
   position: relative;
   left: 9.3em;    
   z-index: 1;
-  background: #fff url(../homepage/img/pexels-artem-podrez-7232399.jpg)  center/cover no-repeat scroll;
+  background: #fff url(../portfolio/img/pexels-artem-podrez-7232399.jpg)  center/cover no-repeat scroll;
   color: #fff;
   overflow-x: auto;
 }
@@ -336,7 +336,7 @@
   justify-content: center;
   overflow-x: hidden;
   align-items: center;
-  background: #fff url(../homepage/img/pexels-aviv-perets-3274903.jpg) center/cover no-repeat fixed;
+  background: #fff url(../portfolio/img/pexels-aviv-perets-3274903.jpg) center/cover no-repeat fixed;
 }
 .about h1 {
   text-align: center;
