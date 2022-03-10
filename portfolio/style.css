@@ -385,6 +385,7 @@
 }
 .projects a {
   display: block;
+  text-decoration: underline;
 }
 .projects a:hover {
   transform: scale(1.2);
