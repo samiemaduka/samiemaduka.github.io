@@ -453,10 +453,10 @@
 .what a {
   color: #25D366;
 }
-.inst a, .inst i, .inst {
-  padding: 0;
-  margin: 0;
-  border-radius: 2px;
+.inst a {
+  padding: 0.2em 0.1em 0 0.1em;
+  margin: -0.2em 0 0 0;
+  border-radius: 5px;
   background: linear-gradient(45deg, #FFDC80, #FCAF45, #FD1D1D, #E1306C, #833AB4, #5B51D8, #405DE6);
 }
 .gith a {
