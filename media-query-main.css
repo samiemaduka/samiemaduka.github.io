@@ -237,7 +237,7 @@
       margin: 0;
     }
     footer li {
-      margin-bottom: 3em;
+      margin-bottom: 1em;
       margin-left: 0;
       font-size: 1em;
     }
@@ -783,7 +783,7 @@
       flex-direction: column;
     }
     footer li {
-      margin-bottom: 3em;
+      margin-bottom: 1.2em;
       font-size: 1em;
     }
     .mq-nav {
