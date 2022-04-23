@@ -232,13 +232,13 @@
       font-size: 1.5em;
     }
     footer ul {
-      flex-direction: column;
+      flex-direction: row;
       padding: 0;
       margin: 0;
     }
     footer li {
       margin-bottom: 1em;
-      margin-left: 0;
+      margin-left: 1em;
       font-size: 1em;
     }
     .mq-nav {
@@ -780,10 +780,11 @@
       font-size: 1.5em;
     }
     footer ul {
-      flex-direction: column;
+      flex-direction: row;
     }
     footer li {
       margin-bottom: 1.2em;
+      margin-left: 1em;
       font-size: 1em;
     }
     .mq-nav {
