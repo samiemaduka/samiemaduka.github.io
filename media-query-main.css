@@ -9,6 +9,9 @@
     .wrapperrr, .navigation-dots {
       display: none;
     }
+    #myVideo {
+      display: none;
+    }
     body {
       max-width: 100%;
     }
@@ -549,6 +552,9 @@
 
     body {
       max-width: 100%;
+    }
+    #myVideo {
+      display: none;
     }
     .nav-content {
       min-width: 50%;
