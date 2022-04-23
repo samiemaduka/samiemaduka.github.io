@@ -115,7 +115,7 @@ h2 {
     text-shadow: 0 0 8px #8C58DA;
     font-size: 3em;
     font-family: 'Comfortaa', 'Courier New', Courier, monospace;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 p {
     padding: 0;
