@@ -371,7 +371,7 @@
     position: absolute;
     left: -2rem;
     height: 100%;
-    border-left: 3px solid white;
+    border-left: 0px solid white;
     border-radius: 2px;
     opacity: 0;
     visibility: hidden;
@@ -925,7 +925,7 @@
     position: absolute;
     left: -2rem;
     height: 100%;
-    border-left: 3px solid white;
+    border-left: 0px solid white;
     border-radius: 2px;
     opacity: 0;
     visibility: hidden;
