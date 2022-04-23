@@ -97,7 +97,7 @@ header p {
     align-items: baseline;
     margin: 0;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 0;
 }
 .header-content h1 {
