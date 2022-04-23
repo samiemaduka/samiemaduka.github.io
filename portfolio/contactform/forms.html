@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Let's Work Together!</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--.created font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <!--.created font link end-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="../contactform/css/forms.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+</head>
+	<body>
+		<div class="wrapper">
+			<section>
+				<h1>Do you have a job for me?</h1>
+				<p>Fill out the form below so we can start working today!</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+			" method="post">
+			<input type="hidden" name="send_to" value="madukasamuel2002@gmail.com">
+				<fieldset>
+					<legend>Your contact information</legend>
+					<label for="name">Your name:</label> 
+						<input type="text" id="name" name="name" placeholder="Fullname here!" required>
+					<label for="phone">Phone number:</label>
+						<input type="tel" id="phone" name="phone" placeholder="Phone number here!" required>
+					<label for="email">Email:</label>
+						<input type="email" id="email" name="email" placeholder="Email here!" required>
+				</fieldset>
+					<fieldset>
+					<legend>Your needs</legend>
+					<label for="date">When do you expect this job to be delivered*</label>
+					<input type="date" id="date" name="date" required>
+					<label for="qty">What is your budget?($)*</label>
+					<input type="number" id="qty" name="qty" required>
+					<p>What kind of website are you looking to create?</p>
+						<label>
+							<input type="radio" name="ufotype" value="eCommerce" checked> eCommerce website
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Portfolio"> Portfolio website
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Personal"> Personal website
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Blog"> Blog
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Business"> Business websites
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Social"> Social media websites
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Membership"> Membership websites
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Wiki"> Wiki or community forum website
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Magazine"> Magazine and news media websites
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Video-streaming"> Video streaming websites
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="web-portal"> Web portals
+						</label>
+
+						<label>
+							<input type="radio" name="ufotype" value="Landing-pages"> Landing pages
+						</label>
+						
+					<label for="abtype"> What is your preferred method of contact?</label>
+						<select id="abtype" name="contact-type" required>
+							<option selected> --Select one-- </option>
+							<option value="email">Email</option>
+							<option value="call">Call</option>
+							<option value="Whatsapp">Whatsapp**</option>
+						</select>
+					<label for="comments">Additional information?:</label>
+					<textarea id="comments" name="comments" placeholder="what else would you like me to do for you?..."></textarea>
+
+					<label>
+						<input type="checkbox" value="subscribe" name="subscribe" checked> Add me to your Email list!
+					</label>
+				</fieldset>
+				<button type="submit">Submit</button>
+				</form>				
+			</section>
+			<a href="#home" class="clickable">
+			<div class="fixed-home">
+				<a href="../homepage/index.html"><i class="fas fa-home"></i>
+					<p>back home?</p></a>
+			</div>
+			</a>
+			<aside>
+				<p>*= Negotiable</p>
+				<p>**= Please input your Whatsapp number in the contact field instead</p>
+			</aside>
+			<footer>
+				
+      			<!--created html code-->
+	 				 <div class="created"> 
+						<a href="../index.html">©Samuel Maduka</a> 
+	  				</div>
+				<!--created html code end-->
+			</footer>
+		</div>
+		<script src="js/forms.js"></script>
+	</body>
+</html>
+
+
+
+
+
