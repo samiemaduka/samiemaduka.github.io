@@ -622,7 +622,7 @@
     }
     .main-img {
       max-width: 100%;
-      margin: 0 auto;
+      margin: 3em auto 0 auto;
     }
     .astro-grid {
       margin: 0;
