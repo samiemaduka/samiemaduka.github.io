@@ -97,7 +97,7 @@ header p {
     align-items: baseline;
     margin: 0;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     padding: 0;
 }
 .header-content h1 {
@@ -230,7 +230,7 @@ nav li a {
     margin-left: 0.5em;
     color: #9edb78;
     font-style: normal;
-    text-shadow: 0 0 10px 9edb78#fff;
+    text-shadow: 0 0 10px #fff;
     font-family: 'Comfortaa', Verdana, Geneva, Tahoma, sans-serif;
 }
 .mq-img {
