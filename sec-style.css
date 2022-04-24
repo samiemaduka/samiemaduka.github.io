@@ -160,7 +160,7 @@ main {
 nav {
     display: flex;
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 1em;
     z-index: 9999;
     flex-direction: column;
