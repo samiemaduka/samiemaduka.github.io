@@ -1,0 +1,298 @@
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #F2EDEB;
+}
+
+nav {
+  width: 23%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: left;
+  margin: auto 0;
+  overflow-y: scroll;
+  padding: 0 0 0 0;
+  overflow-x: hidden;
+}
+nav img {
+  width: 5em;
+  height: 6em;
+  margin-left: 1em;
+  padding: 0;
+}
+nav header {
+  display: flex;
+  font-family: 'Supermercado One', cursive;
+  font-size: 1em;
+  box-shadow: inset 0em 0.5em 0px 0em #8C142A, inset 0em 1em 0em  #464573;
+  text-transform: uppercase;
+  padding-top: 2em;
+  width: 100%;
+}
+nav h1 {
+  margin: 1em;
+  padding: 0;
+  align-self: center;
+}
+nav h2 {
+  margin-bottom: 0.1em;
+  font-size: 1em;
+  margin-left: 1em;
+  color: #464573;
+}
+nav ul {
+  margin-top: 0;
+  margin-left: 1em;
+  list-style: none;
+  padding-left: 1em;
+  font-size: 0.7em;
+  width: 80%;
+}
+nav ul li {
+  margin-bottom: 0.3em;
+  padding-left: 0;
+  margin-left: 0;
+}
+nav input {
+  margin-bottom: 0;
+  margin-left: 1em;
+  width: 50%;
+  height: 3em;
+  padding: 0.8em;
+  font-size: 0.8em;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+nav button {
+  width: 20%;
+  height: 2.9em;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  background-color: #464573;
+  color: white;
+}
+::-webkit-scrollbar {
+  background-color: #BFB4AA;
+  width: 10px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #464573;
+  border-radius: 5px;
+}
+nav button:hover {
+  background-color: #8C142A;
+  color: white;
+}
+nav p {
+  margin-top: 0;
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+nav a {
+  text-decoration: none;
+  color: #464573;
+}
+nav .form {
+  display: flex;
+  align-items: center;
+}
+main {
+  position: relative;
+  right: 0;
+  width: 50%;
+  margin: 1em 30em;
+}
+/*created css code*/
+.created {
+  font-size: 1.5em;
+  font-family: 'Comforter', cursive;
+  margin-left: 0.2em;
+}
+.created:hover {
+  transform: scale(1.1);
+  transition: 800ms;
+  margin-left: 1em;
+}
+/*created css code end*/
+.socials ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+.socials ul li {
+  margin: 0.6em;
+}
+.content {
+  margin-bottom: 0;
+}
+.blog-content {
+  color: #8C142A;
+}
+.blog-content a {
+  color: #464573;
+  text-decoration: none;
+}
+.blog-content h2 {
+  color: #464573;
+  font-size: 1.5em;
+}
+a:hover {
+  color: #8C5656;
+}
+.read-more {
+  color: #8C5656;
+}
+.read-more:hover {
+  color: #6D733F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 4000; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    visibility: hidden;
+}
+  
+  /* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    visibility: hidden;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .mobile-mediaquery header {
+    display: none;
+    visibility: hidden;
+  }

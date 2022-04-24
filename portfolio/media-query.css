@@ -1,0 +1,237 @@
+
+
+
+
+
+
+
+
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 319px) and (max-width: 479px) {
+
+    body {
+        width: 100%;
+        overflow-x: none;
+        margin: 0;
+    }
+  .side-bar {
+      min-width: 100%;
+      display: block;
+      overflow-y: auto;
+      margin: 0;
+  }
+  .collapse {
+     overflow-x: hidden;
+     min-width: 22%;
+     margin: 0;
+  }
+  .logo-name__name {
+      margin-left: -0.5em;
+  }
+  .message {
+      margin-right: 1em;
+      padding-left: 0.4em;
+      background-color: brown;
+      padding-right: 3em;
+      margin-left: -1em;
+  }
+  .side-bar.category-list i::before {
+      visibility: hidden;
+  }
+  .message-icon i {
+      font-size: 0.6em;
+      margin-left: 0.5em;
+      padding-right: 0em;
+  }
+  .category-item li {
+      font-size: 0.5em;
+  }
+  .category-list {
+      margin-left: 0.4em;
+  }
+  .category-item-status {
+      margin-left: -0.6em;
+      font-size: 0.5em;
+  }
+  .category-item-text {
+      font-size: 0.8em;
+      margin: 0;
+  }
+  .category-list i::before {
+      margin-left: -2.7em;
+      margin-right: 0;
+      font-size: 0.6em;
+  }
+  .features-list {
+      margin-left: 0;
+      padding-left: 0;
+  }
+  .features-item::before {
+      border: none;
+  }
+  .features-item::before {
+      left: 2em;
+  }
+  .features-item i {
+      font-size: 0.8em;
+      margin-left: 0.1em;
+  }
+  .features-item-text {
+      font-size: 0.8em;
+      margin-left: 1em;
+      padding-left: 1em;
+  }
+    .about h1 {
+      font-size: 0.8em;
+      line-height: 1.5em;
+    }
+    .about-continued p{
+        font-size: 0.5em;
+        line-height: 1.5em;
+        margin-left: 0.5em;
+    }
+    .projects h2 {
+        font-size: 1.2em;
+    }
+    .projects-list {
+        font-size: 0.5em;
+    }
+    #wrapper {
+        max-width: 85%;
+        left: 4.3em;
+        overflow-x: hidden;
+    }
+    .skills h3 {
+        font-size: 1.5em;
+    }
+    .skill-type p {
+        font-size: 1em;
+    }
+    .certificate {
+        width: 100%;
+        padding: 2em;
+        height: 40%;
+        margin-left: 0.8em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 480px) and (max-width: 767px) {
+      body {
+          width: 100%;
+          overflow-x: none;
+          margin: 0;
+          margin-right: 3em;
+      }
+    .side-bar {
+        min-width: 100%;
+        display: block;
+        overflow-y: auto;
+        margin: 0;
+    }
+    .logo-name__name {
+        margin-left: -2em;
+    }
+    .collapse {
+       overflow-x: hidden;
+       min-width: 20%;
+       margin: 0;
+     }
+     .message {
+         margin-right: 2em;
+         padding-left: 0.2em;
+         padding-right: 3em;
+         margin-left: 0em;
+     }
+    .side-bar.category-list i::before {
+        visibility: hidden;
+    }
+    .message-icon i {
+        font-size: 0.8em;
+        margin-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    .category-item li {
+        font-size: 1em;
+    }
+    .category-list {
+        margin-left: 1em;
+    }
+    .category-item-status {
+        margin-left: -0.3em;
+    }
+    .category-list i::before {
+        margin-left: -1.8em;
+        margin-right: 0;
+    }
+    .features-list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .features-item::before {
+        border: none;
+    }
+    .features-item::before {
+        left: 2em;
+    }
+    .features-item i {
+        font-size: 1em;
+        margin-left: 0.3em;
+    }
+    .features-item-text {
+        margin-left: 0em;
+        padding-left: 1em;
+    }
+      .about h1 {
+        font-size: 1em;
+        line-height: 1.5em;
+      }
+      .about-continued p{
+          font-size: 0.8em;
+          line-height: 1.5em;
+          margin-left: 0.5em;
+      }
+      .projects h2 {
+          font-size: 1.5em;
+      }
+      .projects-list {
+          font-size: 0.7em;
+      }
+      #wrapper {
+          max-width: 85%;
+          left: 6.3em;
+          overflow-x: hidden;
+      }
+      .skills h3 {
+          font-size: 1.5em;
+      }
+      .skill-type p {
+          font-size: 1em;
+      }
+      .certificate{
+          width: 100%;
+          padding: 2em;
+          height: 50%;
+          margin-left: 1em;
+      }
+}
