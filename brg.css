@@ -1,0 +1,117 @@
+.sidebar-new {
+  opacity: 0;
+}
+
+.side-bar.collapse.sidebar-new.burger.new-label {
+  opacity: 0;
+}
+
+.new-label {
+  position: absolute;
+  margin: 0;
+  z-index: 800;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.new-label::before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.new-label .burger {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.new-label .burger::before,
+.new-label .burger .bar, .new-label .burger::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 12%;
+  background: black;
+  content: '';
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.new-label .burger .bar {
+  top: 44%;
+}
+
+.new-label .burger::before {
+  top: 0;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.new-label .burger::after {
+  bottom: 0;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+input:focus + label .burger,
+label:hover .burger {
+  opacity: .75;
+}
+
+[id="navcheck"]:checked + label::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+[id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
+  width: 141.42%;
+}
+
+[id="navcheck"]:checked + label .burger::before {
+  -webkit-transform: rotate(45deg) translateY(-50%);
+  transform: rotate(45deg) translateY(-50%);
+}
+
+[id="navcheck"]:checked + label .burger::after {
+  -webkit-transform: rotate(-45deg) translateY(50%);
+  transform: rotate(-45deg) translateY(50%);
+}
+
+[id="navcheck"]:checked + label .burger .bar {
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
+/* helper */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*# sourceMappingURL=brg.css.map */
