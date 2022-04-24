@@ -83,7 +83,6 @@ body {
     bottom: 0;
     padding: 0;
     width: 85%;
-    height: 100%;
     margin: 0 auto;
     min-height: 100%;
     position: relative;
@@ -92,12 +91,15 @@ body {
 #myVideo {
     position: fixed;
     right: 0;
+    bottom: 0;
     top: 0;
     left: 0;
-    bottom: 0;
-    min-width: 100vw;
-    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
     z-index: 0;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
     -webkit-filter: brightness(0.3);
     filter: brightness(0.3);
     opacity: 0.4;
