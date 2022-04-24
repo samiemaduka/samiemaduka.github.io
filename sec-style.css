@@ -120,11 +120,11 @@ header p {
 }
 .header-content h1 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     color: #9edb78;
     margin: 0 !important;
-    text-shadow: 0px 0px 6px #9edb78;
+    text-shadow: 0px 0px 4px #9edb78;
     font-family: 'Rajdhani', serif;
 }
 h2 {
