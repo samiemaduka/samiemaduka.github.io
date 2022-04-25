@@ -214,6 +214,7 @@ nav {
     line-height: 1.8em;
     margin-left: 0;
     list-style: number;
+    text-shadow: 0 0 0 #fff !important;
     text-align: justify;
 }
 .ownership li ul li {
