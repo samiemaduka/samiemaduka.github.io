@@ -18,6 +18,8 @@ body {
     margin: 0;
     background-image: url(./vid/ezgif.com-gif-maker\ \(1\).gif);
     top:0!important;
+    -moz-background-blend-mode: darken;
+    -ms-background-blend-mode: darken;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
