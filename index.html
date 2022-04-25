@@ -16,6 +16,15 @@
     <title>Capexveer NFTs | Sovereign Bulldog Club NFTs</title>
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $("video").get(0).volume=0;
+            $('video').attr('playsinline', true);
+            $('video').attr('muted', "muted");
+            $('video').get(0).play()
+        })
+    </script>
+    
     <div class="background-vid">
         <video autoplay playsinline muted loop id="myVideo" poster="./img/Screenshot (39).png">
             <source src="./vid/Pexels-Videos-1851190.webm" type="video/webm">
