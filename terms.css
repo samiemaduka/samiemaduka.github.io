@@ -28,10 +28,10 @@ body {
     -ms-background-blend-mode: darken;
     -moz-background-blend-mode: darken;
     background-blend-mode: darken;
-    -webkit-background-repeat: no-repeat;
-    -moz-background-repeat: no-repeat;
-    -ms-background-repeat: no-repeat;
-    background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat !important;
+    -moz-background-repeat: no-repeat !important;
+    -ms-background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
     -webkit-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;

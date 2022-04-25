@@ -11,6 +11,10 @@
     }
     body {
       max-width: 100%;
+      -webkit-background-repeat: no-repeat !important;
+      -moz-background-repeat: no-repeat !important;
+      -ms-background-repeat: no-repeat !important;
+      background-repeat: no-repeat !important;
     }
     .nav-content {
       min-width: 50%;
@@ -554,6 +558,10 @@
 
     body {
       max-width: 100%;
+      -webkit-background-repeat: no-repeat !important;
+      -moz-background-repeat: no-repeat !important;
+      -ms-background-repeat: no-repeat !important;
+      background-repeat: no-repeat !important;
     }
     .nav-content {
       min-width: 50%;
