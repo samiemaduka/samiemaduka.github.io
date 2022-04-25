@@ -14,8 +14,11 @@ html {
     box-sizing: inherit;
 }
 body {
-    background: linear-gradient(120deg, #313973, rgb(0, 0, 49), rgb(0,0,49), rgb(0,0,49)) fixed;
     margin: 0;
+    -webkit-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    background-attachment: fixed;
     -webkit-background-image: url('./vid/ezgif.com-gif-maker\ \(1\).gif');
     -ms-background-image: url('./vid/ezgif.com-gif-maker\ \(1\).gif');
     -moz-background-image: url('./vid/ezgif.com-gif-maker\ \(1\).gif');
