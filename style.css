@@ -397,7 +397,7 @@ main {
 /* testimonial begins */
 .testimonial {
     padding: 0 4em;
-    background-color: #AB370F;
+    background-color: #701178;
     margin: 8em auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -422,12 +422,12 @@ main {
     grid-auto-columns: 0.5fr 1fr;
     margin:  3em auto 5em auto;
     width: 70%;
-    transition: ease-in-out 0.3s;
+    transition: ease-out 0.3s;
     gap: 2em;
     padding: 1em 0 0 0;
     cursor: pointer;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
+    border-right: 1px solid #450D15;
+    border-bottom: 1px solid #450D15;
     border-radius: 10px;
 }
 .t-grid:hover {
@@ -456,6 +456,7 @@ main {
 }
 .t-location {
     color: #450D15;
+    font-weight: bold;
     font-style: italic;
     cursor: inherit;
 }
