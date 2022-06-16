@@ -111,7 +111,7 @@ button:hover {
     border: none;
   }
   .openbtn:hover, .closebtn:hover {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
   }
   .closebtn {
       font-size: 2.5em;
@@ -398,7 +398,7 @@ main {
 .testimonial {
     padding: 0 4em;
     background-color: #701178;
-    margin: 8em auto 0 auto;
+    margin: 6em auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -407,6 +407,7 @@ main {
 .testimonial h2 {
     font-size: 2.5em;
     font-weight: normal;
+    margin-top: 3em;
     text-transform: uppercase;
 }
 .testimonial p {
