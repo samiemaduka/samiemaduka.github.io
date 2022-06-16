@@ -74,17 +74,15 @@ button:hover {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: #450D15;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
-    padding-top: 60px;
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 0px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.5em;
     color: #fff;
@@ -107,6 +105,7 @@ button:hover {
     position: fixed;
     top: 5px;
     left: 0;
+    z-index: 9999999999;
     padding: 15px 25px;
     border: none;
   }
@@ -124,7 +123,7 @@ button:hover {
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
+    .sidebar {padding-top: 0px;}
     .sidebar a {font-size: 18px;}
   }
 /*Navigation Bar ends*/
