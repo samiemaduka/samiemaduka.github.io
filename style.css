@@ -77,7 +77,7 @@ button:hover {
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: #450D15;
-    overflow: hidden;
+    overflow-y: hidden;
     transition: 0.5s;
   }
   
