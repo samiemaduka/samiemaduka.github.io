@@ -73,6 +73,7 @@ button:hover {
     z-index: 9999999999999;
     top: 0;
     left: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -498,6 +499,8 @@ main {
     }
     .t-grid {
         width: 100%;
+        grid-template-areas: 'date' 'content';
+        grid-auto-columns: 1fr 1fr;
     }
     .t-writeup {
         width: 100%;
