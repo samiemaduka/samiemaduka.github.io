@@ -200,7 +200,7 @@ nav {
 /* header starts */
 header {
     display: flex;
-    padding-top: 3em;
+    padding-top: 5em;
     height: 100vh;
     justify-content: space-evenly;
     flex-direction: row;
