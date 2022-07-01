@@ -110,9 +110,8 @@ li::selection {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: clamp(0.8rem, 1.8vw, 1rem);
 }
-.nav__active{
+.active{
     color: var(--primary_color_1);
 }
 .sidebar {
@@ -120,7 +119,7 @@ li::selection {
     width: 100vw;
     position: fixed;
     z-index: 999;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     display: none;
@@ -132,14 +131,11 @@ li::selection {
     overflow-y: scroll;
     transition: 1s ease-out;
     box-shadow: 3px 3px 5px black;
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-}
-.sidebar::-webkit-scrollbar{
-    display: none;
-} 
+  }
+  
 .sidebar a {
     padding: 0px 8px 8px 32px;
+    /* border-bottom: 1px solid black; */
     text-decoration: none;
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 1.1rem);
@@ -148,7 +144,12 @@ li::selection {
     display: block;
     margin-top: 2rem;
     transition: 0.3s;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
+.sidebar::-webkit-scrollbar{
+    display: none;
+} 
 .sidebar a:hover {
     color:var(--primary_color_1) ;
 }
@@ -186,7 +187,7 @@ li::selection {
     }
     
 }
-/* END OF NAVBAR DESIGN ///////////////////////*/
+/* END OF NAVBAR DESIGN ////////////////////// */
 
 
 /* BEGGINING OF ABOUT ///////////////////////// */

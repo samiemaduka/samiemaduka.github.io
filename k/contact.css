@@ -764,8 +764,9 @@ li::selection {
     .contact_form-content {
         align-items: center;
         width: 100%;
+        justify-content: center;
     }
     .contact_form-content h2, .contact_form-content p, .contact_form-content li {
-        text-align: center;
+        text-align: left;
     }
 }
