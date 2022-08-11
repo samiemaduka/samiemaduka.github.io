@@ -1,0 +1,178 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 319px) and (max-width: 479px) {
+    nav {
+        width: 30%;
+    }  
+    header h1 {
+          font-size: 0.8em;
+      }
+      header img {
+          width: 2em;
+          height: 3em;
+      }
+      .search-btn h2, .email-btn h2 {
+          font-size: 0.8em;
+      }
+      .form input {
+          height: 1.5em;
+          padding: 0 0.8em;
+      }
+      .form button {
+        height: 1.5em;
+        padding: 0 0.8em;
+        width: 3em;
+        margin-right: 0.3em;
+    }
+      .form button i {
+          font-size: 0.5em;
+      }
+      .email-btn button {
+          font-size: 0.3em;
+          height: 4em;
+          width: 10em;
+          margin-right: 0.3em;
+      }
+      .email-btn a {
+          font-size: 0.8em;
+      }
+      .learn h2, .connect h2, .featured h2 {
+          font-size: 0.8em;
+      }
+      .learn a, .connect a, .featured a {
+          font-size: 0.6em;
+      } 
+      main {
+          min-width: 70%;
+          margin: 0 0 0 8em;
+      } 
+      .content h2 {
+          font-size: 1em;
+      }
+      .content p {
+          font-size: 0.6em;
+      }
+      .socials ul {
+          font-size: 0.6em;
+      } 
+      .content cite {
+          font-size: 0.6em;
+      }
+      .read-more {
+          font-size: 0.7em;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 480px) and (max-width: 767px)  {
+    
+    nav {
+        width: 30%;
+    }  
+    header h1 {
+          font-size: 0.9em;
+      }
+      header img {
+          width: 2.2em;
+          height: 3.2em;
+      }
+      .search-btn h2, .email-btn h2 {
+          font-size: 0.9em;
+      }
+      .form input {
+          height: 1.5em;
+          padding: 0 0.8em;
+      }
+      .form button {
+        height: 1.5em;
+        padding: 0 0.8em;
+        width: 3em;
+        margin-right: 0.3em;
+    }
+      .form button i {
+          font-size: 0.6em;
+      }
+      .email-btn button {
+          font-size: 0.4em;
+          height: 3em;
+          width: 10em;
+          margin-right: 0.3em;
+      }
+      .email-btn a {
+          font-size: 0.8em;
+      }
+      .learn h2, .connect h2, .featured h2 {
+          font-size: 0.9em;
+      }
+      .learn a, .connect a, .featured a {
+          font-size: 0.8em;
+      } 
+      main {
+          min-width: 70%;
+          margin: 0 0 0 9.5em;
+      } 
+      .content h2 {
+          font-size: 1em;
+      }
+      .content p {
+          font-size: 0.6em;
+      }
+      .socials ul {
+          font-size: 0.6em;
+      } 
+      .content cite {
+          font-size: 0.6em;
+      }
+      .read-more {
+          font-size: 0.8em;
+      }
+  
+  }
