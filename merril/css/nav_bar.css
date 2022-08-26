@@ -41,7 +41,9 @@ body {
 
 
  /*google translate Dropdown */
- 
+ i {
+  color: #012169;
+ }
  #google_translate_element select{
     background:#f5f5f5;
     color:#000;
