@@ -1020,13 +1020,13 @@ textarea {
 .submit_btn {
     background-color: var(--primary_color_1);
     color: #fff;
-    font-size: min(0.8em, 1em);
+    font-size: min(1em, 1.2em);
     font-weight: 800;
     font-family: var(--primary_font_1);
-    width: 20%;
+    width: 22%;
     border: none;
     align-self: center;
-    padding: 0.3em 0;
+    padding: 0.3em 0.2em;
     transition: ease 300ms;
     cursor: pointer;
 }
