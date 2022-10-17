@@ -359,12 +359,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
 }
 .header_content_heading {
-    font-size: min(2.5em, 73px);
+    font-size: min(3em, 73px) !important;
     font-weight: 900;
     line-height: 1.2em !important;
 }
 .header_content p {
     width: 80%;
+    font-size: min(1em,1.2em);
     line-height: 1.5em;
     margin: 0.5em 0 0.5em 0;
     /* border: 2px solid red; */
@@ -436,7 +437,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         gap: 3em;
     }
     .header_content_heading {
-        font-size: min(3em, 73px);
+        font-size: min(3em, 73px) !important;
     }
     .header_content p {
         width: 100%;
@@ -501,7 +502,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     align-items: center;
     justify-items: center;
     background-color: var(--primary_color_5);
-    padding: 5em 5em 1em 5em;
+    padding: 5em;
 }
 .arrow {
     grid-area: box1;
@@ -743,9 +744,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .swiper-slide img {
     width: 90%;
 }
-.slide1 img, .slide3 img {
-    width: 40%;
+.slide1 img, .slide3 img, .slide5 img{
+    width: 45%;
     /* border: 2px solid black; */
+}
+.slide4 img, .slide5 img, .twitter_logo_border img {
+    filter: saturate(0);
 }
 .swiper-button-next, .swiper-button-prev {
     height: 30px !important;
@@ -766,7 +770,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .swiper-slide img {
         width: 100%;
     }
-    .slide1 img, .slide3 img {
+    .slide1 img, .slide3 img, .slide5 img {
         width: 50%;
     }
     .swiper-button-next, .swiper-button-prev {
@@ -784,7 +788,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .swiper-slide img {
         width: 95%;
     }
-    .slide1 img, .slide3 img {
+    .slide1 img, .slide3 img, .slide5 img {
         width: 65%;
     }
     .swiper {
