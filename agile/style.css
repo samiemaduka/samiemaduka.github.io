@@ -663,7 +663,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    transition: ease 200ms;
+    cursor: pointer;
     background-color: #E0FBFC;
+}
+.ourcourses_box:hover {
+    background-color: #293241;
+    color: #E0FBFC;
 }
 .ourcourses_box p {
     width: max(60%, 65%);
@@ -682,10 +688,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     color: var(--primary_color_1);
     transition: ease 200ms;
 }
-.learnmore_link:hover i {
+.ourcourses_box:hover i {
     transform: scale(1.3);
 }
-.learnmore_link:hover a {
+.ourcourses_box:hover a {
     text-decoration: underline;
 }
 @media (max-width:890px) {
