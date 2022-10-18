@@ -601,7 +601,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     }
     .upcoming_section_wrapper {
         
-    padding: 5em 0 1em 0;
+    padding: 5em 0;
     }
     .upcoming_section h2 {
         font-size: min(1.8em, 2em);
