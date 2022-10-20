@@ -551,7 +551,7 @@ input:checked + .slider:before {
 }
 @media (max-width: 1100px) {
     .login_form_img img {
-        width: 50%;
+        width: 60%;
     }
     .login_form_wrapper {
         grid-auto-columns: 50% 50%;
