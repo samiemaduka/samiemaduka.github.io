@@ -393,10 +393,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     border: none;
     border-radius: 5px;
 }
-.login_form form i {
-    margin-left: -30px;
-    cursor: pointer;
-}
 .password_container {
     display: flex;
     gap: 0.8em;
@@ -406,7 +402,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     /* border: 2px solid red; */
     display: grid;
     grid-template-areas: 'box1 box2';
-    grid-auto-columns: 93% 7%;
+    grid-auto-columns: 91% 9%;
     gap: 0.3em;
     background-color: #E5E5E5;
     align-items: center;
