@@ -72,12 +72,6 @@ nav {
     font-size: max(0.6em, 1em);
     /* border: 2px solid black; */
 }
-.nav_content p {
-    cursor: pointer;
-}
-.nav_content p:hover {
-    text-decoration: underline;
-}
 .nav_login_btn {
     background-color: var(--primary_color_3);
     color: var(--primary_color_4);
@@ -170,6 +164,7 @@ i {
     width: 70%;
     font-size: clamp(0.7em,4vw, 0.9em);
     margin-top: 60px;
+    padding: 1em 0;
     transform: translateX(-100%);
     transition: transform 250ms ease-in-out;
     background: #f5f5f5;
@@ -180,16 +175,17 @@ i {
     border-top: 1px solid #c8d0e2;
 }
 .sidebarMenuLogo {
-    padding: 20px;
+    margin: 20px;
+    /* border: 2px solid black; */
 }
 .sidebarMenuLogo img {
     width: 80%;
+    /* border: 2px solid red; */
 }
 .sidebarMenuInner li{
     list-style: none;
     color: #000;
-    font-weight: 400;
-    padding: 20px;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -198,14 +194,14 @@ i {
 .sidebarMenuInner li span{
     display: block;
     font-size: 14px;
-    color: rgba(104, 104, 104, 0.5);
+    color: rgba(182, 152, 152, 0.5);
 }
 .sidebarMenuInner li a{
     color: #000;
-    text-transform: uppercase;
-    font-weight: bold;
     width: 100%;
+    padding: 20px;
     cursor: pointer;
+    /* border: 2px solid red; */
     margin-left: 0.4em;
     text-decoration: none;
 }
@@ -339,7 +335,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: 4em;
 }
 .header_wrapper {
-    background: url(img/header\ background.png) no-repeat scroll center/cover;
+    background: url(../img/headerBackground.png) no-repeat scroll center/cover;
 }
 .header {
     width: 75%;
