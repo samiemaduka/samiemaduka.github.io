@@ -17,6 +17,7 @@
 html {
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
     width: 100%;
 }
 *, *::after, *::before {
@@ -609,12 +610,63 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         font-size: min(0.8em, 1em);
     }
 }
+.form_popup {
+    display: none;
+    position: fixed;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 2em;
+    bottom: 0;
+    overflow-y: scroll;
+    left: 0;
+    /* border: 2px solid red; */
+}
+.form_popup .upcoming_section_wrapper {
+    width: 80%;
+    margin: 5em auto 0 auto;
+    overflow-y: scroll;
+    position: relative;
+}
+.cancel_btn {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    display: flex;
+    justify-content: center;
+    width: 22px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #EE6C4D;
+    align-items: center;
+    cursor: pointer;
+}
+.cancel_btn i {
+    color: var(--primary_color_1);
+}
 @media(max-width:600px) {
     .arrow {
         margin-right: 1.5em;
     }
     .allcourses_btn {
         width: 80%;
+    }
+    .form_popup .upcoming_section_wrapper {
+        width: 95%;
+    }
+    .form_popup .upcoming_section_wrapper h2{
+        font-size: min(1.2em,1.5em);
+    }
+    .form_popup .upcoming_section_wrapper p{
+        font-size: min(0.9em,1.5em);
+    }
+    .form_popup .upcoming_section_wrapper .course_date, .form_popup .upcoming_section_wrapper .course_duration{
+        font-size: min(0.7em,1em) !important;
+    }
+    .form_popup {
+        top: 0.5em;
+    }
+    .cancel_btn {
+        right: 1em;
     }
 }
 

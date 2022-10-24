@@ -20,7 +20,7 @@
     </a>
 
     <div class="nav_content">
-        <a href="courses.html">courses</a>
+        <a href="#courses">courses</a>
         <a href="community.html">community</a>
         <a href="consulting.html">consulting</a>
         <a href="contactus.html">contact us</a>
@@ -53,7 +53,7 @@
   
   
           <ul class="sidebarMenuInner">
-            <li><a href="courses.html">courses</a></li>
+            <li><a href="#courses">courses</a></li>
             <li></li>
             <li><a href="community.html">community</a></li>
             <li></li>
@@ -154,7 +154,7 @@
                     <div class="enrol_btn">Enrol Now</div> 
                 </div>
             </div>
-                <p class="allcourses_btn">Browse all upcoming courses</p>
+                <p class="allcourses_btn open-button" onclick="openForm()" id="courses">Browse all upcoming courses</p>
 
 
         </div>
@@ -167,6 +167,89 @@
         </div>
 
     </div>
+
+    <!-- POPUP MENU //////////////// -->
+    <div class="form_popup" id="myForm">
+
+        <div class="upcoming_section_wrapper">
+
+            <div class="arrow"><i class="fa-solid fa-circle-arrow-down"></i></div>
+    
+            <div class="upcoming_section">
+    
+                <h2>Upcoming courses & events</h2>
+            
+                <div class="course_box">
+                    <p>Scrum Mastery + Agile Product Delivery</p>
+                    <div class="course_details">
+                        <div class="course_date">April 10, 2022 - May 29, 2022</div>
+                        <div class="course_duration">(3 Saturdays)</div>
+                        <div class="enrol_btn">Enrol Now</div> 
+                    </div>
+                </div>
+    
+                <div class="course_box">
+                    <p>Product Management (Immersion)</p>
+                    <div class="course_details">
+                        <div class="course_date">April 10, 2022 - May 29, 2022</div>
+                        <div class="course_duration">(3 Saturdays)</div>
+                        <div class="enrol_btn">Enrol Now</div> 
+                    </div>
+                </div>
+
+                <div class="course_box">
+                    <p>Design Thinking & user Experience Research</p>
+                    <div class="course_details">
+                        <div class="course_date">April 10, 2022 - May 29, 2022</div>
+                        <div class="course_duration">(3 Saturdays)</div>
+                        <div class="enrol_btn">Enrol Now</div> 
+                    </div>
+                </div>
+    
+                <div class="course_box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="course_details">
+                        <div class="course_date">April 10, 2022 - May 29, 2022</div>
+                        <div class="course_duration">(3 Saturdays)</div>
+                        <div class="enrol_btn">Enrol Now</div> 
+                    </div>
+                </div>
+
+                <div class="course_box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="course_details">
+                        <div class="course_date">April 10, 2022 - May 29, 2022</div>
+                        <div class="course_duration">(3 Saturdays)</div>
+                        <div class="enrol_btn">Enrol Now</div> 
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="circle">
+                <div class="circle_1"></div>
+                <div class="circle_2"></div>
+                <div class="circle_3"></div>
+                <div class="circle_4"></div>
+            </div>
+
+            <p type="button" class="cancel_btn" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></p>
+    
+        </div>
+
+
+    </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <!-- POPUP MENU //////////////// -->
+
 
     <div class="courses_section">
         <div class="courses_heading">

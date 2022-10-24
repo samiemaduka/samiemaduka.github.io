@@ -5,26 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#F3F3F3">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/create_account.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <title>Agile Pantha</title>
 </head>
 <body>
 
 <nav class="bg_screen">
-    <a href="index.html" class="nav_logo">
-        <img src="img/logo.png" alt="Agile Pantha Logo">
-    </a>
+    <div class="nav_wrapper">
 
-    <div class="nav_content">
-        <a href="courses.html">courses</a>
-        <a href="community.html">community</a>
-        <a href="consulting.html">consulting</a>
-        <a href="contactus.html">contact us</a>
-        <a href="login.html" class="nav_login_btn">Login</a>
+        <a href="index.html" class="nav_logo">
+            <img src="img/alt_logo.png" alt="Agile Pantha Logo">
+        </a>
+    
+        <div class="nav_content">
+            <a href="index.html#courses">courses</a>
+            <a href="community.html">community</a>
+            <a href="consulting.html">consulting</a>
+            <a href="contactus.html">contact us</a>
+            <a href="login.html" class="nav_login_btn">Login</a>
+        </div>
+
     </div>
 </nav>
 
@@ -44,7 +49,7 @@
         <div id="sidebarMenu">
 
             <a href="index.html" class="sidebarMenuLogo">
-                <img src="img/logo.png" alt="Agile Pantha Logo">
+                <img src="img/alt_logo.png" alt="Agile Pantha Logo">
             </a>
 
           <ul class="sidebarMenuInfo">
@@ -53,7 +58,7 @@
   
   
           <ul class="sidebarMenuInner">
-            <li><a href="courses.html">courses</a></li>
+            <li><a href="index.html#courses">courses</a></li>
             <li></li>
             <li><a href="community.html">community</a></li>
             <li></li>
@@ -72,6 +77,91 @@
 
 
 <div class="wrapper">
+
+    
+    <div class="create_acct_wrapper">
+
+        <h1>Create account</h1>
+
+        <p class="create_acct_content">A user name and password will be emailed to you on completion of this transaction. Please enter your primary email to continue.</p>
+
+        <form action="">
+
+            <div class="form_input_wrapper">
+
+                <div class="form_input">
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <div class="form_input">
+                    <label for="lastName">Last name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+                
+                <div class="form_input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="form_input">
+                    <label for="shippingAddress">Shipping address</label>
+                    <input type="text" name="shippingAddress" id="shippingAddress" required>
+                </div>
+                
+                <div class="form_input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                
+                <div class="form_input">
+                    <label for="confirm_password">Confirm password</label>
+                    <input type="password"  id="confirm_password" required>
+                </div>
+                
+                <script src="js/script.js">
+                </script>
+                
+            </div>
+
+            <div class="forgot_password">
+                <a href="">Forgot password?</a>
+            </div>
+
+            <div class="checkbox_wrapper">
+
+                <div class="checkbox_input">
+                    <input type="checkbox" name="rememberMe" id="rememberMe" value="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <div class="checkbox_input">
+                    <input type="checkbox" name="termsAndPolicy" id="termsAndPolicy" value="termsAndPolicy">
+                    <label for="termsAndPolicy">I agree to all the <a href="">Terms</a> and <a href="">Privacy policy</a></label>
+                </div>
+
+            </div>
+
+            <div class="submit_btns_wrapper">
+
+                <button type="submit" class="pure-button pure-button-primary create_acct_btn">Create Account</button>
+
+                <a href="" class="google_signin">
+                    <img src="img/googlelogo.png" alt="">
+                    <p>Sign-in with google</p>
+                </a>
+
+            </div>
+            
+        </form>
+
+        <div class="login_page_wrapper">
+            <p>Already have an account?</p>
+            <a href="login.html" class="login_page">Log In</a>
+        </div>
+
+    </div>
+    
 
     <footer>
 
