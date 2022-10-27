@@ -50,7 +50,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #F3F3F3;
+    background-color: #3A3D40;
     /* border: 2px solid brown; */
 }
 .nav_logo {
@@ -65,6 +65,7 @@ nav {
 .nav_content {
     display: flex;
     gap: 3em;
+    color: var(--primary_color_4);
     justify-content: center;
     align-items: center;
     font-family: var(--primary_font_1);
@@ -73,16 +74,16 @@ nav {
     /* border: 2px solid black; */
 }
 .nav_login_btn {
-    background-color: var(--primary_color_3);
-    color: var(--primary_color_4);
+    background-color: var(--primary_color_1);
+    color: var(--primary_color_3);
     padding: 0.5em 1em;
     border-radius: 3px;
     transition: ease 200ms;
     cursor: pointer;
 }
 .nav_login_btn:hover {
-    background-color: var(--primary_color_4);
-    color: var(--primary_color_3);
+    background-color: var(--primary_color_3);
+    color: var(--primary_color_4);
     text-decoration: none !important;
 }
 
@@ -109,11 +110,11 @@ nav {
 
  /*google translate Dropdown */
 i {
-    color: var(--primary_color_2);
+    color: var(--primary_color_4);
 }
 #google_translate_element select{
-    background:#f5f5f5;
-    color:#000;
+    background:#3A3D40;
+    color:var(--primary_color_4);
     border: none;
     border-radius:3px;
     padding: 6px;
@@ -147,7 +148,7 @@ i {
     max-width: 100%;
     top: 0;
     box-shadow: none;
-    background-color: #F3F3F3;
+    background-color: #3A3D40;
     position: fixed;
     height: 60px!important;
     z-index: 999999999999999999999999;
@@ -167,7 +168,7 @@ i {
     padding: 1em 0;
     transform: translateX(-100%);
     transition: transform 250ms ease-in-out;
-    background: #f5f5f5;
+    background: #3A3D40;
 }
 .sidebarMenuInner{
     margin:0 0 3.5em 0;
@@ -184,7 +185,7 @@ i {
 }
 .sidebarMenuInner li{
     list-style: none;
-    color: #000;
+    color: var(--primary_color_4);
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -197,7 +198,7 @@ i {
     color: rgba(182, 152, 152, 0.5);
 }
 .sidebarMenuInner li a{
-    color: #000;
+    color: var(--primary_color_4);
     width: 100%;
     padding: 20px;
     cursor: pointer;
@@ -235,11 +236,11 @@ i {
     margin-right: 0.3em;
 }
 
-input[type="checkbox"]:checked ~ #sidebarMenu {
+.sidebar input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
 
-input[type=checkbox] {
+.sidebar input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
     display: none;
@@ -264,7 +265,7 @@ input[type=checkbox] {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
 }
 .horizontal {
     transition: all 0.3s;
@@ -337,410 +338,227 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 
-.course_heading_box {
-    position: relative;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
+
+
+
+
+
+.scrum_payment_wrapper {
+    margin: 10em auto;
+    /* border:  2px solid red; */
 }
-.course_heading_wrapper {
-    background: url(../img/scrum_mastery_img.png) no-repeat scroll center/cover;
-    padding: 5em 5em 2em 5em;
-    margin-top: 3em;
-    color: #fff;
-    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.7), inset 0 0 500px rgba(0, 0, 0, 0.7);
-    /* border: 2px solid brown; */
-}
-.course_heading {
-    display: flex;
-    flex-direction: column;
+.scrum_payment_heading p {
     font-weight: 800;
-    gap: 0;
-    align-items: flex-start;
-    margin: 10em 5em 3em 5em;
-    /* border: 2px solid blue; */
-}
-.course_heading h1 {
-    font-size: max(5em,4.5em);
-    margin: 0;
-    font-weight: 900 !important;
-    /* border: 2px solid red; */
-}
-.course_heading p{
-    /* border: 2px solid blue; */
-    margin: 0 0 -1.2em 0;
-}
-.course_heading a {
-    background-color: var(--primary_color_1);
-    padding: 0.3em 0.5em !important;
-    margin: 0 !important;
-}
-.popup {
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
-    width: 150px;
-    position: absolute;
-    bottom: -10em;
-    right: 0;
-    color: #3A3D40;
-    background-color: #F9F9F9;
-    font-size: min(0.8em, 0.6em);
-}
-.enrol_btn {
-    background-color: var(--primary_color_1);
-    margin: 0.5em 0 0 0 !important;
-    padding: 0.7em 0.5em !important;
-    color: #fff;
-    font-weight: 800;
-    cursor: pointer;
-    border: none !important;
-}
-.enrol_btn:hover {
-    background-color: #F9F9F9;
-    color: var(--primary_color_1);
-    text-decoration: none;
-}
-.popup_restyle {
-    border: none !important;
-}
-.popup a{
-    margin: 0.3em 0.5em;
-    padding: 0.5em 0;
-    border-bottom: 1px solid #D2D2D2;
-}
-@media (max-width:1010px) {
-    .popup {
-        right: -4em;
-    }
-}
-@media (max-width:960px) {
-    .course_heading {
-        margin: 0;
-    }
-}
-@media (max-width:860px) {
-    .popup {
-        left: 0;
-        bottom: -20em;
-    }
-    .course_heading_wrapper{
-        padding: 5em 1em 3em 1.5em;
-   }
-}
-@media (max-width:760px) {
-    .course_heading h1 {
-        font-size: min(3em,3.5em);
-    }
-    .course_heading p {
-        font-size: min(1em,1.2em);
-        margin: 0;
-    }
-    .course_heading a {
-        font-size: min(0.8em,1em);
-        margin-top: 1em !important;
-    }
-}
-@media (max-width:400px) {
-    .course_heading h1 {
-        font-size: min(3em,2.5em);
-    }
-    .course_heading p {
-        font-size: min(0.8em,1em);
-        margin: 0;
-    }
-    .course_heading a {
-        font-size: min(0.6em,0.8em);
-        margin-top: 1em !important;
-    }
-}
-.purchaseOption_popup {
-    display: none;
-    position: fixed;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    bottom: 0;
-    overflow-y: scroll;
-    left: 0;
-    z-index: 2000;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.purchaseOption_wrapper {
-    background-color: #fff;
-    /* border: 2px solid blue; */
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-.close_btn {
-    align-self: flex-end;
-    cursor: pointer;
-    margin: 0 1em 0 0;
-    /* border: 2px solid indigo; */
-    font-size: min(2em,3.5em);
-}
-.purchaseOption_content_wrapper {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 35% 65%;
-    padding: 1em 3em;
-    gap: 1em;
-}
-.purchaseOption_heading {
-    font-size: min(2em,1.5em);
-    color: #B3B3B3;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-weight: 800;
-    margin: 0 0 0.8em 0;
-    padding-bottom: 0.5em;
-}
-.purchaseOption_title {
-    font-size: min(0.9em,1.2em);
-    font-weight: 500;
-    margin: 0 0 1em 0;
-    color: rgba(102, 102, 102, 1);
-}
-.purchaseOption_grid1 {
-    display: flex;
-    margin: 0;
-}
-.grid1 {
-    padding: 0 0 0.2em 1em !important;
-}
-.grid1 p {
-    color: #666666 !important;
-    font-weight: 800 !important;
-}
-.purchaseOption_grid2 {
-    display: flex;
-    margin: 0;
-    background-color: #F0F0F0;
-    color: rgba(102, 102, 102, 1);
-}
-.purchaseOption_box {
-    width: 100%;
-    padding: 0 0.3em 0 1em;
-    font-weight: 400;
-    font-size: min(0.8em,1em);
-    border: 1px solid rgba(58, 61, 64, 0.6);
-}
-.border {
-    border-right: 0 !important;
-    border-bottom: 0 !important;
-}
-.border2 {
-    border-bottom: 0 !important;
-}
-.checkbox {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    gap: 0.5em;
-    border-right: 0 !important;
-}
-.checkbox p {
-    margin: 0;
-}
-.circle {
-    background-color: rgba(231, 231, 231, 1);
-    height: 1.4em;
-    width: 1.4em;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    align-items: center;
-}
-.circle_inner {
-    background-color: #fff;
-    height: 0.7em;
-    width: 0.7em;
-    border-radius: 50%;
-}
-.purchaseOption_content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-@media(max-width:1200px) {
-    .purchaseOption_img img {
-        width: 95%;
-    }
-    .purchaseOption_content_wrapper {
-        padding: 1em 2em;
-    }
-}
-@media(max-width:1000px) {
-    .purchaseOption_img {
-        display: none;
-    }
-    .purchaseOption_content_wrapper {
-        display: flex;
-    }
-}
-@media(max-width:600px) {
-    .purchaseOption_wrapper {
-        width: 95%;
-    }
-    .purchaseOption_content_wrapper {
-        padding: 1em;
-    }
-    .close_btn {
-        font-size: min(1em,3.5em);
-    }
-}
-.continuePurchase_btn_wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em 3em 1em 0;
-    border-top:  1px solid rgba(0, 0, 0, 0.21);
-}
-.continuePurchase_btn {
-    background-color: var(--primary_color_1);
-    font-weight: 800;
-    color: #fff;
-    padding: 0.4em 0.8em;
-}
-.continuePurchase_btn:hover {
-    text-decoration: none !important;
-    background-color: #fff;
-    color: var(--primary_color_1);
-}
-.course_content {
-    width: 65%;
-    margin: 5em auto;
-    text-align: justify;
-    line-height: 1.8em;
-}
-.course_content h2 {
-    font-weight: 800;
-    color: #8B8D92;
-    font-size: min(2.5em,2em);
-}
-@media (max-width:860px) {
-    .course_content {
-        margin-top: 11em;
-        width: 85%;
-    }
-}
-@media (max-width:530px) {
-    .course_content {
-        width: 90%;
-        margin-top: 12em;
-        font-size: min(0.8em,1em);
-    }
-}
-.skills {
-    border: 3px solid #BEB9B9;
-    width: 65%;
-    margin: 5em auto 7em auto;
-    display: flex;
-    padding: 2em 1em;
-    flex-direction: column;
-}
-.skills_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-}
-.skills_heading {
-    font-size: min(2.5em, 2em);
-    color: #8B8D92;
-    font-weight: 800;
-}
-.skills p {
-    font-size: min(0.8em,1em);
-}
-.skills_grid_box {
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
-}
-.skills_grid_box i {
-    font-size: 2em;
-    color: #137560;
-}
-/* 
-.skills_heading, .skills_content, .skills_grid {
-    border: 2px solid red;
-} */
-@media (max-width:870px) {
-    .skills_grid {
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (max-width:570px) {
-    .skills_heading {
-        font-size: min(1.5em, 2em);
-    }
-    .skills {
-        width: 90%;
-    }
-}
-.course_duration {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3em;
-    margin: 3em auto 5em auto;
-}
-.course_duration_heading {
-    font-size: max(2em,2.5em);
-    font-weight: 800;
-    color: #8B8D92;
-}
-.course_duration_box_wrapper {
-    display: flex;
-    /* border: 3px solid red; */
-    justify-content: space-evenly;
-    width: 100%;
-    box-shadow: 0 -20px 0 0 #FAFAFA;
-}
-.course_duration_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2em 0;
-}
-.course_duration_box p {
+    font-size: min(2em,1.7em);
     text-align: center;
 }
-.course_duration_icon {
-    border-radius: 50%;
-    border: 2px solid #EE6C4D;
-    width: 50px;
-    height: 50px;
-    padding: 1em;
-    justify-content: center;
-    align-items: center;
+.scrum_payment_content p {
+    font-size: min(1em,1.2em);
+    text-align: center;
+    width: 50%;
+    margin: 2em auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+.scrum_payment_method_wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 0 auto;
+    padding: 0.7em 2em;
+    gap: 1em;
+    border-radius: 23px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.scrum_payment_method_wrapper form {
     display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
-.course_duration_icon i {
-    font-size: 1.5em;
+.scrum_payment_method_heading p{
+    font-weight: 700;
 }
-.course_duration_icon img {
-    width: 30px;
+.scrum_card_method_box {
+    background-color: #EFF0F7;
+    padding: 0.5em 1em;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
-@media (max-width:590px) {
-    .course_duration_box_wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+.card_method_head {
+    display: flex;
+    justify-content: space-between;
+}
+.scrum_card_method_title {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+.scrum_card_method_title p, .scrum_card_method_title i {
+    font-size: 0.8em;
+    color: #344054;
+    font-weight: 700;
+}
+.scrum_card_method_img {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.payment_icon {
+    padding: 0.6em 1.1em;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.scrum_card_method_grid {
+    display: grid;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    gap: 0.5em;
+    padding: 0.5em 1em 1em 1em;
+    background-color: #EFF0F7;
+    grid-template-columns: 70% 30%;
+}
+.scrum_card_grid_box {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+}
+.scrum_card_grid_box input {
+    width: 100%;
+    padding: 0.4em 0.5em;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: var(--primary_font_1);
+}
+.scrum_card_grid_box label {
+    font-size: min(0.7em,0.9em);
+    font-weight: 700;
+    color: #344054;
+}
+.input_box {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items: center;
+    padding: 0 0.5em;
+    gap: 0.5em;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+.input_box input {
+    border: none !important;
+}
+/* Chrome, Safari, Edge, Opera */
+.input_box input::-webkit-outer-spin-button,
+.input_box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input_box input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.scrum_card_alt_method {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0 0 0;
+}
+.apple_pay label, .paypal label {
+    display: grid;
+    gap: 1em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    align-items: center;
+    padding: 0 1em;
+    grid-template-columns: 0.1fr 1.2fr 0.2fr;
+}
+.apple_pay label img, .paypal label img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.4em 1em;
+    border-radius: 5px;
+}
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    color: #828282;
+    font-weight: 400;
+}
+.policy i {
+    padding: 0.8em;
+    color: #000;
+    font-size: 0.6em;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+}
+.next_btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.next_btn {
+    background-color: var(--primary_color_1);
+    color: #fff;
+    font-weight: 700;
+    font-size: max(1em,0.8em) !important;
+    padding: 0.5em 2.5em;
+    border-radius: 8px;
+}
+@media (max-width:800px) {
+    .scrum_payment_method_wrapper {
+        width: 90%;
     }
+    .scrum_payment_wrapper {
+        margin: 5em auto;
+    }
+    .apple_pay label, .paypal label, .policy {
+        font-size: min(0.7em,0.9em);
+    }
+
 }
-@media (max-width:400px) {
-    .course_duration_box_wrapper {
+@media (max-width:600px) {
+    .scrum_card_method_grid {
         display: flex;
         flex-direction: column;
     }
-    .course_duration_heading {
-        font-size: min(2em,2.5em);
+    .scrum_payment_heading {
+        font-size: min(0.8em,1.5em);
+    }
+    .scrum_payment_content {
+        font-size: max(0.6em,0.7em);
+    }
+    .scrum_payment_content p {
+        width: 80%;
     }
 }
+@media (max-width:500px) {
+    .card_method_head {
+        flex-direction: column;
+    }
+    .scrum_card_method_img {
+        justify-content: space-between;
+    }.next_btn {
+        padding: 0.4em 1.2em;
+        font-size: min(1em,0.75em) !important;
+    }
+}
+@media (max-width:330px) {
+    .scrum_card_method_img img {
+        width: 30%;
+    }
+}
+
+
+
 
 
 

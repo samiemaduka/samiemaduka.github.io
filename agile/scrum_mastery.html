@@ -90,12 +90,75 @@
                 <a href="">Takeaway</a>
                 <a href="">Who Should Enroll</a>
                 <a href="" class="popup_restyle">Request information</a>
-                <a href="" class="enrol_btn">ENROL NOW</a>
+                <p href="" onclick="openForm()" class="enrol_btn">ENROL NOW</p>
             </div>
 
         </div>
 
     </div>
+
+        <!-- POPUP MENU //////////////// -->
+        <div class="purchaseOption_popup" id="myForm">
+
+            <div class="purchaseOption_wrapper">
+                <div onclick="closeForm()" class="close_btn">__</div>
+
+                <div class="purchaseOption_content_wrapper">
+                    <div class="purchaseOption_img">
+                        <img src="img/purchaseOption_img.png" alt="">
+                    </div>
+
+                    <div class="purchaseOption_content">
+                        <p class="purchaseOption_heading">Purchase Option</p>
+                        <p class="purchaseOption_title">Scrum Mastery + Agile Product Delivery Course Overview</p>
+
+                        <div class="purchaseOption_grid_wrapper">
+                            <div class="purchaseOption_grid1">
+                                <div class="purchaseOption_box grid1 border">
+                                    <p>Payment Method</p>
+                                </div>
+                                <div class="purchaseOption_box grid1 border2">
+                                    <p>Cost</p>
+                                </div>
+                            </div>
+
+                            <div class="purchaseOption_grid2">
+
+                                <div class="purchaseOption_box checkbox">
+                                    <div class="circle">
+                                        <div class="circle_inner"></div>
+                                    </div>
+
+                                    <p>Determine your own course schedule </p>
+                                </div>
+
+                                <div class="purchaseOption_box">
+                                    <p>$1,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continuePurchase_btn_wrapper">
+                    <a href="scrum_mastery_selectCourse.html" class="continuePurchase_btn">Continue</a>
+                </div>
+            </div>
+
+    
+        </div>
+        <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "flex";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+        <!-- POPUP MENU //////////////// -->
+
+
 
     <div class="course_content">
         <h2>Data analytics bootcamp</h2>
