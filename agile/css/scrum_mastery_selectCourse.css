@@ -437,11 +437,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     cursor: pointer;
     padding: 0.4em 0.8em;
     color:  #F2F2F2;
+    transition: ease 200ms;
 }
-/* .continue_btn:hover {
-    background-color: rgba(238, 108, 77,0.5);
-    color: #666;
-} */
+.continue_btn:hover {
+    background-color: var(--primary_color_3);
+    color: #fff;
+    text-decoration: none !important;
+}
 .continue_btn:hover a {
     text-decoration: none;
 }
