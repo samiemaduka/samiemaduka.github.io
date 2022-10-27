@@ -513,6 +513,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     padding: 0.5em 2.5em;
     border-radius: 8px;
 }
+.next_btn:hover {
+    background-color: var(--primary_color_3);
+    color: #fff;
+    text-decoration: none !important;
+}
 @media (max-width:800px) {
     .scrum_payment_method_wrapper {
         width: 90%;
