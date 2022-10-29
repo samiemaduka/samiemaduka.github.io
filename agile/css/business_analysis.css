@@ -452,6 +452,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .course_heading {
         margin: 0;
     }
+    .popup {
+        bottom: 0 !important;
+        top: 70%;
+
+    }
 }
 @media (max-width:860px) {
     .course_heading_wrapper{
