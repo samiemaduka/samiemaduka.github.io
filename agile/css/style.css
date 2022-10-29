@@ -395,7 +395,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .header_content p {
     width: 80%;
-    font-size: min(1em,1.2em);
+    font-size: max(1em,1.3em);
     line-height: 1.5em;
     margin: 0.5em 0 0.5em 0;
     /* border: 2px solid red; */

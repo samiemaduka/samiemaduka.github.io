@@ -47,6 +47,7 @@
 html {
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
     width: 100%;
 }
 *, *::after, *::before {
@@ -418,9 +419,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     width: 200px;
     height: 200px;
     position: fixed;
-    top: 50%;
-    bottom: 50%;
-    z-index: 9999;
+    bottom: 3em;
+    z-index: 2000;
     right: 2em;
     color: #3A3D40;
     background-color: #F9F9F9;
@@ -452,11 +452,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 @media (max-width:960px) {
     .course_heading {
         margin: 0;
-    }
-    .popup {
-        bottom: 0 !important;
-        top: 70%;
-
     }
 }
 @media (max-width:860px) {
@@ -504,7 +499,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     bottom: 0;
     overflow-y: scroll;
     left: 0;
-    z-index: 2000;
+    z-index: 3000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
