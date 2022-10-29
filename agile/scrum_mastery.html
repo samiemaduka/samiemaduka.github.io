@@ -21,7 +21,7 @@
     </a>
 
     <div class="nav_content">
-        <a href="index.html#courses">courses</a>
+        <a href="courses.html">courses</a>
         <a href="community.html">community</a>
         <a href="consulting.html">consulting</a>
         <a href="contactus.html">contact us</a>
@@ -54,7 +54,7 @@
   
   
           <ul class="sidebarMenuInner">
-            <li><a href="index.html#courses">courses</a></li>
+            <li><a href="courses.html">courses</a></li>
             <li></li>
             <li><a href="community.html">community</a></li>
             <li></li>
@@ -70,6 +70,16 @@
 </div>
 
 
+<div class="popup animate__animated animate__bounceInRight animate__delay-1s">
+    <a href="courses.html">Courses</a>
+    <a href="#skillsYouWillLearn">Skills you will learn</a>
+    <a href="#takeaway">Takeaway</a>
+    <a href="#whoShouldEnrol">Who Should Enroll</a>
+    <a href="#requestInformation" class="popup_restyle">Request information</a>
+    <a href="create_account.html" popuponclick="openForm()" class="enrol_btn">ENROL NOW</a>
+</div>
+
+<!-- put this inside the first part of the a tag to open the payment popuponclick="openForm()" ///////////// -->
 
 
 <div class="wrapper">
@@ -81,21 +91,14 @@
             <div class="course_heading">
                 <p>Scrum Mastery + Agile Product Delivery</p>
                 <h1>Course outline</h1>
-                <a href="">Learn more</a>
+                <a href="#skillsYouWillLearn">Learn more</a>
             </div>
 
-            <div class="popup animate__animated animate__bounceInLeft animate__delay-1s">
-                <a href="">Courses</a>
-                <a href="">Skills you will learn</a>
-                <a href="">Takeaway</a>
-                <a href="">Who Should Enroll</a>
-                <a href="" class="popup_restyle">Request information</a>
-                <p href="" onclick="openForm()" class="enrol_btn">ENROL NOW</p>
-            </div>
 
         </div>
 
     </div>
+    
 
         <!-- POPUP MENU //////////////// -->
         <div class="purchaseOption_popup" id="myForm">
@@ -163,7 +166,7 @@
     <div class="course_content">
         <h2>Data analytics bootcamp</h2>
 
-        <p>It is not enough to learn Scrum or become Scrum Certified. Many who invest in certifications soon discover that holding a certification may get you noticed but could also be a gateway to countless rejection letters. We know that your aim is to land a job in the role. This course will help you understand the Agile Product Delivery ecosystem so that you can have a deeper understanding of the Scrum role within an eco-system rather than in isolation. It goes beyond getting you noticed to helping you distinguish yourself as an informed practitioner of the trade. We do not just prepare you to take the Scrum Certification Test. We equip you to be a competent Scrum Master with all the tools to support high performing teams.</p>
+        <p id="skillsYouWillLearn">It is not enough to learn Scrum or become Scrum Certified. Many who invest in certifications soon discover that holding a certification may get you noticed but could also be a gateway to countless rejection letters. We know that your aim is to land a job in the role. This course will help you understand the Agile Product Delivery ecosystem so that you can have a deeper understanding of the Scrum role within an eco-system rather than in isolation. It goes beyond getting you noticed to helping you distinguish yourself as an informed practitioner of the trade. We do not just prepare you to take the Scrum Certification Test. We equip you to be a competent Scrum Master with all the tools to support high performing teams.</p>
     </div>
 
     <div class="skills">
@@ -246,7 +249,7 @@
 
             <div class="course_duration_box">
                 <div class="course_duration_icon"><i class="fa-solid fa-users"></i></div>
-                <p><b>Course Length</b> <br>30 Students</p>
+                <p id="whoShouldEnrol"><b>Course Length</b> <br>30 Students</p>
             </div>
 
             <div class="course_duration_box">
@@ -259,7 +262,89 @@
 
     </div>
 
+
+    <div class="content">
+        
+        <div class="whoShouldEnrol">
+            <h3>Who should enrol</h3>
+            
+            <p class="youShouldEnrol">You should enrol on this course if you are interested in..</p>
+
+            <ul>
+                <li>Solving problems for people?</li>
+                <li>Learning how to transform an idea into sellable products</li>
+                <li>Curious about how to make products that delight the customer?</li>
+                <li>Curious about how to know which products have a high chance of success in the market before it is built?</li>
+                <li>Interested in helping product delivery and marketing teams excite customers ?</li>
+            </ul>
+        </div>
+
+        <div class="course_outline">
+            <h3>Course Outline</h3>
+
+            <ul>
+                <li>Introduction to User Experience, Innovative Process & Design</li>
+                <li>Design Thinking & Innovation</li>
+                <li>Intersection between Design Thinking & User Experience Research</li>
+                <li>Problem Vs Solution Space</li>
+                <li>User Personas & Market Sizing</li>
+                <li>Identify your users and their problems</li>
+                <li>Recognise your assumptions (Actual vs Perceived Problems)</li>
+                <li>Designing Solutions</li>
+                <li>Using Low & High Fidelity Design Techniques to create prototypes</li>
+                <li id="requestInformation">Conducting usability tests</li>
+                <li>Supporting delivery and marketing teams with UX insights</li>
+                <li>Designing Product Launch and Go-to-Market</li>
+            </ul>
+        </div>
+
+    </div>
+
     
+
+
+    <div class="contactform_section">
+        <h3>Request Information Now</h3>
+        <p>Act Now - limited space </p>
+
+        <form action="https://formsubmit.co/madukasamuel@aol.com" method="POST">
+
+            <div class="input_box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="firstName" placeholder="First Name*" id="firstName" required>
+            </div>
+
+            <div class="input_box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="lastName" placeholder="Last Name*" id="lastName" required>
+            </div>
+
+            <div class="input_box">
+                <i class="fa-solid fa-envelope-open"></i>
+                <input type="email" name="email" placeholder="Email*" id="email" required>
+            </div>
+
+            <div class="input_box">
+                <i class="fa-solid fa-bullseye"></i>
+                <select name="programOfInterest" placeholder="Program Of Interest*"  id="programOfInterest">
+                    <option value="firstProgram">Program Of Interest*</option>
+                    <option value="firstProgram">First Program</option>
+                    <option value="secondProgram">Second Program</option>
+                    <option value="thirdProgram">Third Program</option>
+                    <option value="fourthProgram">Fourth Program</option>
+                </select>
+            </div>
+
+            <textarea name="note" id="note" cols="30" placeholder="Note*" rows="10"></textarea>
+
+            <button type="submit" class="submit_btn">Submit</button>
+            
+        </form>
+    </div>
+
+
+
+
 
     <footer>
 

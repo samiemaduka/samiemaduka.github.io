@@ -1,6 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-
+/*default version*/
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProLight.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProLight.otf') 
+		format('opentype');
+}
+/* bold 800 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProBlack.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProBlack.otf') 
+		format('opentype');
+	font-weight: 800;
+}
+/* bold 600 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProMedium.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProMedium.otf') 
+		format('opentype');
+	font-weight: 600;
+}
 :root{
     --primary_color_1: #EE6C4D;
     --primary_color_2: #293241;
@@ -12,11 +42,12 @@
     --radius: 5.5;
     --size: 4;
 
-    --primary_font_1: 'Manrope', sans-serif;
+    --primary_font_1: 'Avenir', sans-serif;
 }
 html {
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
     width: 100%;
 }
 *, *::after, *::before {
@@ -34,8 +65,10 @@ a {
     transition: ease 200ms;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary_color_1);
 }
+
 
 
 
@@ -69,7 +102,7 @@ nav {
     align-items: center;
     font-family: var(--primary_font_1);
     font-weight: 600;
-    font-size: max(0.6em, 1em);
+    font-size: max(0.6em, 1.2em);
     /* border: 2px solid black; */
 }
 .nav_login_btn {
@@ -357,7 +390,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-weight: 800;
     gap: 0;
     align-items: flex-start;
-    margin: 10em 5em 3em 5em;
+    margin: 10em 5em 5em 5em;
     /* border: 2px solid blue; */
 }
 .course_heading h1 {
@@ -368,24 +401,30 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .course_heading p{
     /* border: 2px solid blue; */
-    margin: 0 0 -1.2em 0;
+    margin: 0;
 }
 .course_heading a {
     background-color: var(--primary_color_1);
     padding: 0.3em 0.5em !important;
     margin: 0 !important;
 }
+.course_heading a:hover {
+    color: #fff;
+}
 .popup {
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
-    width: 150px;
-    position: absolute;
-    bottom: -10em;
-    right: 0;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999;
+    right: 2em;
     color: #3A3D40;
     background-color: #F9F9F9;
-    font-size: min(0.8em, 0.6em);
+    font-size: max(0.8em, 0.6em);
 }
 .enrol_btn {
     background-color: var(--primary_color_1);
@@ -408,21 +447,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     padding: 0.5em 0;
     border-bottom: 1px solid #D2D2D2;
 }
-@media (max-width:1010px) {
-    .popup {
-        right: -4em;
-    }
-}
+
 @media (max-width:960px) {
     .course_heading {
         margin: 0;
     }
 }
 @media (max-width:860px) {
-    .popup {
-        left: 0;
-        bottom: -20em;
-    }
     .course_heading_wrapper{
         padding: 5em 1em 3em 1.5em;
    }
@@ -438,6 +469,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .course_heading a {
         font-size: min(0.8em,1em);
         margin-top: 1em !important;
+    }
+    .popup {
+        font-size: min(0.6em,0.8em);
+        width: 150px;
+        height: 150px;
     }
 }
 @media (max-width:400px) {
@@ -455,20 +491,18 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .course_content {
     width: 65%;
-    margin: 5em auto;
+    margin: 3em auto;
     text-align: justify;
     line-height: 1.8em;
 }
 @media (max-width:860px) {
     .course_content {
-        margin-top: 11em;
         width: 85%;
     }
 }
 @media (max-width:530px) {
     .course_content {
         width: 90%;
-        margin-top: 12em;
         font-size: min(0.8em,1em);
     }
 }

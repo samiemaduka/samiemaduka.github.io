@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+
+.orbit {
+  background: #000;
+  float: left;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.orbit-icon {
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  font-size: 1.2em;
+  border-radius: 50%;
+  background: #ccc;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.orbit-wrap {
+  height: 40em;
+  list-style: none;
+  font-size: 1.3em;
+}
+.orbit-wrap > li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.orbit-wrap > li:hover ul {
+  border-width: 2px;
+  border-color: #fff;
+}
+.orbit-wrap > li:hover ~ li ul {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.orbit-wrap > li:hover ~ li ul li {
+  opacity: 0.4;
+}
+
+ul[class^=ring] {
+  transition: all 300ms ease-in-out;
+}
+ul[class^=ring] li {
+  transition: all 300ms ease-in-out;
+}
+
+.ring-0 {
+  width: 10em;
+  height: 10em;
+  -webkit-animation: clockwiseRotate 35s linear infinite;
+          animation: clockwiseRotate 35s linear infinite;
+}
+.ring-0 i {
+  -webkit-animation: counterClockwiseRotate 35s linear infinite;
+          animation: counterClockwiseRotate 35s linear infinite;
+}
+
+.ring-0 > *:nth-of-type(1) {
+  transform: rotate(95deg) translate(7.5em) rotate(-95deg);
+}
+
+.ring-0 > *:nth-of-type(2) {
+  transform: rotate(190deg) translate(7.5em) rotate(-190deg);
+}
+
+.ring-0 > *:nth-of-type(3) {
+  transform: rotate(285deg) translate(7.5em) rotate(-285deg);
+}
+
+.ring-0 > *:nth-of-type(4) {
+  transform: rotate(380deg) translate(7.5em) rotate(-380deg);
+}
+
+.ring-1 {
+  width: 15em;
+  height: 15em;
+  -webkit-animation: clockwiseRotate 30s linear infinite;
+          animation: clockwiseRotate 30s linear infinite;
+}
+.ring-1 i {
+  -webkit-animation: counterClockwiseRotate 30s linear infinite;
+          animation: counterClockwiseRotate 30s linear infinite;
+}
+
+.ring-1 > *:nth-of-type(1) {
+  transform: rotate(126.6666666667deg) translate(5em) rotate(-126.6666666667deg);
+}
+
+.ring-1 > *:nth-of-type(2) {
+  transform: rotate(253.3333333333deg) translate(5em) rotate(-253.3333333333deg);
+}
+
+.ring-1 > *:nth-of-type(3) {
+  transform: rotate(380deg) translate(5em) rotate(-380deg);
+}
+
+
+ul[class^=ring] {
+  border: solid 1px #fff;
+  position: relative;
+  z-index: -9;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  box-sizing: content-box;
+}
+
+ul[class^=ring] li {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  margin: -0.8em;
+}
+
+/*
+  center;
+*/
+.orbit-center {
+  /* z-index: 5; */
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+  background: hotpink;
+  border-radius: 50%;
+}
+.orbit-center:hover .orbit-center__icon {
+  transform: rotateZ(0deg);
+}
+
+.orbit-center__icon {
+  transform: rotateZ(-360deg);
+  transition: all 300ms ease-in-out;
+}
+
+.orbit-wrap > li.orbit-center:hover ~ li > ul {
+  width: 0;
+  height: 0;
+}
+.orbit-wrap > li.orbit-center:hover ~ li > ul * {
+  transform: translate(0, 0);
+}
+
+/* 
+animations 
+*/
+@-webkit-keyframes clockwiseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes clockwiseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes counterClockwiseRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes counterClockwiseRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+/* 
+icons 
+*/
+
+
+.fa-html5 {
+  background: #fff url(img/googlelogo.png) scroll center/cover;
+  color: #e65100;
+}
+
+.fa-css3 {
+  background: #fff url(img/instagram_icon.png) scroll center/cover;
+  color: #2196f3;
+  border: 6px sold white;
+}
+
+.fa-git {
+  background: #fff url(img/whatsapp_icon.png) scroll center/cover;
+  color: white;
+}
+
+.fa-free-code-camp {
+  background: #fff url(img/slack_icon.png) scroll center/cover;
+  color: white;
+  padding: 0.5em;
+}
+
+.fa-podcast {
+  background: #fff url(img/facebook_icon.png) scroll center/cover;
+  color: white;
+}
+
+.fa-codepen {
+  background: #fff url(img/twitter.png) scroll center/cover;
+  color: white;
+}
+
+
+
+
+
+
+.cirle_outer {
+        /* border: 2px solid black; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        position: absolute;
+        z-index: -5;
+        background-color: #434C5A;
+        height: 200px;
+    }
+    .circle_inner {
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        width: 130px;
+        display: flex;
+        background-color: #424B57;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+    }
+    .circle_inner2 {
+        /* border: 2px solid black; */
+        border-radius: 50%;
+        background-color: #4A4E54;
+        width: 50px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+        height: 50px;
+    }
+    .circle_inner2 img {
+        width: 100%;
+        position: relative;
+        z-index: -3;
+    }
+
+    @media(max-width:900px) {
+        .ring-0 {
+            width: 8em;
+            height: 8em;
+        }
+        .ring-1 {
+            width: 12em;
+            height: 12em;
+        }
+        .cirle_outer {
+            width: 150px;
+            height: 150px;
+        }
+        .circle_inner {
+            width: 100px;
+            height: 100px;
+        }
+        .ring-1 > *:nth-of-type(1) {
+            transform: rotate(126.6666666667deg) translate(3.8em) rotate(-126.6666666667deg);
+        }
+
+        .ring-1 > *:nth-of-type(2) {
+            transform: rotate(253.3333333333deg) translate(3.8em) rotate(-253.3333333333deg);
+        }
+
+        .ring-1 > *:nth-of-type(3) {
+            transform: rotate(380deg) translate(3.8em) rotate(-380deg);
+        }
+        .ring-0 > *:nth-of-type(1) {
+            transform: rotate(95deg) translate(6.3em) rotate(-95deg);
+        }
+
+        .ring-0 > *:nth-of-type(2) {
+            transform: rotate(190deg) translate(6.3em) rotate(-190deg);
+        }
+
+        .ring-0 > *:nth-of-type(3) {
+            transform: rotate(285deg) translate(6.3em) rotate(-285deg);
+        }
+
+        .ring-0 > *:nth-of-type(4) {
+            transform: rotate(380deg) translate(6.3em) rotate(-380deg);
+        }
+    }
+</style>
+<body>
+    
+    <div class="orbit">
+  
+        <ul class="orbit-wrap">
+          
+          <li class="orbit-center">
+            <div class="cirle_outer">
+                <div class="circle_inner animate__animated animate__heartBeat animate__delay-1s animate__infinite animate__slower">
+                    <div class="circle_inner2 animate__animated animate__heartBeat animate__infinit eanimate__slow">
+                        <img src="img/female_img.png" alt="">
+                    </div>
+                </div>
+            </div>   
+          </li>
+      
+          <li>
+            <ul class="ring-0">
+              <li><i class="orbit-icon fa fa-git"></i></li>
+              <li><i class="orbit-icon fa fa-free-code-camp"></i></li>
+              <li><i class="orbit-icon fa fa-html5"></i></li>
+              <li><i class="orbit-icon fa fa-codepen"></i></li>
+            </ul>
+          </li>
+      
+          <li>
+            <ul class="ring-1">
+              <li><i class="orbit-icon fa fa-podcast"></i></li>
+              <li><i class="orbit-icon fa fa-css3"></i></li>
+            </ul>
+          </li>
+      
+        </ul>
+        
+      </div>
+
+
+</body>
+</html>

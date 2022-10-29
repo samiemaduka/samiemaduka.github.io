@@ -1,6 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-
+/*default version*/
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProLight.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProLight.otf') 
+		format('opentype');
+}
+/* bold 800 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProBlack.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProBlack.otf') 
+		format('opentype');
+	font-weight: 800;
+}
+/* bold 600 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProMedium.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProMedium.otf') 
+		format('opentype');
+	font-weight: 600;
+}
 :root{
     --primary_color_1: #EE6C4D;
     --primary_color_2: #293241;
@@ -12,7 +42,7 @@
     --radius: 5.5;
     --size: 4;
 
-    --primary_font_1: 'Manrope', sans-serif;
+    --primary_font_1: 'Avenir', sans-serif;
 }
 html {
     box-sizing: border-box;
@@ -34,7 +64,8 @@ a {
     transition: ease 200ms;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary_color_1);
 }
 
 
@@ -69,8 +100,11 @@ nav {
     align-items: center;
     font-family: var(--primary_font_1);
     font-weight: 600;
-    font-size: max(0.6em, 1em);
+    font-size: max(0.6em, 1.2em);
     /* border: 2px solid black; */
+}
+.nav_content a:hover {
+    color: var(--primary_color_1);
 }
 .nav_login_btn {
     background-color: var(--primary_color_3);
@@ -82,7 +116,7 @@ nav {
 }
 .nav_login_btn:hover {
     background-color: var(--primary_color_4);
-    color: var(--primary_color_3);
+    color: var(--primary_color_3) !important;
     text-decoration: none !important;
 }
 
@@ -345,10 +379,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .course_heading_wrapper {
     background: url(../img/scrum_mastery_img.png) no-repeat scroll center/cover;
-    padding: 5em 5em 2em 5em;
+    padding: 5em 5em 5em 5em;
     margin-top: 3em;
     color: #fff;
-    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.7), inset 0 0 500px rgba(0, 0, 0, 0.7);
+    /* box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.7), inset 0 0 500px rgba(0, 0, 0, 0.7); */
     /* border: 2px solid brown; */
 }
 .course_heading {
@@ -356,6 +390,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
     font-weight: 800;
     gap: 0;
+    color: var(--primary_color_3);
     align-items: flex-start;
     margin: 10em 5em 3em 5em;
     /* border: 2px solid blue; */
@@ -368,24 +403,28 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .course_heading p{
     /* border: 2px solid blue; */
-    margin: 0 0 -1.2em 0;
+    margin: 0 0 -0em 0;
 }
 .course_heading a {
     background-color: var(--primary_color_1);
     padding: 0.3em 0.5em !important;
     margin: 0 !important;
+    color: var(--primary_color_5);
 }
 .popup {
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
-    width: 150px;
-    position: absolute;
-    bottom: -10em;
-    right: 0;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999;
+    right: 2em;
     color: #3A3D40;
     background-color: #F9F9F9;
-    font-size: min(0.8em, 0.6em);
+    font-size: max(0.8em, 0.6em);
 }
 .enrol_btn {
     background-color: var(--primary_color_1);
@@ -409,21 +448,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     padding: 0.5em 0;
     border-bottom: 1px solid #D2D2D2;
 }
-@media (max-width:1010px) {
-    .popup {
-        right: -4em;
-    }
-}
+
 @media (max-width:960px) {
     .course_heading {
         margin: 0;
     }
 }
 @media (max-width:860px) {
-    .popup {
-        left: 0;
-        bottom: -20em;
-    }
     .course_heading_wrapper{
         padding: 5em 1em 3em 1.5em;
    }
@@ -439,6 +470,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .course_heading a {
         font-size: min(0.8em,1em);
         margin-top: 1em !important;
+    }
+    .popup {
+        font-size: min(0.6em,0.8em);
+        width: 150px;
+        height: 150px;
     }
 }
 @media (max-width:400px) {
@@ -611,7 +647,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .course_content {
     width: 65%;
-    margin: 5em auto;
+    margin: 3em auto;
     text-align: justify;
     line-height: 1.8em;
 }
@@ -622,14 +658,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media (max-width:860px) {
     .course_content {
-        margin-top: 11em;
         width: 85%;
     }
 }
 @media (max-width:530px) {
     .course_content {
         width: 90%;
-        margin-top: 12em;
         font-size: min(0.8em,1em);
     }
 }
@@ -686,7 +720,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
     align-items: center;
     gap: 3em;
-    margin: 3em auto 5em auto;
+    margin: 3em auto 0 auto;
 }
 .course_duration_heading {
     font-size: max(2em,2.5em);
@@ -698,7 +732,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     /* border: 3px solid red; */
     justify-content: space-evenly;
     width: 100%;
-    box-shadow: 0 -20px 0 0 #FAFAFA;
+    box-shadow: 0 -20px 0 0 #FAFAFA, 0 20px 0 0 #EAF2F2, 0 40px 0 0 #EFF7F7, 0 60px 0 0 #F2FAFA, 0 80px 0 0 #F6FEFE;
 }
 .course_duration_box {
     display: flex;
@@ -741,6 +775,157 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         font-size: min(2em,2.5em);
     }
 }
+
+.content {
+    background-color: #F6FEFE;
+    padding: 2em 0;
+}
+.whoShouldEnrol, .course_outline {
+    width: 70%;
+    margin:  3em auto;
+    /* border: 2px solid red; */
+}
+.whoShouldEnrol h3, .course_outline h3 {
+    font-size: min(3.5em,3em);
+    font-weight: 800;
+    color: #293241;
+}
+.course_outline h3 {
+    margin: 0;
+}
+.youShouldEnrol {
+    font-weight: 600;
+    margin-top: 1em;
+    font-size: min(1.3em, 2em);
+}
+.content p {
+    text-align: justify !important;
+}
+.content ul{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 25px;
+}
+.content li {
+    font-size: min(1.5em,1em);
+}
+@media(max-width:800px) {
+    .whoShouldEnrol, .course_outline {
+        width: 90%;
+    }
+}
+@media(max-width:400px) {
+    .whoShouldEnrol h3, .course_outline h3 {
+        font-size: min(1.5em,2em);
+    }
+}
+.contactform_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+}
+.contactform_section p {
+    margin-bottom: 2em;
+}
+.contactform_section h3{
+    position: relative;
+    font-size: min(1.8em,2.2em);
+    text-align: center;
+    font-weight: 800;
+    color: #12131380;
+}
+.contactform_section h3::after {
+    position: absolute;
+    content: '';
+    width: 35%;
+    height: 5px;
+    background-color: var(--primary_color_1);
+    bottom: -0.5em;
+    left: 33%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    /* border: 2px solid blue; */
+    width: 35%;
+}
+.input_box {
+    border: 1px solid rgba(58, 61, 64, 0.4);
+    display: flex;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.3em 0.6em;
+}
+.input_box i {
+    border-right: 1px solid;
+    padding: 0.2em 0.6em 0.2em 0.4em;
+    color: rgba(58, 61, 64, 0.6);
+}
+.input_box input, .input_box select {
+    width: 100%;
+    font-family: var(--primary_font_1);
+    border: none;
+    padding: 0.3em 0.8em;
+}
+textarea {
+    padding: 0.5em 0.8em;
+    border: 1px solid rgba(58, 61, 64, 0.4);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    font-family: var(--primary_font_1);
+}
+.submit_btn {
+    background-color: var(--primary_color_1);
+    color: #fff;
+    font-size: min(1em, 1.2em);
+    font-weight: 800;
+    font-family: var(--primary_font_1);
+    width: 22%;
+    border: none;
+    align-self: center;
+    padding: 0.3em 0.2em;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+.submit_btn:hover {
+    background-color: #fff;
+    color: var(--primary_color_1);
+}
+@media (max-width: 1000px) {
+    form {
+        width: 50%;
+    }
+}
+@media (max-width: 690px) {
+    form {
+        width: 60%;
+    }
+}
+@media (max-width: 550px) {
+    form {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

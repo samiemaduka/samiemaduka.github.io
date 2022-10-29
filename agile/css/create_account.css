@@ -1,6 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-
+/*default version*/
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProLight.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProLight.otf') 
+		format('opentype');
+}
+/* bold 800 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProBlack.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProBlack.otf') 
+		format('opentype');
+	font-weight: 800;
+}
+/* bold 600 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProMedium.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProMedium.otf') 
+		format('opentype');
+	font-weight: 600;
+}
 :root{
     --primary_color_1: #EE6C4D;
     --primary_color_2: #293241;
@@ -12,11 +42,12 @@
     --radius: 5.5;
     --size: 4;
 
-    --primary_font_1: 'Manrope', sans-serif;
+    --primary_font_1: 'Avenir', sans-serif;
 }
 html {
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
     width: 100%;
 }
 *, *::after, *::before {
@@ -34,7 +65,8 @@ a {
     transition: ease 200ms;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary_color_1);
 }
 
 
@@ -72,7 +104,7 @@ nav {
     font-family: var(--primary_font_1);
     font-weight: 600;
     color: #fff;
-    font-size: max(0.6em, 1em);
+    font-size: max(0.6em, 1.2em);
     /* border: 2px solid black; */
 }
 .nav_login_btn {

@@ -1,6 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-
+/*default version*/
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProLight.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProLight.otf') 
+		format('opentype');
+}
+/* bold 800 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProBlack.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProBlack.otf') 
+		format('opentype');
+	font-weight: 800;
+}
+/* bold 600 version */
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/AvenirLTProMedium.otf'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('../font/AvenirLTProMedium.otf') 
+		format('opentype');
+	font-weight: 600;
+}
 :root{
     --primary_color_1: #EE6C4D;
     --primary_color_2: #293241;
@@ -12,11 +42,12 @@
     --radius: 5.5;
     --size: 4;
 
-    --primary_font_1: 'Manrope', sans-serif;
+    --primary_font_1: 'Avenir', sans-serif;
 }
 html {
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
     width: 100%;
 }
 *, *::after, *::before {
@@ -35,8 +66,10 @@ a {
     transition: ease 200ms;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary_color_1);
 }
+
 
 
 
@@ -51,7 +84,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #F3F3F3;
+    background-color: var(--primary_color_2);
     /* border: 2px solid brown; */
 }
 .nav_logo {
@@ -70,7 +103,8 @@ nav {
     align-items: center;
     font-family: var(--primary_font_1);
     font-weight: 600;
-    font-size: max(0.6em, 1em);
+    color: var(--primary_color_5);
+    font-size: max(0.6em, 1.2em);
     /* border: 2px solid black; */
 }
 .nav_login_btn {
@@ -148,7 +182,7 @@ i {
     max-width: 100%;
     top: 0;
     box-shadow: none;
-    background-color: #F3F3F3;
+    background-color: var(--primary_color_2);
     position: fixed;
     height: 60px!important;
     z-index: 999999999999999999999999;
@@ -168,7 +202,7 @@ i {
     padding: 1em 0;
     transform: translateX(-100%);
     transition: transform 250ms ease-in-out;
-    background: #f5f5f5;
+    background: var(--primary_color_2);
 }
 .sidebarMenuInner{
     margin:0 0 3.5em 0;
@@ -185,7 +219,7 @@ i {
 }
 .sidebarMenuInner li{
     list-style: none;
-    color: #000;
+    color: var(--primary_color_5);
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -198,7 +232,7 @@ i {
     color: rgba(182, 152, 152, 0.5);
 }
 .sidebarMenuInner li a{
-    color: #000;
+    color: var(--primary_color_5);
     width: 100%;
     padding: 20px;
     cursor: pointer;
@@ -265,7 +299,7 @@ input[type=checkbox] {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: var(--primary_color_5);
 }
 .horizontal {
     transition: all 0.3s;

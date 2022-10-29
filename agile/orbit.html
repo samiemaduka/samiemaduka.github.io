@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<style>
+    .cirle_outer {
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 225px;
+        background-color: #434C5A;
+        height: 225px;
+    }
+    .circle_inner {
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        width: 175px;
+        display: flex;
+        background-color: #424B57;
+        justify-content: center;
+        align-items: center;
+        height: 175px;
+    }
+    .circle_inner2 {
+        /* border: 2px solid black; */
+        border-radius: 50%;
+        background-color: #4A4E54;
+        width: 100px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    .circle_inner2 img {
+        width: 80%;
+        position: relative;
+        z-index: -3;
+    }
+</style>
+<body>
+    <div class="cirle_outer animate__animated animate__heartBeat animate__infinite animate__delay-1s animate__slower">
+        <div class="circle_inner animate__animated animate__heartBeat animate__delay-1s animate__infinite animate__slower">
+            <div class="circle_inner2 animate__animated animate__heartBeat animate__infinit eanimate__slow">
+                <img src="img/female_img.png" alt="">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
