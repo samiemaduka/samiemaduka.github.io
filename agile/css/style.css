@@ -490,6 +490,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     padding: 2.5em 0;
     gap: 3em;
     width: 100%;
+    align-items: end;
     justify-content: space-evenly;
 }
 .icon_section_box {
@@ -501,151 +502,119 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     gap: 0.5em;
     width: 100%;
     font-size: 0.8em;
+    text-align: center;
     font-weight: 800;
 }
-.icon_section_box i {
-    font-size: 4em;
-    color: var(--primary_color_3);
+.icon_section_box img {
+    width: 20%;
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     .icon_section {
         flex-direction: column;
         gap: 3em;
     }
-    .icon_section_box i {
-        font-size: 3.5em;
-        gap: 0.8em;
+    .icon_section_box img {
+        width: 10%;
     }
 }
-
-
-
-
-
-
-
-.upcoming_section_wrapper {
-    display: grid;
-    grid-template-areas: 'box1 box2 box3';
-    grid-auto-columns: 10% 70% 15%;
-    /* border: 2px solid red; */
-    align-items: center;
-    justify-items: center;
-    background-color: var(--primary_color_5);
-    padding: 5em;
-}
-.arrow {
-    grid-area: box1;
-    font-size: 1.5em;
-    /* border: 2px solid blue; */
-    display: flex;margin-left: 2em;
-}
-.upcoming_section {
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+.upcoming_courses_wrapper {
     width: 100%;
-    gap: 1em;
-    grid-area: box2;
-}
-.upcoming_section h2 {
-    font-weight: 800;
-    font-size: max(2em, 2.2em);
-}
-.course_box {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid saddlebrown; */
+    background-color: #E0FBFC;
 }
-.course_box p {
-    font-size: min(1.5em, 2em);
-}
-.course_details {
-    display: grid;
-    grid-template-columns: 30% 30% 15%;
-    align-items: center;
-    gap: 2em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #000;
-    color: var(--primary_color_1);
-    font-weight: 700;
-}
-.enrol_btn {
-    padding: 0.2em 0.5em;
-    background-color: var(--primary_color_1);
-    color: #fff;
+.upcoming_courses_wrapper h2 {
     font-weight: 800;
-    cursor: pointer;
-    transition: ease 200ms;
+    font-size: 2em;
+    text-align: center;
 }
-.enrol_btn:hover, .allcourses_btn:hover {
-    background-color: inherit;
-    color: var(--primary_color_1);
-}
-.allcourses_btn{
-    padding: 0.4em 0.5em;
-    background-color: var(--primary_color_1);
-    color: #fff;
-    font-weight: 800;
-    cursor: pointer;
-    transition: ease 200ms;
-    width: 30%;
-}
-.circle {
-    grid-area: box3;
+
+.upcoming_courses_swiper2 {
+    width: 60%;
+    height: 330px !important;
+    margin: -1em auto 0 auto;
+    // border: 2px solid blue;
+  }
+  .upcoming_courses_swiper2 .swiper-wrapper {
     display: flex;
+    // border: 2px solid red;
     flex-direction: column;
-    align-items: center;
-    gap: 0.6em;
+    width: 80%;
+    height: 80%;
+  }
+  .upcoming_courses_swiper2 .swiper-pagination{
+    transform: scale(1.2) !important;    
+    right: 120px !important;
+    top: 30% !important;
 }
-.circle_1 {
-    height: 20px;
-    width: 20px;
+.upcoming_courses_swiper2 .swiper-pagination-bullet-active {
     background-color: #000;
-    border-radius: 50%;
-    display: inline-block;
 }
-.circle_2 {
-    height: 17px;
-    width: 17px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    display: inline-block;
+  .upcoming_courses_swiper2 .swiper-slide {
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    background: #fff;
+    padding: 3em 2em;
+    width: 80%;
+    gap: 1em;
+    height: 10px !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+.upcoming_courses_swiper2 .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
 }
-.circle_3 {
-    height: 13px;
-    width: 13px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    display: inline-block;
+.upcoming_courses_swiper2 .swiper-slide p {
+    font-size: 1.2em;
+    text-align: left;
 }
-.circle_4 {
-    height: 9px;
-    width: 9px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    display: inline-block;
+.upcoming_courses_swiper2 .course_details {
+    font-size: 0.6em;
 }
-@media(max-width:850px) {
-    .course_details {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .upcoming_section_wrapper {
-        padding: 5em 0;
-    }
-    .upcoming_section h2 {
-        font-size: min(1.8em, 2em);
-    }
-    .course_box p {
-        font-size: min(1.2em, 1.7em);
-    }
-    .allcourses_btn {
-        width: 50% !important;
-        font-size: min(0.8em, 1em);
-    }
+.enrol_btn p{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0.4em 0;
 }
+.upcoming_courses_swiper2 .swiper_restyle {
+    align-items: start !important;
+}
+.allcourses_btn {
+    background-color: var(--primary_color_1);
+    align-self: center;
+    padding: 0.7em 1.2em;
+    color: #f2f2f2;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 800;
+}
+@media(max-width:1066px) {
+  .upcoming_courses_swiper2 .swiper-pagination {
+    right: 3px !important;
+  }
+}
+@media(max-width:760px) {
+    .upcoming_courses_swiper2 .swiper-slide {
+      padding: 5em 2em;
+    }
+    .upcoming_courses_swiper2 .swiper-wrapper {
+        margin-left: -1em;
+    }
+    .upcoming_courses_swiper2 {
+        height: 460px !important;
+    }
+  }
 .form_popup {
     display: none;
     position: fixed;
@@ -655,6 +624,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     right: 0;
     overflow-y: visible;
     bottom: 0;
+    z-index: 999;
     /* border: 2px solid red; */
 }
 .upcoming_courses_popup {
@@ -662,7 +632,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     /* border: 2px solid burlywood; */
     width: 90% !important;
-    padding: 5em 10em 0em 10em;
+    padding: 5em 10em 0em 13em;
     position: relative;
     flex-direction: column;
     height: 100%;
@@ -670,12 +640,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     background-color: #E0FBFC;
 }
 .upcoming_courses_popup h2 {
-    align-self: flex-start;
+    align-self: center !important;
+    text-align: center;
     width: 90%;
     margin: 0 auto;
     font-size: min(3em,2.5em);
 }
 .upcoming_courses_popup .swiper {
+    display: flex;
     justify-content: flex-start !important;
     align-items: flex-start !important;
     /* border: 2px solid saddlebrown; */
@@ -690,22 +662,30 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin: 0!important;
     top: -8em !important;
     bottom: 0 !important;
+    gap: 3em;
     width: 100%;
 }
 .upcoming_courses_swiper .swiper-slide {
-    align-items: stretch !important;
-    /* border: 2px solid olivedrab; */
-    justify-content: flex-start !important;
-}
-.upcoming_courses_swiper .course_details {
-    justify-content: space-between !important;
+    display: flex;
+    // border: 2px solid olivedrab;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-direction: row;
+    padding: 0 1em;
+    justify-content: space-evenly !important;
 }
 .upcoming_courses_swiper .course_box {
-    width: 90% !important;
+    width: 85% !important;
+    gap: 2em;
+    display: flex;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    align-items: center;
 }
 .upcoming_courses_swiper .swiper-slide p {
-    /* border: 2px solid red; */
-    font-size: min(2em,1.8em);
+    // border: 2px solid red;
+    font-size: 1.8em;
 }
 /* .upcoming_courses_swiper .swiper-slide .course_details {
     border: 2px solid red;
@@ -718,8 +698,34 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     width: 10em !important;
     height: 10em !important;
 } */
-.swiper-pagination {
+.upcoming_courses_swiper .swiper-pagination {
     transform: scale(3) !important;
+}
+.enrol_btn {
+    background-color: var(--primary_color_1);
+    padding: 0em 1em;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    width: 30%;
+    font-weight: 800;
+}
+.swiper_restyle {
+    // border: 2px solid red;
+    width: 80%;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.swiper_restyle p {
+    font-size: 2em;
+}
+.course_details {
+    display: flex;
+    gap: 3em;
+    color: var(--primary_color_1);
+    font-weight: 800;
+    font-size: 1.3em;
 }
 .cancel_btn {
     position: absolute;
@@ -730,7 +736,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px solid #EE6C4D;
+    border: 3px solid #EE6C4D;
     align-items: center;
     cursor: pointer;
     color: var(--primary_color_1);
@@ -739,13 +745,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media(max-width:1200px) {
     .upcoming_courses_popup {
-        padding: 5em 0 0 0;
+        padding: 5em 0 0 1em;
+    }
+}
+@media(max-width:950px) {
+    .form_popup {
+        top: 3em;
     }
 }
 @media(max-width:900px) {
-    .form_popup {
-        top: 5em;
-    }
     .cancel_btn {
         top: 1em;
     }
@@ -754,16 +762,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .upcoming_courses_popup h2 {
         font-size: min(2em,1.8em);
     }
-    .upcoming_courses_swiper .swiper-slide p {
-        font-size: min(1.2em,1.5em);
+    .swiper-wrapper .swiper-slide p {
+        font-size: max(0.7em,1.2em) !important;
     }
-    .swiper-pagination {
+    .upcoming_courses_swiper .swiper-pagination {
         transform: scale(2) !important;
     }
-}
-@media(max-width:350px) {
-    .upcoming_courses_swiper .swiper-wrapper {
-        gap: 6em;
+    .course_details {
+        font-size: 0.8em;
+    }
+    .enrol_btn {
+        font-size: 0.7em;
     }
 }
 @media(max-width:600px) {
@@ -774,10 +783,25 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         width: 80%;
     }
     .upcoming_courses_swiper .course_box {
-        width: 80%;
+        width: 75%;
+        gap: 0.5em;
+        padding: 0 1em 0 0 !important;
     }
     .form_popup .upcoming_section_wrapper {
         width: 95%;
+    }
+    .upcoming_courses_swiper .swiper-wrapper {
+        top: -8em !important;
+    }
+    .upcoming_courses_popup {
+        width: 97% !important;
+    }
+    .enrol_btn {
+        font-size: 0.5em;
+        margin-bottom: 1em;
+    }
+    .course_box {
+        flex-direction: column !important;
     }
     .form_popup .upcoming_section_wrapper h2{
         font-size: min(1.2em,1.5em);
@@ -789,13 +813,21 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         font-size: min(0.7em,1em) !important;
     }
     .form_popup {
-        top: 0.5em;
+        top: 3em;
     }
     .cancel_btn {
         right: 1em;
     }
 }
+@media(max-width:350px) {
+    .upcoming_courses_swiper .swiper-wrapper {
+        gap: 6em;
+    }
+    .upcoming_courses_swiper .course_box {
+        padding: 3em 1.2em !important;
+    }
 
+}
 
 
 
@@ -828,6 +860,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .ourcourses_box_wrapper {
     display: grid;
     gap: 0.5em;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
     margin: 2em 0;
     grid-template-areas: 'box1 box2 box3' 'box4 box5 box6';
 }

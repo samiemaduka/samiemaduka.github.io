@@ -25,7 +25,7 @@
         <a href="community.html">community</a>
         <a href="consulting.html">consulting</a>
         <a href="contactus.html">contact us</a>
-        <a href="login.html" class="nav_login_btn">Login</a>
+        <a href="register.html" class="nav_login_btn">Login</a>
     </div>
 </nav>
 
@@ -62,7 +62,7 @@
             <li></li>
             <li><a href="contactus.html">contact us</a></li>
             <li></li>
-            <li><a href="login.html">login</a></li>
+            <li><a href="register.html">login</a></li>
           </ul>
         </div>
     <!-- ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
@@ -76,8 +76,8 @@
     <a href="#skillsYouWillLearn">Skills you will learn</a>
     <a href="#takeaway">Takeaway</a>
     <a href="#whoShouldEnrol">Who Should Enroll</a>
-    <a href="contactus.html" class="popup_restyle">Request information</a>
-    <a href="create_account.html" class="enrol_btn">ENROL NOW</a>
+    <a href="#requestInformation" class="popup_restyle">Request information</a>
+    <a href="register.html" class="enrol_btn">ENROL NOW</a>
 </div>
 
 <!-- put this inside the first part of the a tag to open the payment popuponclick="openForm()" ///////////// -->
@@ -207,11 +207,53 @@
                 <li>Product growth hacking</li>
                 <li>Storytelling and Strategic Communication</li>
                 <li>Pitching your Product / Features</li>
-                <li>Fireside Chat with a real life rockstar in Product Management landscape.</li>
+                <li id="requestInformation">Fireside Chat with a real life rockstar in Product Management landscape.</li>
             </ul>
         </div>
 
     </div>
+
+
+    <div class="contactform_section">
+        <h3>Request Information Now</h3>
+        <p>Act Now - limited space </p>
+
+        <form action="https://formsubmit.co/madukasamuel@aol.com" method="POST">
+
+            <div class="input_box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="firstName" placeholder="First Name*" id="firstName" required>
+            </div>
+
+            <div class="input_box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="lastName" placeholder="Last Name*" id="lastName" required>
+            </div>
+
+            <div class="input_box">
+                <i class="fa-solid fa-envelope-open"></i>
+                <input type="email" name="email" placeholder="Email*" id="email" required>
+            </div>
+
+            <div class="input_box">
+                <i class="fa-solid fa-bullseye"></i>
+                <select name="programOfInterest" placeholder="Program Of Interest*"  id="programOfInterest">
+                    <option value="firstProgram">Program Of Interest*</option>
+                    <option value="firstProgram">First Program</option>
+                    <option value="secondProgram">Second Program</option>
+                    <option value="thirdProgram">Third Program</option>
+                    <option value="fourthProgram">Fourth Program</option>
+                </select>
+            </div>
+
+            <textarea name="note" id="note" cols="30" placeholder="Note*" rows="10"></textarea>
+
+            <button type="submit" class="submit_btn">Submit</button>
+            
+        </form>
+    </div>
+
+
 
     <footer>
 

@@ -457,21 +457,24 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .contact_form_socials_grid {
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 1.5em;
+    gap: 3em;
     /* border: 2px solid red; */
 }
 .socials_box {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
 }
-.socials_box img {
+.socials_box i {
     width: 60%;
     /* border: 2px solid red; */
     border-radius: 20px;
-    background-color: #fff;
-    padding: 1.5em;
+    font-size: 2em;
+    padding: 0.5em 0.6em;
 }
 @media(max-width:1075px) {
     .socials_box img {
