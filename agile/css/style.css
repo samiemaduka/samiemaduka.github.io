@@ -713,6 +713,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 } */
 .upcoming_courses_swiper .swiper-pagination {
     transform: scale(3) !important;
+    right: 7px !important;
 }
 .enrol_btn {
     background-color: var(--primary_color_1);
