@@ -196,7 +196,7 @@ a:hover {
 }
 .signin_btn, .signup_btn {
     background-color: var(--primary_color_1);
-    width: 30%;
+    width: 45%;
     color: #f2f2f2;
     font-weight: 800;
     text-align: center;
