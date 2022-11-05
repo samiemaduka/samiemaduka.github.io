@@ -712,7 +712,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     height: 10em !important;
 } */
 .upcoming_courses_swiper .swiper-pagination {
-    transform: scale(1.5) !important;
+    transform: scale(2) !important;
     right: 7px !important;
 }
 .enrol_btn {
