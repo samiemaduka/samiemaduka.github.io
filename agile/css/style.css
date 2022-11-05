@@ -532,7 +532,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .upcoming_courses_swiper2 {
     width: 60%;
     height: 330px !important;
-    margin: -1em auto 0 auto;
+    margin: 0 auto 0 auto;
     // border: 2px solid blue;
   }
   .upcoming_courses_swiper2 .swiper-wrapper {
@@ -544,7 +544,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
   .upcoming_courses_swiper2 .swiper-pagination{
     transform: scale(1.2) !important;    
-    right: 120px !important;
+    right: 100px !important;
     top: 30% !important;
 }
 .upcoming_courses_swiper2 .swiper-pagination-bullet-active {
@@ -552,7 +552,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
   .upcoming_courses_swiper2 .swiper-slide {
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 2px rgba(0, 0, 0, 0.3);
     font-size: 18px;
     background: #fff;
@@ -574,6 +574,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     flex-direction: column;
     height: 80%;
+    align-items: center;
 }
 .upcoming_courses_swiper2 .swiper-slide p {
     font-size: 1.2em;
@@ -585,10 +586,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .enrol_btn p{
     font-size: 0.8em;
     margin: 0;
+    text-align: center !important;
     padding: 0.4em 0;
 }
 .upcoming_courses_swiper2 .swiper_restyle {
     align-items: start !important;
+    width: 100%;
 }
 .allcourses_btn {
     background-color: var(--primary_color_1);
@@ -606,13 +609,23 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media(max-width:760px) {
     .upcoming_courses_swiper2 .swiper-slide {
-      padding: 5em 2em;
+      padding: 3.5em 2em;
     }
     .upcoming_courses_swiper2 .swiper-wrapper {
         margin-left: -1em;
     }
     .upcoming_courses_swiper2 {
-        height: 460px !important;
+        height: 350px !important;
+    }
+    .upcoming_courses_swiper2 .swiper_restyle {
+        align-items: center !important;
+    }
+    .upcoming_courses_swiper2 .swiper_restyle p {
+        font-size: 0.7em;
+        text-align: center;
+    }
+    .upcoming_courses_swiper2 .course_details {
+        font-size: 0.5em;
     }
   }
 .form_popup {
@@ -662,15 +675,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin: 0!important;
     top: -8em !important;
     bottom: 0 !important;
-    gap: 3em;
+    gap: 1em;
     width: 100%;
 }
 .upcoming_courses_swiper .swiper-slide {
     display: flex;
     // border: 2px solid olivedrab;
     background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
     flex-direction: row;
     padding: 0 1em;
     justify-content: space-evenly !important;
@@ -762,14 +775,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .upcoming_courses_popup h2 {
         font-size: min(2em,1.8em);
     }
-    .swiper-wrapper .swiper-slide p {
-        font-size: max(0.7em,1.2em) !important;
+    .upcoming_courses_swiper .swiper-wrapper .swiper-slide p {
+        font-size: max(0.7em,1em) !important;
+        text-align: center;
     }
     .upcoming_courses_swiper .swiper-pagination {
         transform: scale(2) !important;
     }
     .course_details {
         font-size: 0.8em;
+        align-self: center;
     }
     .enrol_btn {
         font-size: 0.7em;
@@ -792,6 +807,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     }
     .upcoming_courses_swiper .swiper-wrapper {
         top: -8em !important;
+        align-items: center !important;
     }
     .upcoming_courses_popup {
         width: 97% !important;
@@ -818,13 +834,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .cancel_btn {
         right: 1em;
     }
+    .upcoming_courses_swiper .course_details {
+        font-size: 0.5em;
+    }
 }
 @media(max-width:350px) {
     .upcoming_courses_swiper .swiper-wrapper {
         gap: 6em;
     }
     .upcoming_courses_swiper .course_box {
-        padding: 3em 1.2em !important;
+        padding: 1em 1.2em !important;
     }
 
 }
