@@ -543,7 +543,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     height: 80%;
   }
   .upcoming_courses_swiper2 .swiper-pagination{
-    transform: scale(1.2) !important;    
+    transform: scale(1.5) !important;    
     right: 100px !important;
     top: 30% !important;
 }

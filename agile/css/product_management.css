@@ -376,13 +376,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
 }
 .course_heading_wrapper {
-    background: url(../img/product_management_img.png) no-repeat scroll center/cover;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(../img/product_management_img.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 5em 5em 2em 5em;
     margin-top: 3em;
     color: #fff;
-    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.7), inset 0 0 500px rgba(0, 0, 0, 0.8), inset 0 0 500px rgba(0, 0, 0, 0.9);
-    /* border: 2px solid brown; */
-    background: linear-gradient(90%, rgba(0,0,0,0.1), rgba(0,0,0,0.1), rgba(0,0,0,1), rgba(0,0,0,1));
 }
 .course_heading {
     display: flex;
