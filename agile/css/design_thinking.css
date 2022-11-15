@@ -420,17 +420,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     height: 200px;
     position: fixed;
     bottom: 50%;
-    top: 50%;
+    top: 55%;
     z-index: 2000;
     right: 1em;
     color: #3A3D40;
-    background-color: #F9F9F9;
+    background-color: #F9F9F9 !important;
     font-size: max(1em, 0.6em);
 }
 .enrol_btn {
     background-color: var(--primary_color_1);
     margin: 0 !important;
-    padding: 0.7em 0.5em !important;
+    padding: 0.7em 1em !important;
     color: #fff;
     font-weight: 800;
     cursor: pointer;
@@ -444,12 +444,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .popup_restyle {
     border: none !important;
     margin: 0 !important;
-    padding: 0.5em 0.5em !important;
+    padding: 0.5em 1em !important;
     background-color: #F9F9F9;
 }
+.wishlist_restyle {
+    background-color: #f9f9f9;
+}
 .popup a{
-    margin: 0.3em 0.5em;
-    padding: 0.5em 0;
+    margin: 0 0.5em;
+    padding: 0.5em 0.5em;
     border-bottom: 1px solid #D2D2D2;
 }
 @media (max-width:960px) {

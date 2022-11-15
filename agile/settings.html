@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F3F3F3">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Agile Pantha</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="settings_header">
+            <p>Settings</p>
+        </div>
+
+        <div class="settings_wrapper">
+            <div class="settings_sidebar">
+                <div class="settings_sidebar_links">
+                    <div class="settings_sidebar_box">
+                        <p class="settings_sidebar_heading">Account</p>
+
+                        <a href="settings.html" class="active">Personal Information</a>
+
+                        <a href="settings_password.html">Password</a>
+                    </div>
+
+                    
+                    <div class="settings_sidebar_box">
+                        <p class="settings_sidebar_heading">Enrollment</p>
+
+                        <a href="settings_subs&billings.html">Subscription & Billings</a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="form_style_wrapper">
+
+                <div class="settings_form_wrapper">
+
+                    <div class="settings_form_box">
+                        <div class="settings_content_header">
+                            <p>Basic Information</p>
+                        </div>
+                        
+                        <div class="settings_content">
+                            <div class="settings_content_box1">
+                                <div class="settings_content_box1_group__1">    
+                                    <label for="enter">
+                                        <img src="img/profile_picture.png" alt="Profile Picture">
+                                    </label>
+
+                                    <input type="file" name="profilePicture" id="enter">
+
+                                    <a href="#" id="clear">
+                                        <img src="img/trash_icon.png" alt="">
+                                    </a>
+
+                                    <script>
+                                        window.addEventListener('load', () => {
+                                            const click = document.querySelector('#clear');
+                                            click.addEventListener('click', () => {
+                                                document.querySelector('#enter').value = "";
+                                            });
+                                        });
+                                    </script>
+                                </div>
+        
+                                <div class="settings_content_box1_group__2">
+                                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+        
+                                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+        
+                            <div class="settings_content_box2">
+                                <input type="email" name="email" id="email" placeholder="Email Address">
+                            </div>
+        
+                            <div class="settings_content_box3">
+                                <div class="settings_content_box3_group__1">
+                                    <img src="img/phoneInput_icon.png" alt="phoneIcon">
+                                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                                </div>
+        
+                                <div class="settings_content_box3_group__2">
+                                    <a href="#" class="sendCode">Send Code</a>
+                                </div>
+                            </div>
+        
+                            <div class="settings_content_box4">
+                                <img src="img/caution_icon.png" alt="">
+        
+                                <p>A one-time verification code will be sent to your mobile device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action_btns">
+                    <a href="dashboard.html" class="cancel_btn">Cancel</a>
+    
+                    <a href="dashboard.html" class="save_btn">Save</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

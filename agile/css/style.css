@@ -577,7 +577,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     align-items: center;
 }
 .upcoming_courses_swiper2 .swiper-slide p {
-    font-size: 1.2em;
+    font-size: 1.2em !important;
     text-align: left;
 }
 .upcoming_courses_swiper2 .course_details {
@@ -732,14 +732,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
 }
 .swiper_restyle p {
-    font-size: 2em;
+    font-size: 1.2em !important;
 }
 .course_details {
     display: flex;
     gap: 3em;
     color: var(--primary_color_1);
     font-weight: 800;
-    font-size: 1.3em;
+    font-size: 0.9em;
 }
 .cancel_btn {
     position: absolute;
@@ -784,7 +784,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         transform: scale(2) !important;
     }
     .course_details {
-        font-size: 0.8em;
+        font-size: 0.6em;
         align-self: center;
     }
     .enrol_btn {
