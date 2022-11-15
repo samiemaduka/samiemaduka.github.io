@@ -260,4 +260,7 @@ a:hover {
     .settings_content {
         justify-content: center;
     }
+    .subs_box{
+        margin-top: 3em;
+    }
 }
