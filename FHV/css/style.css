@@ -419,7 +419,7 @@ body{
 }
 .bottom-nav__text{
     text-decoration: none;
-    font-size: clamp(0.8rem, 2vw, 1rem)!important;
+    font-size: clamp(0.65rem, 2vw, 1rem)!important;
     text-transform: uppercase;
     font-weight: 600;
 }
