@@ -50,7 +50,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    bottom: 0;
+    bottom: 0 !important;
     position: fixed;
     top: 0;
     left: 0;
