@@ -676,7 +676,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 @media (max-width:600px) {
     .oldSwiper{
         top: 3em;
-        height: 400px;
+        height: 600px;
     }
     .header_group1 {
         margin-top: 0em;
