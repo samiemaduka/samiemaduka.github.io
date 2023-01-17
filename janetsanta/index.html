@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/x-icon" href="img/Janet santa cherry.png">
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <title>Janet Santa Sherry</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+              <!--  ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+              <nav>
+
+                <div class="nav_header">
+                  <img src="img/" alt="">
+                </div>
+                
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                  <div class="spinner diagonal part-1"></div>
+                  <div class="spinner horizontal"></div>
+                  <div class="spinner diagonal part-2"></div>
+                </label>
+          
+                <div id="sidebarMenu">
+                  <ul class="sidebarMenuInfo">
+                      <li><i class="fa-solid fa-location-dot top-nav__icon"></i>3849 Pineview Dr, Sebring, FL 33870, USA</li>
+          
+                      <li><i class="fa-solid fa-phone top-nav__icon"></i> +1 (512)887-2685</li>
+          
+                      <li class="translate"><i class="fa-brands fa-google"></i><div id="google_translate_element"></div></li>
+                  </ul>
+          
+          
+                  <!-- <ul class="sidebarMenuLogo">
+                      <img src="img/logo.svg" alt="">
+                  </ul> -->
+          
+          
+                  <ul class="sidebarMenuInner">
+                    <li><i class="fa-solid fa-archway"></i><a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-users"></i><a href="about.html">About</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="contact.html">Contact</a></li>
+                    <li><i class="fa-solid fa-circle-question"></i><a href="faq.html">Services</a></li>
+                  </ul>
+                </div>
+          
+              </nav>
+            <!-- ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+        
+
+        <div class="top_nav">
+            <div class="top_nav_social">
+                <i class="fa-brands fa-linkedin-in"></i>
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="top_nav_contact">
+                <div class="top_nav_contact_group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>info@janetsanta.com</p>
+                </div>
+
+                <div class="top_nav_contact_group">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1 (512)887-2685</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav_bar navbar-fixed-top" id="mynav">
+
+            <a href="#" class="logo">
+                <img src="img/Janet santa cherry (1).svg" alt="Logo">
+            </a>
+
+            <div class="nav_bar_links">
+                <a class="active" href="#">Home</a>
+                <a href="#about">About</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdownBtn">Services</a> 
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Financial Consulting</a>
+                        <a href="#">Stock Brokerage</a>
+                    </div>
+                </div>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        
+        <script>
+           $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 400) {
+                    $(".navbar-fixed-top").css("background" , "white");
+                    $(".navbar-fixed-top").css("box-shadow" , "0 0 18px 0 rgba(0,0,0,0.3)");
+                    $(".navbar-fixed-top a").css("color" , "black");
+                    $(".navbar-fixed-top i").css("color" , "black");
+                    $(".navbar-fixed-top").css("transition" , "200ms ease-in");
+                }
+
+                else{
+                    $(".navbar-fixed-top").css("background" , "linear-gradient(to bottom, rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.312), rgba(0, 0, 0, 0.015))");
+                    $(".navbar-fixed-top").css("box-shadow" , "none");
+                    $(".navbar-fixed-top a").css("color" , "rgb(211, 211, 211)");
+                    $(".navbar-fixed-top i").css("color" , "rgb(211, 211, 211)");	
+                }
+            })
+            })
+        </script>
+
+
+        <!-- Slider main container -->
+        <div class="swiper oldSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="header_group1">
+                        <p class="header_title">FINANCIAL ADVISOR</p>
+
+                        <p class="header_name">Janet Santa Sherry</p>
+
+                        <p class="header_content">Financial Consultant, Investment Adviser & Stock Broker.</p> 
+                        <a href="#" class="header_btn">detailed report</a>
+                    </div>
+                    <img src="img/IMG-0883.JPG" alt="#">
+
+                    
+                    <i class="fa-solid fa-chevron-down animate__animated animate__heartBeat animate__slower animate__infinite	infinite"></i>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header_group1">
+                        <p class="header_title">FINANCIAL ADVISOR</p>
+
+                        <p class="header_name">Janet Santa Sherry</p>
+
+                        <p class="header_content">Financial Consultant, Investment Adviser & Stock Broker.</p> 
+                        <a href="#" class="header_btn">detailed report</a>
+                    </div>
+                    <img src="img/IMG-0871.WEBP" alt="#">
+
+
+                    
+                    <i class="fa-solid fa-chevron-down animate__animated animate__heartBeat animate__slower animate__infinite	infinite"></i>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <section id="about" class="about_wrapper">
+            <img src="img/IMG-0870.jpg" alt="#" class="main_image">
+
+            <div class="about_group">
+                <div class="about_group_box">
+                    <img src="img/social-media.gif" alt="#">
+                    <p class="about_heading">About me</p>
+                </div>
+
+                <p class="about_title">“Successful investing is about managing risk, not avoiding it.”</p>
+                
+                <p class="about_content">I am Janet Santa Sherry, A Financial Consultant and Stock Broker with 16 years of experience worked with more than 5 prestigious brokerage firms in the U.S. At the moment, I partner with FIDELITY PERSONAL AND WORKPLACE ADVISORS (CRD#: 288590) where I help clients meet their desired financial targets with strategic investing in the stock, digital & foreign exchange market. I have obtained Fifty-four (54) State Registration Licenses and passed three(3) Brokerage Qualification Examinations.</p>
+
+                <div class="about_services">
+                    <!-- <img src="img/customer-service-agent (1).png" alt=""> -->
+                    <div class="about_services_group">
+                        <p> <b>Services rendered:</b></p>
+                       
+                        <p>Financial Consulting | Investment Advisory & Stock Brokerage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services_wrapper">
+            <div class="services_header">
+                <div class="services_header_group">
+                    <img src="img/social-media.gif" alt="">
+                    <p>WHAT I DO</p>
+                </div>
+                <p><b>Valued Services</b></p>
+            </div>
+
+            
+            <!-- Swiper -->
+            <div class="swiper newSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="image">
+                                <img src="img/bull-market.png" alt="">
+                                <p><b>stock brokerage</b></p>
+                            </div>
+                            
+                            <div class="overlay animate__animated animate__fadeIn">
+                                <div class="bt1"><p>Buying of stocks strategically and selling at profitable margins.</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="image">
+                                <img src="img/cpu.png" alt="">
+                                <p><b>digital assets training</b></p>
+                            </div>
+                            <div class="overlay animate__animated animate__fadeIn">
+                                <div class="bt1"><p>Investing a portion of your profits in the most reliable digital currencies so as to be part of the future.</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="image">
+                                <img src="img/currency (2).png" alt="">
+                                <p><b>investment strategy</b></p>
+                            </div>
+                            <div class="overlay animate__animated animate__fadeIn">
+                                <div class="bt1">
+                                    <p>My insights on Investment could make you consistent profits in the financial markets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="image">
+                                <img src="img/financial-advisor.png" alt="">
+                                <p><b>financial consultinng</b></p>
+                            </div>
+                            <div class="overlay animate__animated animate__fadeIn">
+                                <div class="bt1">
+                                    <p>Critical evaluation with deep insight on investment in efficiently handling financial portfolios with consistent profits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="chooseMe_wrapper">
+
+            <div class="chooseMe_group2">
+                <div class="chooseMe_group">
+                    <div class="separate">
+                        <img src="img/social-media.gif" alt="#">
+                        <p><b>why choose me</b></p>
+                    </div>
+
+                    
+                    <p>“The key is in not spending time, but in investing it.”</p>
+                </div>
+
+
+                <div class="chooseMe_group_box">
+                    <div class="chooseMe_grid_box">
+                        <div class="icon_box">
+                            <img src="img/process.png" alt="">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <p>experience 11 years</p>
+                    </div>
+
+                    <div class="chooseMe_grid_box">
+                        <div class="icon_box">
+                            <img src="img/exam.png" alt="">
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <p>54 State Licenses & <br>
+                            3 Exams Passed</p>
+                    </div>
+
+                    <div class="chooseMe_grid_box">
+                        <div class="icon_box">
+                            <img src="img/24-hours.png" alt="">
+                            <img src="img/3.png" alt="">
+                        </div>
+                        <p>Investment Advisor,
+                            Financial Adviser,
+                            & Stock Broker.</p>
+                    </div>
+
+                    <div class="chooseMe_grid_box">
+                        <div class="icon_box">
+                            <img src="img/growth.png" alt="">
+                            <img src="img/4.png" alt="">
+                        </div>
+                        <p>Over $120 Million in
+                            accumulated profits</p>
+                    </div>
+                </div>
+            </div>
+
+            <img class="bigImg" src="img/IMG-0877.jpg" alt="">
+        </section>
+
+
+        <div class="counter-background">
+            <div class="counter-container">
+      
+              <div class="counter counter-box1">
+                <span class="num" data-val="121">000</span>
+                <span class="counter__text1">Services Provider</span>
+                <p class="counter__text2">winners and losers</p>
+              </div>
+
+
+              <div class="counter counter-box2">
+                <span class="num" data-val="11">000</span>
+                <span class="counter__text1">years of experience</span>
+                <p class="counter__text2">trading currencies and assets.</p>
+              </div>
+              <div class="counter counter-box3">
+                <span class="num" data-val="3">000</span>
+                <span class="counter__text1">awards won</span>
+                <p class="counter__text2">as a notable financial advisor.</p>
+              </div>
+              <div class="counter counter-box4">
+                <span class="num" data-val="119">000</span>
+                <span class="counter__text1">satisfied customers</span>
+                <p class="counter__text2">from all around the world.</p>
+              </div>
+      
+            </div>
+            <script src="main.js"></script>
+
+            <div class="counter_group">
+                <div class="counter_group_content">
+                    <div class="counter_group_box">
+                        <img src="img/rating (1).png" alt="#">
+                        <p>testimomnials</p>
+                    </div>
+
+                    <p><b>Our Client <br>
+                        Reviews.</b></p>
+                </div>
+
+                <div class="swiper newerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/testimonial_3.jpg" alt="">
+
+                            <div class="newSwiper_box">
+                                <p><cite>"I worked with a lot of brokers and it’s quite hard to find a genuine trustworthy and diligent broker like Jill with zero disclosures. She worked my Profits up; From under $35k to $90k In less than 4 months."</cite></p>
+                                <p>George Simmang</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/testimonial_2.jpg" alt="">
+
+                            <div class="newSwiper_box">
+                                <p><cite>"I feel like I am more focused on my finances than others. Hence my decision to work with a professional like Jill. She’s so detailed and effective in handling portfolios and her copytrading pattern is super efficient. I don’t need to struggle hard to keep up anymore."</cite></p>
+                                <p>Simon Johansen</p>
+                            </div>
+                        </div>
+                      
+                        <div class="swiper-slide">
+                            <img src="img/testimonial_1.jpg" alt="">
+
+                            <div class="newSwiper_box">
+                                <p><cite>"Jill is amazing and I wouldn't have accrued the volume of profits I did at the start of the year if I didn't meet her. She just knows what to do, especially in extreme market conditions. I'd definitely recommend her over and over again."</cite></p>
+                                <p>Ren Harold</p>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="img/testimonial_4.jpg" alt="">
+
+                            <div class="newSwiper_box">
+                                <p><cite>"Great Communication! She's very experienced with her work and is also very adaptable with respect to the financial markets. If you are a newbie and you are still looking for an investment adviser. Jill is definitely well qualified for the job."</cite></p>
+                                <p>Sarah McCarthy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contact_wrapper">
+            <div class="contact_heading">
+                <div class="contact_group">
+                    <img src="img/social-media.gif" alt="">
+                    <p>Contact Us</p>
+                </div>
+
+                <p class="center"><b>get in touch.</b></p>
+
+                <form action="">
+                    <div class="form_group">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        
+                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
+                        
+                        <input type="text" name="address" id="address" placeholder="Location" required>
+                        
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
+                </form>
+            </div>
+
+            <div class="contact_panel">
+
+                <p class="contact_panel_heading">Contact Info</p>
+
+                <div class="contact_panel_group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <p>Need a Session?</p>
+                        <p class="email_text">hello@janetsantasherry.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <!-- BEGGINING OF FOOTER ///////////////////// -->
+
+        <section class="footer-section">
+
+            <div class="footer">
+        
+            <div class="footer-about footer-box1">
+                <h2 class="footer__head">Financial Advisor</h2>
+                <img class="footer-about__img1" src="img/Janet santa cherry (1).svg" alt="">
+                <!-- <p class="footer-about__text">We offer the best investment plan leverage your funds to yield maximum returns in no time.</p> -->
+                <img class="footer-about__img2" src="icon/logo3.png" alt="">
+            </div>
+        
+            <!-- <div class="footer-news footer-box2">
+                <h2 class="footer__head">Recent news</h2>
+                <div class="footer-news__desc">
+                <a class="footer-news__link" href="forecasters...html">Forecasters see growing chance of a recession as Fed hikes rates this year to fight inflation</a>
+                <p class="footer-news__text"><i class="fa-regular fa-clock footer__icon"></i>March 19, 2022</p>
+                </div>
+                <div class="footer-news__desc">
+                <a class="footer-news__link" href="medical...html">Most medical debt will be wiped from consumer credit reports</a>
+                <p class="footer-news__text"><i class="fa-regular fa-clock footer__icon"></i>March 19, 2022</p>
+                </div>
+                <div class="footer-news__desc">
+                <a class="footer-news__link" href="irs...html">The IRS has delivered more than 45 million tax refunds. This is the average payment
+                </a>
+                <p class="footer-news__text"><i class="fa-regular fa-clock footer__icon"></i>March 19, 2022</p>
+                </div>
+            </div> -->
+        
+            <div class="footer-touch footer-box3">
+                <h2 class="footer__head">Get in touch</h2>
+                <div class="footer-location"><i class="fa-solid fa-location-dot footer-touch__icon"></i><p class="footer-touch__text">3849 Pineview Dr, Sebring, FL 33870, USA </p></div>
+                <p class="footer-touch__text"><i class="fa-solid fa-mobile-screen-button footer-touch__icon"></i>Call +1 (512)887-2685</p>
+                <p class="footer-touch__text"><i class="fa-solid fa-fax footer-touch__icon"></i>Text: +1 (512)887-2685</p>
+                <p class="footer-touch__text2"><i class="fa-regular fa-envelope footer-touch__icon"></i>support@janetsantasherry.com</p>
+            </div>
+        
+            <div class="footer-link footer-box4">
+                <h2 class="footer__head">Useful links</h2>
+                <div class="footer__menu">
+                <ul class="footer-link__menu">
+                <a href="index.html"><li class="footer-link__list">home</li></a>
+                <a href="kyc.html"><li class="footer-link__list">about</li></a>
+                </ul>
+
+
+                <ul class="footer-link__menu">
+                <a href="about.html"><li class="footer-link__list">services</li></a>
+                <a href="contact.html"><li class="footer-link__list">contact</li></a>
+                </ul>
+                </div>
+            </div>
+            </div>
+        
+        </section>
+        
+        <!-- END OF FOOTER //////////////////////////// -->
+  
+
+    </div>
+
+    <script>
+       var swiper = new Swiper(".oldSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+        },
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        speed: 600,
+        parallax: true,
+        loop: true,
+    
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".newSwiper", {
+            slidesPerView: 3,
+            centeredSlides: false,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+            breakpoints: {
+            400: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            },
+            loop: true,
+        });
+        
+    </script>
+
+    <script>
+        var swiper = new Swiper(".newerSwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+        },
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        speed: 600,
+        parallax: true,
+        loop: true,
+        });
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+          <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
