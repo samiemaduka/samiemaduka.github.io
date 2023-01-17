@@ -1274,7 +1274,7 @@ input[type="number"]::-webkit-inner-spin-button {
     gap: 7em;
     padding: 2em 3.5em;
     flex-direction: column;
-    background: #fff url(img/background-vector.jpg) fixed no-repeat right/contain;
+    background: #fff url(img/background-vector.jpg) scroll no-repeat center/cover;
 }
 .contact_panel_heading {
     font-size: clamp(1em, 3vw, 2.3em);
@@ -1291,6 +1291,7 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
     text-shadow: 0 0 5px black;
     gap: 0.5em;
+    margin-left: 1.5em;
 }
 .contact_panel_group i {
     font-size: clamp(1em, 2vw, 1.8em);
@@ -1331,7 +1332,10 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: center;
    }
    .contact_panel {
-    display: none;
+    /* display: none; */
+    gap: 2em;
+    padding: 5em 2em;
+    background-attachment: fixed;
    }
 }
 
