@@ -756,8 +756,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media (max-width:600px) {
     .about_wrapper {
+        justify-content: center;
         margin: 8em 0 0 0;
         flex-direction: column;
+    }
+    .about_group_box {
+        justify-content: center;
     }
     .about_wrapper .main_image {
         display: none;
@@ -1188,7 +1192,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         align-items: center;
     }
     .newerSwiper {
-        width: 80%;
+        width: 90%;
         height: 300px;
     }
     .newerSwiper  .swiper-button-next, .newerSwiper .swiper-button-prev {
