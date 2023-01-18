@@ -903,6 +903,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         flex-direction: column;
         align-items: center;
     }
+    .services_wrapper {
+        margin: 4em 0;
+    }
 }
 .chooseMe_wrapper {
     display: flex;
