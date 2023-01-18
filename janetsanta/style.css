@@ -1097,7 +1097,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         grid-template-areas:'box1' 'box2' 'box3' 'box4' ;
         padding: 1rem;
     }
-    
+    .counter-background {
+        padding-top: 3em;
+    }
 }
 
 .newerSwiper {
