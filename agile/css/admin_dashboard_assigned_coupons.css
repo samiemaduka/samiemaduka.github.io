@@ -638,8 +638,8 @@ a:hover {
     flex-grow: 1;
     margin: 0;
     white-space: pre-wrap !important;
-    width: 30%;
     display: flex;
+    width: 30%;
     /* border: 2px solid blue; */
 }
 .popup_form_group p {
@@ -656,12 +656,22 @@ a:hover {
 }
 .popup_form_group input, .popup_form_group select {
     /* border: 2px solid blue; */
+    width: 70%;
     flex-grow: 3;
 }
 .popup_form_group select {
     cursor: pointer;
 }
 .popup_form_group input[type="text"], .popup_form_group select{
+    padding: 0.3em 0.6em;
+    color: #3A3D40 !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.05), -1px -2px 0 rgba(0, 0, 0, 0.05);
+    font-size: clamp(0.7em, 2vw, 1.3em);
+    font-family: var(--primary_font_1);
+}
+
+.popup_form_group input[type="time"]{
     padding: 0.3em 0.6em;
     color: #3A3D40 !important;
     border: 1px solid rgba(0, 0, 0, 0.05);

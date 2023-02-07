@@ -292,6 +292,7 @@ a:hover {
 .btn_group {
     display: flex;
     gap: 1.2em;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 .moreBtn, .add_btn, .deleteBtn, .editBtn, .save_btn, .viewBtn, .assignBtn, .search_btn {

@@ -126,6 +126,7 @@
                     </form>
                 </div>
 
+                <a href="#" onclick="openAddPartnerForm()" class="add_btn">Create Partner Coupon</a>
 
                 <div class="admin_dash_content_gridWrapper marginBottom" id="activeUsers">
 
@@ -187,6 +188,74 @@
             </div>
         </div>
     </div>
+
+    <div class="generic_popup_wrapper" id="generic_popup_add_partner">
+
+        <div class="generic_popup">
+            <div onclick="closeAddPartnerForm()" class="close_btn">__</div>
+
+            <div class="generic_popup_content">
+                <p>Create Partner Coupon</p>
+                <form action="">
+                    <div class="popup_form_group">
+                        <label for="partnerID">Coupon ID:</label>
+
+                        <input type="text" name="partnerID" id="partnerID" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="partnerID">Coupon Value:</label>
+
+                        <input type="text" name="partnerID" id="partnerID" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="partnerID">Discounted Amount:</label>
+
+                        <input type="text" name="partnerID" id="partnerID" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="startTime">Start Time:</label>
+
+                        <input type="time" name="startTime" id="startTime">
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="endTime">End Time:</label>
+
+                        <input type="time" name="endTime" id="endTime">
+                    </div>
+
+                    <!-- <div class="popup_form_group">
+                        <label for="newSelectCoupon">Assign Coupon:</label>
+
+                        <select name="newSelectCoupon" id="newSelectCoupon">
+                            <option value="50%Off" selected>--Select Coupon--</option>
+
+                            <option value="50%Off">50% Off Coupon</option>
+                            
+                            <option value="50%Off">Scrum Management 10$ Promo</option>
+                        </select>
+                    </div> -->
+
+                    <button class="save_btn" type="submit">Add</button>
+                </form>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script>
+        function openAddPartnerForm() {
+          document.getElementById("generic_popup_add_partner").style.display = "flex";
+        }
+        
+        function closeAddPartnerForm() {
+          document.getElementById("generic_popup_add_partner").style.display = "none";
+        }
+    </script>
     
 </body>
 </html>
