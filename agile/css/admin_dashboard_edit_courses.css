@@ -153,7 +153,7 @@ a:hover {
     color: white;
 }
 .dropdown-btn p {
-    font-size: clamp(0.6em, 2vw, 1em);
+    font-size: clamp(0.6em, 2vw, 0.9em) !important;
 }
 .dropdown-btn p i {
     font-size: clamp(0.6em, 2vw, 0.8em);
@@ -176,7 +176,7 @@ a:hover {
     gap: 0.5em;
 }
 .dropdown-container a i {
-    font-size: clamp(0.6em, 2vw, 1em);
+    font-size: clamp(0.6em, 1.5vw, 0.8em);
     /* border: 2px solid; */
 }
 .dropdown-container a:hover {

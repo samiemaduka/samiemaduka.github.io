@@ -153,7 +153,7 @@ a:hover {
     color: white;
 }
 .dropdown-btn p {
-    font-size: clamp(0.6em, 2vw, 1em);
+    font-size: clamp(0.6em, 2vw, 0.9em) !important;
 }
 .couponDropdown_container a p b{
     font-size: clamp(0.6em, 2vw, 0.8em);
@@ -182,7 +182,7 @@ a:hover {
     gap: 0.5em;
 }
 .dropdown-container a i, .couponDropdown_container a i {
-    font-size: clamp(0.6em, 2vw, 1em);
+    font-size: clamp(0.6em, 2vw, 0.8em);
     /* border: 2px solid; */
 }
 .dropdown-container a:hover, .couponDropdown_container a:hover {
