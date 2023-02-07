@@ -91,17 +91,30 @@ nav {
     align-items: center;
 }
 .nav_logo img {
-    width: 100%;
+    width: clamp(75%, 5vw, 100%);
 }
 .nav_content {
     display: flex;
-    gap: 3em;
+    gap: 2em !important;
     justify-content: center;
     align-items: center;
     font-family: var(--primary_font_1);
     font-weight: 600;
-    font-size: max(0.6em, 1.2em);
+    font-size: clamp(0.9em, 1.3vw, 1.2em);
     /* border: 2px solid black; */
+}
+.cart_link i{
+    font-size: clamp(1em,2.5vw,1.5em) !important;
+}
+.cart_link sub {
+    font-size: clamp(0.4em,1vw,0.5em);
+    border: 0.1em solid black;
+    border-radius: 50%;
+    padding: 0.2em 0.4em;
+    font-family: var(--primary_font_1);
+}
+.cart_link:hover {
+    color: var(--primary_color_1) !important;
 }
 .nav_content a:hover {
     color: var(--primary_color_1);
@@ -113,13 +126,81 @@ nav {
     border-radius: 3px;
     transition: ease 200ms;
     cursor: pointer;
+    display: none;
 }
+
+/* // Logged in User Styling //////////////// */
+.loggedIn {
+    display: block !important;
+}
+.dropbtn {
+    background-color: transparent;
+    color: var(--primary_color_4);
+    padding: 0;
+    font-size: inherit;
+    font-family: var(--primary_font_1);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .dropdown {
+    position: relative;
+    /* // border: 2px solid red; */
+    /* // margin: 8em; */
+    display: inline-block;
+  }
+  .dropdown:hover .dropbtn {
+    color: var(--primary_color_2) !important;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary_color_4);
+    z-index: 999999999999;
+    top: 2em;
+    left: 0;
+    width: 130px;
+    padding: 1em 0;
+    font-size: clamp(0.6em,1.5vw,0.8em) !important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* // box-shadow: 0px 0 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+  }
+  .notLoggedIn {
+    display: none !important;
+    visibility: hidden !important;
+    border-bottom: none !important;
+  }
+  .dropdown-content a:hover {
+    background-color: var(--primary_color_2) !important; 
+}
+.dropdown-content a:hover i {
+    color: var(--primary_color_1);
+}
+  .dropdown:hover .dropdown-content {
+    display: flex;
+}
+  
+
 .nav_login_btn:hover {
     background-color: var(--primary_color_4);
     color: var(--primary_color_3) !important;
     text-decoration: none !important;
 }
-
+.dropdown:hover .dropbtn:hover {
+    color: var(--primary_color_2) !important;
+  }
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -501,22 +582,28 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
     gap: 0.5em;
     width: 100%;
-    font-size: 0.8em;
     text-align: center;
     font-weight: 800;
 }
-.icon_section_box img {
-    width: 20%;
+.icon_section_box p {
+    font-size: clamp(0.8em, 1.5vw, 1.2em);
+}
+.icon_section_box i {
+    font-size: clamp(2.5em,3vw,3.5em) !important;
+    color: #000;
 }
 @media (max-width: 600px) {
     .icon_section {
-        flex-direction: column;
-        gap: 3em;
-    }
-    .icon_section_box img {
-        width: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
+
+
+
+
+
+/* UPCOMING COURSES CSS FIRST SWIPER BEGINS ////////////// */
 .upcoming_courses_wrapper {
     width: 100%;
     display: flex;
@@ -525,7 +612,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .upcoming_courses_wrapper h2 {
     font-weight: 800;
-    font-size: 2em;
+    font-size: clamp(1.5em,2vw, 2.5em);
     text-align: center;
 }
 
@@ -533,11 +620,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     width: 60%;
     height: 330px !important;
     margin: 0 auto 0 auto;
-    // border: 2px solid blue;
+    /* // border: 2px solid blue; */
   }
   .upcoming_courses_swiper2 .swiper-wrapper {
     display: flex;
-    // border: 2px solid red;
+    /* // border: 2px solid red; */
     flex-direction: column;
     width: 80%;
     height: 80%;
@@ -577,20 +664,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     align-items: center;
 }
 .upcoming_courses_swiper2 .swiper-slide p {
-    font-size: 1.2em !important;
-    text-align: left;
+    font-size: clamp(0.8em, 1.3vw, 1.2em) !important;
+    text-align: left !important;
 }
 .upcoming_courses_swiper2 .course_details {
-    font-size: 0.6em;
-}
-.enrol_btn p{
-    font-size: 0.8em;
-    margin: 0;
-    text-align: center !important;
-    padding: 0.4em 0;
+    font-size: clamp(0.45em, 1.5vw, 1em) !important;
+    /* border: 2px solid red; */
+    white-space: nowrap;
+    /* // width: 100%; */
 }
 .upcoming_courses_swiper2 .swiper_restyle {
-    align-items: start !important;
     width: 100%;
 }
 .allcourses_btn {
@@ -601,6 +684,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     cursor: pointer;
     text-align: center;
     font-weight: 800;
+    font-size: clamp(0.6em, 1.5vw, 1.1em);
+    white-space: nowrap;
 }
 @media(max-width:1066px) {
   .upcoming_courses_swiper2 .swiper-pagination {
@@ -611,9 +696,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .upcoming_courses_swiper2 .swiper-slide {
       padding: 3.5em 2em;
     }
-    .upcoming_courses_swiper2 .swiper-wrapper {
-        margin-left: -1em;
-    }
     .upcoming_courses_swiper2 {
         height: 350px !important;
     }
@@ -621,13 +703,24 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         align-items: center !important;
     }
     .upcoming_courses_swiper2 .swiper_restyle p {
-        font-size: 0.7em;
-        text-align: center;
+        text-align: center !important;
     }
     .upcoming_courses_swiper2 .course_details {
         font-size: 0.5em;
     }
   }
+/* UPCOMING COURSES CSS FIRST SWIPER ENDS ////////////// */
+
+
+
+
+
+
+
+
+
+
+/* UPCOMING COURSES POPUP SWIPER BEGINS ////////////// */
 .form_popup {
     display: none;
     position: fixed;
@@ -657,7 +750,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     text-align: center;
     width: 90%;
     margin: 0 auto;
-    font-size: min(3em,2.5em);
+    font-size: clamp(1.5em,2vw, 2.5em);
 }
 .upcoming_courses_popup .swiper {
     display: flex;
@@ -676,33 +769,28 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     top: -8em !important;
     bottom: 0 !important;
     gap: 1em;
+    padding-top: 2em;
     width: 100%;
 }
 .upcoming_courses_swiper .swiper-slide {
     display: flex;
-    // border: 2px solid olivedrab;
+    /* // border: 2px solid olivedrab; */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
     flex-direction: row;
+    align-items: center !important;
     padding: 0 1em;
     justify-content: space-evenly !important;
 }
 .upcoming_courses_swiper .course_box {
     width: 85% !important;
-    gap: 2em;
+    gap: 0.5em !important;
     display: flex;
     padding-right: 2em;
     padding-bottom: 2em;
     align-items: center;
 }
-.upcoming_courses_swiper .swiper-slide p {
-    // border: 2px solid red;
-    font-size: 1.8em;
-}
-/* .upcoming_courses_swiper .swiper-slide .course_details {
-    border: 2px solid red;
-} */
 .upcoming_courses_swiper .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
     background: #000 !important;
@@ -717,29 +805,37 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .enrol_btn {
     background-color: var(--primary_color_1);
-    padding: 0em 1em;
+    padding: 0.2em 1em;
     color: #fff;
-    text-align: center;
-    font-size: 0.8em;
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    width: 25%;
     font-weight: 800;
+    font-size: clamp(0.6em, 1.5vw, 0.8em) !important;
+}
+.enrol_btn p{
+    margin: 0;
+    text-align: center !important;
+    padding: 0.4em 0;
+    white-space: nowrap;
 }
 .swiper_restyle {
-    // border: 2px solid red;
+    /* // border: 2px solid red; */
     width: 80%;
-    padding-left: 1em;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .swiper_restyle p {
-    font-size: 1.2em !important;
+    font-size: clamp(0.7em,1.5vw,1.3em) !important;
 }
 .course_details {
     display: flex;
-    gap: 3em;
+    gap: 1.5em;
     color: var(--primary_color_1);
     font-weight: 800;
-    font-size: 0.9em;
+    white-space: nowrap;
+    font-size: clamp(0.45em, 1.5vw, 0.8em) !important;
 }
 .cancel_btn {
     position: absolute;
@@ -769,26 +865,18 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media(max-width:900px) {
     .cancel_btn {
-        top: 1em;
+        top: 0.3em;
     }
 }
 @media(max-width:760px) {
-    .upcoming_courses_popup h2 {
-        font-size: min(2em,1.8em);
-    }
     .upcoming_courses_swiper .swiper-wrapper .swiper-slide p {
-        font-size: max(0.7em,1em) !important;
         text-align: center;
     }
     .upcoming_courses_swiper .swiper-pagination {
         transform: scale(2) !important;
     }
     .course_details {
-        font-size: 0.6em;
         align-self: center;
-    }
-    .enrol_btn {
-        font-size: 0.7em;
     }
 }
 @media(max-width:600px) {
@@ -800,7 +888,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     }
     .upcoming_courses_swiper .course_box {
         width: 75%;
-        gap: 0.5em;
         padding: 0 1em 0 0 !important;
     }
     .form_popup .upcoming_section_wrapper {
@@ -814,14 +901,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         width: 97% !important;
     }
     .enrol_btn {
-        font-size: 0.5em;
         margin-bottom: 1em;
     }
     .course_box {
         flex-direction: column !important;
-    }
-    .form_popup .upcoming_section_wrapper h2{
-        font-size: min(1.2em,1.5em);
     }
     .form_popup .upcoming_section_wrapper p{
         font-size: min(0.9em,1.5em);
@@ -848,7 +931,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     }
 
 }
-
+/* UPCOMING COURSES POPUP SWIPER ENDS ////////////// */
 
 
 
@@ -959,6 +1042,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     color: #12131380;
     text-align: center;
 }
+.mySwiper .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
 .swiper {
     width: 75%;
     height: 150px;
@@ -1048,6 +1136,64 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         font-size: min(1em, 1.3em);
     }
 }
+
+.logo_carousel {
+    display: grid;
+    place-items: center;
+}
+.logo_slide_wrapper {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 75%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.logo_slide_track {
+    display: flex;
+    gap: 1em;
+    width: calc(250px * 48);
+    animation: scroll 150s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 24));
+    }
+}
+.logo_slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.logo_slide img {
+    width: 90%;
+    filter: saturate(0);
+}
+/* // .logo_slide_wrapper::before, .logo_slide_wrapper::after {
+//     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+//     content: '';
+//     height: 100%;
+//     position: absolute;
+//     width: 15%;
+//     z-index: 2;
+// }
+// .logo_slide_wrapper::after{
+//     right: 0;
+//     top: 0;
+//     transform: rotateZ(100deg);
+// }
+// .logo_slide_wrapper::before{
+//     left: 0;
+//     top: 0;
+// } */
+
+
 
 
 .ourclients_section {

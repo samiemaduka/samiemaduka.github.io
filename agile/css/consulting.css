@@ -102,7 +102,7 @@ nav {
     align-items: center;
     font-family: var(--primary_font_1);
     font-weight: 600;
-    font-size: max(0.6em, 1.2em);
+    font-size: clamp(0.6em, 1.5vw, 1.2em);
     /* border: 2px solid black; */
 }
 .nav_login_btn {
@@ -506,7 +506,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 2em auto 5em auto;
+    margin: 5em auto;
     /* border: 2px solid red; */
     gap: 2.5em;
 }
@@ -548,14 +548,29 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .consulting_grid_icon img {
     width: 55%;
 }
+.workforce_img {
+    width: 65%;
+}
 .consulting_grid_content {
     text-align: center;
     margin: 1em auto;
 }
+.consulting_grid_content .list {
+    font-size: clamp(0.75em, 1.5vw, 0.9em);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+}
+.consulting_grid_content .list i {
+    font-style: normal !important;
+}
 .consulting_grid_content p b{
-    font-size: max(0.8em,1em) !important;
+    font-size: clamp(1em, 2vw, 1.2em) !important;
     font-weight: 600;
 }
+
 @media(max-width:870px) {
     .consulting_themes_grid {
         display: flex;

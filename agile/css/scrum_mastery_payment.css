@@ -368,6 +368,22 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 
+/* PREVIOUS BUTTON RESTYLED ///////////// */
+#previous_page_btn {
+    font-weight: 700;
+    font-size: clamp(1.2em,2vw,1.5em) !important;
+    /* border: 2px solid red; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 0.5em;
+}
+#previous_page_btn i {
+    color: #000;
+}
+#previous_page_btn:hover i {
+    color: var(--primary_color_1);
+    transition: ease 200ms;
+}
+
 
 
 
@@ -379,6 +395,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .scrum_payment_wrapper {
     margin: 10em auto;
     /* border:  2px solid red; */
+}
+.scrum_payment_heading {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: 0 auto;
 }
 .scrum_payment_heading p {
     font-weight: 800;
@@ -554,6 +575,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 @media (max-width:800px) {
     .scrum_payment_method_wrapper {
         width: 90%;
+    }
+    .scrum_payment_heading {
+        width: 90%;
+    }
+    #previous_page_btn {
+        border-bottom: none;
     }
     .scrum_payment_wrapper {
         margin: 5em auto;

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F3F3F3">
+    <link rel="stylesheet" href="css/admin_dashboard_generalEnrollmentPromo.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Agile Pantha</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="admin_dash_sidebar">
+
+            <div class="admin_dash_sidebar_img">
+                <a href="index.html">
+                    <img src="img/alt_logo.png" alt="Agile Pantha Logo">
+                </a>
+            </div>
+            
+            <div class="admin_dash_sidebar_links">
+                <a href="admin_dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a>
+
+                <a class="dropdown-btn">
+                    <i class="fa-solid fa-users"></i>
+                    <p class="mq_only">Users <i class="fa-solid fa-chevron-down"></i></p>
+                </a>
+                
+                <div class="dropdown-container">
+                    <a href="admin_dashboard_activeUsers.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Active Users</b></p>
+                    </a>
+                    
+                    <a href="admin_dashboard_pendingUsers.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Pending Users</b></p>
+                    </a>
+                </div>
+
+
+                <a href="admin_dashboard_courses.html">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Courses</p>
+                </a>
+
+                <a href="admin_dashboard_generalComments.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Inbox</p>
+                </a>
+
+                <a class="dropdown-btn">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p class="mq_only">Coupons <i class="fa-solid fa-chevron-down"></i></p>
+                </a>
+                
+                <div class="dropdown-container">
+                    <a href="admin_dashboard_general_coupons.html" class="active">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>General Promo</b></p>
+                    </a>
+                    
+                    <a href="admin_dashboard_pendingUsers.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Course Promo</b></p>
+                    </a>
+                </div>
+
+                <a href="admin_dashboard_partners.html">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p>Partners</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active-dropdown");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "flex";
+                }
+            });
+            }
+        </script>
+
+
+        <div class="admin_dash_content">
+            <div class="admin_dash_section">Coupons</div>
+
+            <div class="admin_dash_content_box">
+                <div class="admin_dash_content_heading">
+                    <p><b>General Enrollment Promo</b></p>
+
+                    <form action="">
+                        <label for="search">
+                            <input type="search" name="search" id="search" placeholder="Search" required>
+                        </label>
+
+                        <button type="submit" class="search_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                    <div onclick="openAddCouponForm()" class="add_btn">Create Enrollment Promo</div>
+
+                <div class="admin_dash_content_gridWrapper" id="activeUsers">
+
+                    <div class="admin_dash_content_grid">
+                         <div class="admin_dash_content_gridBox">
+                            <p>Flash Sale Promo</p>
+ 
+                             <div class="btn_group">
+                             
+                                <a href="#" onclick="openEditCouponForm()" class="editBtn">Edit Enrollment Promo</a>
+ 
+                                <a href="#" class="deleteBtn">Delete Coupon</a>
+
+                                <a href="#" onclick="openviewCoupon()" class="viewBtn">View Coupon</a>
+                         
+                             </div>
+                         
+                         </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PAGINATION HTML ////////////////// -->
+            <div class="pagination">
+                <div class="pagination_prev_btn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="pagination_btn_wrapper">
+                    <div class="pagination_btn activePage"><p>1</p></div>
+                    <div class="pagination_btn"><p>2</p></div>
+                    <div class="pagination_btn"><p>3</p></div>
+                    <div class="pagination_btn"><p>4</p></div>
+                    <div class="pagination_btn"><p>5</p></div>
+                </div>
+
+                <div class="pagination_next_btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- THE POPUP BEGINS ////////////////////// -->
+
+    <div class="generic_popup_wrapper" id="generic_popup_add_coupon">
+
+        <div class="generic_popup">
+            <div onclick="closeAddCouponForm()" class="close_btn">__</div>
+
+            <div class="generic_popup_content">
+                <p>Add New Enrollment Promo</p>
+                <form action="">
+                    <div class="popup_form_group">
+                        <label for="newCouponID">Coupon ID:</label>
+
+                        <input type="text" name="newCouponID" id="newCouponID" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="newCouponValue">Coupon Value:</label>
+
+                        <input type="text" name="newCouponValue" id="newCouponValue" maxlength="10" required>
+                    </div>
+
+                    
+                    <div class="popup_form_group">
+                        <label for="newEnrollmentNumber">No. of Allowable Enrollments:</label>
+
+                        <input type="number" name="newEnrollmentNumber" id="newEnrollmentNumber">
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="newDiscountedAmount">Discounted Amount:</label>
+
+                        <input type="text" name="newDiscountedAmount" id="newDiscountedAmount" maxlength="10" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="newSelectStatus">Select Status:</label>
+
+                        <select name="newSelectStatus" id="newSelectStatus" required>
+                            <option selected value="selectStatus">*Select Status*</option>
+
+                            <option value="active">Active</option>
+
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+
+                    <button class="save_btn" type="submit">Add</button>
+                </form>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="generic_popup_wrapper" id="generic_popup_edit_coupon">
+
+        <div class="generic_popup">
+            <div onclick="closeEditCouponForm()" class="close_btn">__</div>
+
+            <div class="generic_popup_content">
+                <p>Edit Enrollment Promo</p>
+                <form action="">
+                    <div class="popup_form_group">
+                        <label for="couponID">Coupon ID:</label>
+
+                        <input type="text" name="couponID" id="couponID">
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="couponValue">Coupon Value:</label>
+
+                        <input type="text" name="couponValue" id="couponValue" maxlength="10">
+                    </div>
+
+                    
+                    <div class="popup_form_group">
+                        <label for="enrollmentNumber">No. of Allowable Enrollments:</label>
+
+                        <input type="number" name="enrollmentNumber" id="enrollmentNumber">
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="discountedAmount">Discounted Amount:</label>
+
+                        <input type="text" name="discountedAmount" id="discountedAmount" maxlength="10">
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="selectCoupon">Select Status:</label>
+
+                        <select name="selectStatus" id="selectStatus">
+                            <option selected value="selectStatus">*Select Status*</option>
+
+                            <option value="active">Active</option>
+
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+
+                    <button class="save_btn" type="submit">Add</button>
+                </form>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="generic_popup_wrapper" id="generic_popup_view_coupon">
+
+        <div class="generic_popup">
+            <div onclick="closeviewCoupon()" class="close_btn"><p>__</p></div>
+
+            <div class="generic_popup_content">
+                <p class="generic_popup_heading">Coupon</p>
+                <div class="generic_popup_box">
+                    <div class="popup_form_group borderBottom">
+                        <label for="couponID">Coupon ID:</label>
+
+                        <p>Scrum Mastery + AgileProduct Delivery Coupon</p>
+                    </div>
+
+                    <div class="popup_form_group borderBottom">
+                        <label for="couponValue">Coupon Value:</label>
+
+                        <p>93BND8391H3</p>
+                    </div>
+
+                    <div class="popup_form_group borderBottom">
+                        <label for="couponValue">No. of Allowable Enrollments:</label>
+
+                        <p>15</p>
+                    </div>
+
+                    <div class="popup_form_group borderBottom">
+                        <label for="couponValue">Discounted Amount:</label>
+
+                        <p>50%</p>
+                    </div>
+
+                    <div class="popup_form_group borderBottom">
+                        <label for="couponValue">Status:</label>
+
+                        <p>Active</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script>
+        function openAddCouponForm() {
+          document.getElementById("generic_popup_add_coupon").style.display = "flex";
+        }
+        
+        function closeAddCouponForm() {
+          document.getElementById("generic_popup_add_coupon").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openEditCouponForm() {
+        document.getElementById("generic_popup_edit_coupon").style.display = "flex";
+        }
+        
+        function closeEditCouponForm() {
+        document.getElementById("generic_popup_edit_coupon").style.display = "none";
+        }
+    </script>
+
+
+    <script>
+        function openviewCoupon() {
+        document.getElementById("generic_popup_view_coupon").style.display = "flex";
+        }
+        
+        function closeviewCoupon() {
+        document.getElementById("generic_popup_view_coupon").style.display = "none";
+        }
+    </script>
+
+<!-- THE POPUP ENDS ////////////////////// -->
+    
+</body>
+</html>

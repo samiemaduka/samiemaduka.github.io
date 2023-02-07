@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F3F3F3">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Agile Pantha</title>
+</head>
+<body>
+
+    <div class="top_nav">
+        <a href="index.html"><img src="img/logo.png" alt="Agile Pantha.Ca"></a>
+    </div>
+    
+    
+        <!-- Swiper -->
+    <div class="login_wrapper">
+    
+    
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="signup_header">Create your account</div>
+        
+                    <div class="signup_form_wrapper">
+                        <form action="" class="signup_form"> 
+                            <div class="signup_input">
+                                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            
+                                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+        
+                                <input type="number" name="tel" id="tel" placeholder="Phone Number" required>
+        
+                                <div class="password_container">    
+                                    <div class="password_input_box tooltip">
+                                        <input type="password" name="password" autocomplete="current-password" required placeholder="Password" id="signupPassword">
+        
+                                        <i class="far fa-eye" id="togglesignupPassword"></i>
+                                        
+
+                                        <span class="tooltiptext">
+                                            <ul>
+                                                <li>Use at least 8 Characters</li>
+                                                <li>Use upper and lower case characters </li>
+                                                <li>Use at least one special character</li>
+                                                <li>Optionally use numbers</li>
+                                            </ul>
+                                        </span>
+        
+                                        <script>
+                                            let togglesPassword = document.querySelector('#togglesignupPassword');
+                                            let passwords = document.querySelector('#signupPassword');
+        
+                                            togglesPassword.addEventListener('click', function (e) {
+                                                // toggle the type attribute
+                                                let type = passwords.getAttribute('type') === 'password' ? 'text' : 'password';
+                                                passwords.setAttribute('type', type);
+                                                // toggle the eye slash icon
+                                                this.classList.toggle('fa-eye-slash');
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            
+        
+                            
+        
+                            <p class="or">or</p>
+        
+                            <div class="google_signup_btn" onclick="openForm()">
+                                <img src="img/googlelogo.png" alt="">
+                                <p>Sign in with Google</p>
+                            </div>
+        
+                            <p class="terms">By clicking "sign up" you agree to our Terms of Use and our Privacy Policy</p>
+        
+                            <button type="submit" class="signup_btn">Sign up</button>
+                        </form>
+                    </div>
+        
+                    
+                  </div>
+    
+            </div>
+          </div>
+      
+      
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper signInLink_wrapper">
+                <a href="sign-up.html" class="swiper-slide">
+                  <p>Sign up</p>
+                </a>
+
+
+                <a href="sign-in.html" class="swiper-slide" id="non_active">
+                    <p>Sign in</p>
+                </a>
+              </div>
+            </div>
+      
+      
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    
+    </div>
+
+
+
+
+
+
+
+<!-- THE POPUP BEGINS ////////////////////// -->
+
+    <div class="generic_popup_wrapper" id="generic_popup">
+
+        <div class="generic_popup">
+            <div onclick="closeForm()" class="close_btn">__</div>
+
+            <div class="generic_popup_content">
+                <p>You have successfully created an account</p>
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script>
+        function openForm() {
+          document.getElementById("generic_popup").style.display = "flex";
+        }
+        
+        function closeForm() {
+          document.getElementById("generic_popup").style.display = "none";
+        }
+    </script>
+
+<!-- THE POPUP ENDS ////////////////////// -->
+
+
+</body>
+</html>

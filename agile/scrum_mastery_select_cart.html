@@ -74,12 +74,51 @@
 
 <div class="wrapper">
 
+    <!-- PREVIOUS BUTTON RESTYLED ////////////////// -->
    <div class="select_cart_wrapper">
-        <div class="select_cart_heading"><p>Cart</p></div>
+        <div class="select_cart_heading">
+            <a href="scrum_mastery.html" id="previous_page_btn">
+                <i class="fa-solid fa-left-long"></i>
+                Back
+            </a>
+
+            <p>Cart</p>
+        </div>
 
         <div class="select_cart_content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
 
         <form action="/" method="" class="select_cart_grid_wrapper">
+
+            <div class="checkoutInfo_wrapper">
+                <div class="checkoutInfo_box box1">
+
+                    <div class="checkout_title"><p>Course Title</p></div>
+                    <div class="remove_cart"><p>Remove From Cart</p></div>
+                    <div class="select_date"><a href="scrum_mastery_selectCourse.html">Select Your Courses Start Date</a></div>
+               
+                </div>
+                
+                <div class="checkoutInfo_box box2">
+
+                    <div class="checkoutInfo">
+                        <p>Cohort enrol in and start date </p>
+                    </div>
+
+                    <div class="checkoutInfo">
+                        <p><b>Bill to: payer’s name</b></p>
+                    </div>
+
+                    <div class="checkoutInfo">
+                        <p>Price</p>
+
+                        <p><b>Standard</b> Price $1,500</p>
+                    </div>
+
+                    <div class="checkoutInfo right">
+                        <p><b>Subtotal</b> $1,500</p>
+                    </div>
+                </div>
+            </div>
 
             <div class="checkoutInfo_wrapper">
                 <div class="checkoutInfo_box box1">
@@ -105,16 +144,17 @@
                         <p><b>Standard</b> Price $1,500</p>
                     </div>
 
-                    <div class="checkoutInfo_checkbox right">
-                        <input type="checkbox" name="discount" id="discount" class="checkoutInfo"></input>
-                        <label for="discount">Apply a discount </label>
-                    </div>
-
                     <div class="checkoutInfo right">
                         <p><b>Subtotal</b> $1,500</p>
                     </div>
                 </div>
             </div>
+
+            <div class="checkoutInfo_checkbox right">
+                <input type="checkbox" name="discount" id="discount" class="checkoutInfo"></input>
+                <label for="discount">Apply your discount </label>
+            </div>
+
 
             <div class="select_cart_btn">
                 <a href="scrum_mastery_verify_payment.html" class="checkout_btn">

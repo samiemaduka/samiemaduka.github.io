@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F3F3F3">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Agile Pantha</title>
+</head>
+<body>
+
+    <div class="top_nav">
+        <a href="index.html"><img src="img/logo.png" alt="Agile Pantha.Ca"></a>
+    </div>
+    
+    
+        <!-- Swiper -->
+    <div class="login_wrapper">
+    
+    
+        <div class="swiper mySwiper2 signIn_slide">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="signin_header">Welcome</div>
+        
+                    <div class="signin_form_wrapper">
+                        <form action="" class="signin_form"> 
+        
+                            <div class="signin_input">
+                                <input type="email" name="email" id="signin_email" placeholder="Email Address" required>
+        
+                                <div class="password_container">    
+                                    <div class="password_input_box">
+                                        <input type="password" name="password" autocomplete="current-password" required placeholder="Password" id="password">
+        
+                                        <i class="far fa-eye" id="togglePassword"></i>
+        
+        
+                                        <script>
+                                            let togglePassword = document.querySelector('#togglePassword');
+                                            let password = document.querySelector('#password');
+        
+                                            togglePassword.addEventListener('click', function (e) {
+                                                // toggle the type attribute
+                                                let type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                                                password.setAttribute('type', type);
+                                                // toggle the eye slash icon
+                                                this.classList.toggle('fa-eye-slash');
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <p class="or">or</p>
+        
+                            <a href="dashboard.html" class="google_signin_btn">
+                                <img src="img/googlelogo.png" alt="">
+                                <p>Sign in with Google</p>
+                            </a>
+        
+                            <p class="terms">By clicking "sign in" you agree to our Terms of Use and our Privacy Policy</p>
+        
+                            <button type="submit" class="signin_btn">Sign in</button>
+        
+                            <a href="forgot_password.html">Forgot Password?</a>
+                        </form>
+                    </div>
+                  </div>
+    
+            </div>
+          </div>
+      
+      
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper signInLink_wrapper">
+                <a href="sign-up.html" class="swiper-slide" id="non_active">
+                  <p>Sign up</p>
+                </a>
+
+
+                <a href="sign-in.html" class="swiper-slide">
+                    <p>Sign in</p>
+                </a>
+              </div>
+            </div>
+      
+      
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    
+    </div>
+
+
+</body>
+</html>

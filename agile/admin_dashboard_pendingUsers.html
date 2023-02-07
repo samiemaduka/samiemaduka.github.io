@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F3F3F3">
+    <link rel="stylesheet" href="css/admin_dashboard_users.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Agile Pantha</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="admin_dash_sidebar">
+
+            <div class="admin_dash_sidebar_img">
+                <a href="index.html">
+                    <img src="img/alt_logo.png" alt="Agile Pantha Logo">
+                </a>
+            </div>
+            
+            <div class="admin_dash_sidebar_links">
+                <a href="admin_dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a>
+
+                <a class="dropdown-btn">
+                    <i class="fa-solid fa-users"></i>
+                    <p class="mq_only">Users <i class="fa-solid fa-chevron-down"></i></p>
+                </a>
+                
+                <div class="dropdown-container">
+
+                    <a href="admin_dashboard_activeUsers.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Active Users</b></p>
+                    </a>
+                    
+                    <a href="admin_dashboard_pendingUsers.html" class="active">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Pending Users</b></p>
+                    </a>
+                </div>
+
+
+                <a href="admin_dashboard_courses.html">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Courses</p>
+                </a>
+
+                <a href="admin_dashboard_coupons.html">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Coupons</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active-dropdown");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "flex";
+                }
+            });
+            }
+        </script>
+
+
+        <div class="admin_dash_content">
+            <div class="admin_dash_section">Users</div>
+
+            <div class="admin_dash_content_box">
+                <div class="admin_dash_content_heading">
+                    <p><b>Current Users</b></p>
+
+                    <form action="">
+                        <label for="search">
+                            <input type="search" name="search" id="search" placeholder="Search" required>
+                        </label>
+
+                        <button type="submit" class="search_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper" id="activeUsers">
+                    <p>
+                        <i class="fa-solid fa-user-clock"></i>
+                        <b>Pending Users</b>
+                    </p>
+                    <div class="admin_dash_content_grid">
+                        <div class="active_user_box admin_dash_content_gridBox">
+                            <p>Alfreds Futterkiste</p>
+                            <a href="admin_dashboard_user_account.html" class="moreBtn">View More</a>
+                        </div>
+
+                        <div class="active_user_box admin_dash_content_gridBox">
+                            <p>Daniel Baken</p>
+                            <a href="admin_dashboard_user_account.html" class="moreBtn">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination">
+                <div class="pagination_prev_btn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="pagination_btn_wrapper">
+                    <div class="pagination_btn activePage"><p>1</p></div>
+                    <div class="pagination_btn"><p>2</p></div>
+                    <div class="pagination_btn"><p>3</p></div>
+                    <div class="pagination_btn"><p>4</p></div>
+                    <div class="pagination_btn"><p>5</p></div>
+                </div>
+
+                <div class="pagination_next_btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

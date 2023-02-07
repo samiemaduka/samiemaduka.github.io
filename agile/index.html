@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js/splide.min.css">    
+
     <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
     <title>Agile Pantha</title>
 </head>
@@ -26,6 +30,17 @@
         <a href="consulting.html">consulting</a>
         <a href="contactus.html">contact us</a>
         <a href="register.html" class="nav_login_btn">Login</a>
+        <div class="dropdown nav_login_btn loggedIn">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#"><i class="fa-solid fa-house-user"></i> My Account</a>
+                <a href="#"><i class="fa-solid fa-list-check"></i> Wishlist</a>
+            </div>
+        </div>
+        <a class="cart_link" href="scrum_mastery_select_cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <sub class="cart_amount">2</sub>
+        </a>
     </div>
 </nav>
 
@@ -61,8 +76,10 @@
             <li><a href="consulting.html">consulting</a></li>
             <li></li>
             <li><a href="contactus.html">contact us</a></li>
-            <li></li>
-            <li><a href="register.html">login</a></li>
+            <li class="notLoggedIn"></li>
+            <li><a class="notLoggedIn" href="register.html">login</a></li>
+            <li class="notLoggedIn"></li>
+            <li><a class="loggedIn" href="dashboard.html">My Account</a></li>
           </ul>
         </div>
     <!-- ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
@@ -117,19 +134,19 @@
 
     <div class="icon_section">
         <div class="icon_section_box">
-            <img src="img/training_icon.png" alt="">
+            <i class="fa-solid fa-hands-holding-child"></i>
             <p>Hands-on Training </p>
         </div>
         <div class="icon_section_box">
-            <img src="img/resume_icon.png" alt="">
+            <i class="fa-solid fa-headset"></i>
             <p>Resume & Interview Support</p>
         </div>
         <div class="icon_section_box">
-            <img src="img/mentorship_icon.png" alt="">
+            <i class="fa-solid fa-users"></i>
             <p>Mentorship & Community </p>
         </div>
         <div class="icon_section_box">
-            <img src="img/assistance_icon.png" alt="">
+            <i class="fa-solid fa-handshake-angle"></i>
             <p>On the Job Assistance</p>
         </div>
     </div>
@@ -309,11 +326,6 @@
             <p type="button" class="cancel_btn" onclick="closeForm()">&times;</p>
 
         </div>
-
-
-
-     
-
     </div>
 
     <script>
@@ -326,6 +338,9 @@
         }
     </script>
     <!-- POPUP MENU //////////////// -->
+
+
+    
 
 
     <div class="courses_section">
@@ -609,13 +624,16 @@
         // Optional parameters
         direction: 'horizontal',
         loop: true,
+        freeMode: true,
         centeredSlides: true,
         slidesPerView: 3,
-        spaceBetween: 5,
+        spaceBetween: 10,
         autoplay: {
-          delay: 2000,
+          delay: 1,
           disableOnInteraction: false,
         },
+        speed: 5000,
+        freeModeMomentum: true,
 
         // Navigation arrows
         navigation: {

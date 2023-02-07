@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F3F3F3">
+    <link rel="stylesheet" href="css/admin_dashboard_edit_courses.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Agile Pantha</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="admin_dash_sidebar">
+
+            <div class="admin_dash_sidebar_img">
+                <a href="index.html">
+                    <img src="img/alt_logo.png" alt="Agile Pantha Logo">
+                </a>
+            </div>
+            
+            <div class="admin_dash_sidebar_links">
+                <a href="admin_dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a>
+
+                <a class="dropdown-btn">
+                    <i class="fa-solid fa-users"></i>
+                    <p class="mq_only">Users <i class="fa-solid fa-chevron-down"></i></p>
+                </a>
+                
+                <div class="dropdown-container">
+                    <a href="admin_dashboard_activeUsers.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Active Users</b></p>
+                    </a>
+                    
+                    <a href="admin_dashboard_pendingUsers.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Pending Users</b></p>
+                    </a>
+                </div>
+
+
+                <a href="admin_dashboard_courses.html">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Courses</p>
+                </a>
+
+                <a href="admin_dashboard_generalComments.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Inbox</p>
+                </a>
+
+                <a href="admin_dashboard_coupons.html">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Coupons</p>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active-dropdown");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "flex";
+                }
+            });
+            }
+        </script>
+
+
+        <div class="admin_dash_content">
+            <div class="admin_dash_section">Courses</div>
+
+            <div class="admin_dash_content_box">
+                <div class="admin_dash_content_heading">
+                    <p><b>Design Thinking & User Experience Research</b></p>
+
+                    
+                    <a href="admin_dashboard_edit_course_information.html" class="edit_btn">
+                        Edit Course Information
+                    </a>
+                </div>
+
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Description</b></p>
+                    
+                    <p class="course_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos enim dolores libero animi, error amet eaque nihil dolore dignissimos aliquid adipisci esse veniam, ullam veritatis. Enim quo quam officia aperiam!</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Course Length</b></p>
+                    
+                    <p class="course_detail">6 X 3 hours session</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Course Duration</b></p>
+                    
+                    <p class="course_detail">1 month</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Class Size</b></p>
+                    
+                    <p class="course_detail">30 Students</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Delivery Format</b></p>
+                    
+                    <p class="course_detail">100% Online</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Skills you will learn</b></p>
+                    
+                    
+                    <ul>
+                        <li>Explain the relationship between Agile and Scrum and other Agile Frameworks.</li>
+
+                        <li>Demonstrate clear understanding of the various accountabilities (roles) in the Scrum Framework.</li>
+                    </ul>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Who should enrol</b></p>
+                    
+                    
+                    <ul>
+                        <li>Solving problems for people?</li>
+
+                        <li>Learning how to transform an idea into sellable products</li>
+
+                        <li>Curious about how to make products that delight the customer?</li>
+                    </ul>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Course Outline</b></p>
+                    
+                    
+                    <ul>
+                        <li>Introduction to User Experience, Innovative Process & Design</li>
+
+                        <li>Design Thinking & Innovation</li>
+                        
+                        <li>Intersection between Design Thinking & User Experience Research</li>
+
+                        <li>Problem Vs Solution Space</li>
+                    </ul>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Online Class URL</b></p>
+                    
+                    <p class="course_detail">https://www.online-class-url.org/</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Syllabus URL</b></p>
+                    
+                    <p class="course_detail">https://www.syllabus-url.org/</p>
+                </div>
+
+                <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
+                    <p><b>Stripe Product ID</b></p>
+                    
+                    <p class="course_detail">1S92N988S9JS</p>
+                </div>
+            </div>
+
+            <div class="admin_dash_content_box">
+                <div class="admin_dash_content_gridWrapper" id="activeUsers">
+
+                    <div class="admin_dash_content_grid">
+                        
+                        <div class="admin_dash_content_gridBox">
+                            <div class="text_group">
+                                <p><b>Course Dates</b></p>
+
+                                <div onclick="openForm()" class="add_btn">Add new Course Date</div>
+                            </div>
+
+                            <ol class="course_date_group">
+                                <li>
+                                    <div class="list_group">
+
+                                        <div class="startDate">
+                                            <i id="markIcon" class="fa-solid fa-circle"></i>
+
+                                            <p>Start Date:</p>
+                                            <p>1/1/2023</p>
+                                        </div>
+
+                                        <div class="tuition">
+                                            <p>Tuition:</p>
+                                            <p>$1,200</p>
+                                        </div>
+
+                                        <div class="endDate">
+                                            <p>End Date:</p>
+                                            <p>1/1/2023</p>
+                                        </div>
+
+                                        <div class="btn_group">
+                                            <a onclick="markUpcoming()" class="markbtn markUpcoming">Mark as Upcoming</a>
+                        
+                                            <div onclick="unmarkUpcoming()" class="markbtn unmarkUpcoming">Unmark as Upcoming</div>
+
+                                            <div class="delete_btn">Delete Course Date</div>
+                                        </div>
+                                    </div> 
+
+                                    <!-- JAVASCRIPT FOR MARKING UPCOMING COURSES STARTS////////////////////// -->
+                                        <script>
+                                            function markUpcoming() {
+                                            document.getElementById("markIcon").style.display = "block";
+                                            }
+                                            
+                                            function unmarkUpcoming() {
+                                            document.getElementById("markIcon").style.display = "none";
+                                            }
+                                        </script>
+                                    <!-- JAVASCRIPT FOR MARKING UPCOMING COURSES STARTS////////////////////// -->
+                                </li>
+                                
+                                <li>
+                                    <div class="list_group">
+
+                                        <div class="startDate">
+                                            <i id="markIcon" class="fa-solid fa-circle"></i>
+
+                                            <p>Start Date:</p>
+                                            <p>12/2/2023</p>
+                                        </div>
+
+                                        <div class="tuition">
+                                            <p>Tuition:</p>
+                                            <p>$2,300</p>
+                                        </div>
+
+                                        <div class="endDate">
+                                            <p>End Date:</p>
+                                            <p>11/5/2023</p>
+                                        </div>
+
+                                        <div class="btn_group">
+                                            <a onclick="markUpcoming()" class="markbtn markUpcoming">Mark as Upcoming</a>
+                        
+                                            <div onclick="unmarkUpcoming()" class="markbtn unmarkUpcoming">Unmark as Upcoming</div>
+
+                                            <div class="delete_btn">Delete Course Date</div>
+                                        </div>
+                                    </div> 
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- THE POPUP BEGINS ////////////////////// -->
+
+    <div class="generic_popup_wrapper" id="generic_popup">
+
+        <div class="generic_popup">
+            <div onclick="closeForm()" class="close_btn">__</div>
+
+            <div class="generic_popup_content">
+                <p>Add New Course Dates</p>
+                <form action="">
+                    <div class="popup_form_group">
+                        <label for="startDate">Start Date:</label>
+
+                        <input type="date" name="startDate" id="startDate" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="endDate">End Date:</label>
+
+                        <input type="date" name="endDate" id="endDate" required>
+                    </div>
+
+                    <div class="popup_form_group">
+                        <label for="tuition">Tuition ($):</label>
+
+                        <input type="number" name="tuition" id="tuition" required>
+                    </div>
+
+                    <button class="save_btn" type="submit">Save</button>
+                </form>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script>
+        function openForm() {
+          document.getElementById("generic_popup").style.display = "flex";
+        }
+        
+        function closeForm() {
+          document.getElementById("generic_popup").style.display = "none";
+        }
+    </script>
+
+<!-- THE POPUP ENDS ////////////////////// -->
+    
+
+
+
+
+</body>
+</html>

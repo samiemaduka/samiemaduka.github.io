@@ -81,10 +81,12 @@ a:hover {
     left: 0;
     background-color: #fff;
 }
-
+.top_nav img {
+  width: clamp(90%, 5vw, 100%);
+}
 .login_wrapper {
     width: 60%;
-    // border: 2px solid red;
+    /* // border: 2px solid red; */
     margin: 8em auto;
     display: flex;
     gap: 3px;
@@ -103,12 +105,15 @@ a:hover {
   }
 
   .mySwiper2 {
-    height: 700px;
+    height: 750px;
     width: 100%;
     padding:0 0 5em 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #fff;
+  }
+  .signIn_slide {
+    height: 600px !important;
   }
   .mySwiper2 .swiper-slide {
     display: flex;
@@ -118,10 +123,10 @@ a:hover {
     .signin_form, .signup_form {
         display: flex;
         flex-direction: column;
-        gap: 1.5em;
+        gap: 1em;
         width: 80%;
         margin: 0 auto;
-        // border: 3px solid blue;
+        /* // border: 3px solid blue; */
         justify-content: center;
         align-items: center;
     }  
@@ -132,17 +137,22 @@ a:hover {
         font-size: max(1em,1.2em);
         font-family: var(--primary_font_1);
     }
+    input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
   .signin_header, .signup_header {
     font-weight: 800;
-    font-size: max(1.8em,2.3em);
+    font-size: clamp(1.5em,4vw,3em) !important;
     margin: 1em 0;
     color: var(--primary_color_6);
     align-self: center;
   }
   .signin_input, .signup_input {
-    // border: 3px solid red;
+    /* // border: 3px solid red; */
     width: 100%;
-    gap: 2em;
+    gap: 1.2em;
     display: flex;
     flex-direction: column;
   }
@@ -170,12 +180,12 @@ a:hover {
 }
 .or {
     font-weight: 400;
-    margin: -1em 0 0 0;
+    margin: 0.5em 0 0 0;
     font-size: 1em;
 }
 .google_signin_btn, .google_signup_btn {
     display: flex;
-    // border: 2px solid red;
+    /* // border: 2px solid red; */
     background-color: #333333;
     color: #fff;
     cursor: pointer;
@@ -211,7 +221,7 @@ a:hover {
     padding: 10px 0;
     flex-direction: row-reverse !important;
     display: flex !important;
-    // border: 2px solid red;
+    /* // border: 2px solid red; */
     align-items: center;
   }
 
@@ -258,3 +268,155 @@ a:hover {
         width: 92%;
     }
   }
+
+  .signInLink_wrapper {
+    display: flex;
+    /* // border: 2px solid red; */
+    width: 100%;
+    padding: 1.5em 0;
+    gap: 0.5em;
+  }
+  .signInLink_wrapper .swiper-slide {
+    background-color: #fff;
+    color: var(--primary_color_3);
+    width: 100%;
+    padding: 1.2em 0;
+  }
+  .signInLink_wrapper .swiper-slide:hover {
+    background-color: #fff;
+    transition: ease 200ms;
+  }
+  #non_active {
+    background-color: var(--primary_color_6);
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* THE POPUP STARTS ///////////////// */
+.generic_popup_wrapper {
+  display: none;
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* // border: 2px solid red; */
+  overflow-y: scroll;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.close_btn {
+  align-self: flex-end;
+  cursor: pointer;
+  margin: 0 1em 0 0;
+  /* border: 2px solid indigo; */
+  font-size: min(2em,3.5em);
+}
+.generic_popup {
+  background-color: #fff;
+  /* // border: 2px solid blue; */
+  width: clamp(90%,2vw,80%);
+  display: flex;
+  flex-direction: column;
+}
+.generic_popup_content {
+  display: flex;
+  gap: 0.3em;
+  padding-bottom: 1.5em;
+  align-items: center;
+  justify-content: center;
+}
+.generic_popup_content p {
+  font-size: clamp(1em,2vw,1.8em) !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.generic_popup_content i {
+  font-size: clamp(1em,1vw,1.3em) !important;
+  color: var(--primary_color_1);
+}
+/* THE POPUP ENDS ///////////////// */
+
+
+
+
+
+
+
+
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 260px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  right: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltiptext ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: clamp(0.8em, 1vw,1.2em);
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: rotateX(180deg);
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media(max-width:800px) {
+  .tooltiptext {
+    right: 50%;
+  }
+}
+@media(max-width:600px) {
+  .tooltiptext {
+    right: 20%;
+  }
+}
+@media(max-width:350px) {
+  .tooltiptext {
+    right: -5%;
+  }
+}

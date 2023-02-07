@@ -100,7 +100,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 75%;
-    margin: 4em auto;
+    margin: 1em auto 1em auto;
 }
 .courses h3 {
     font-size: min(1.8em, 2.2em);

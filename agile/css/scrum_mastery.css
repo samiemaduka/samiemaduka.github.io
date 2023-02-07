@@ -498,6 +498,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         margin-top: 1em !important;
     }
 }
+
+
+
+
+
+
+
+/* // THE POPUP CSS STARTS///////////////////////////////////// */
 .purchaseOption_popup {
     display: none;
     position: fixed;
@@ -590,8 +598,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .circle {
     background-color: rgba(231, 231, 231, 1);
-    height: 1.4em;
-    width: 1.4em;
+    padding: 0.4em;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -600,8 +607,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .circle_inner {
     background-color: #fff;
-    height: 0.7em;
-    width: 0.7em;
+    padding: 0.4em;
     border-radius: 50%;
 }
 .purchaseOption_content {
@@ -653,6 +659,19 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     background-color: #fff;
     color: var(--primary_color_1);
 }
+// THE POPUP CSS ENDS /////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
 .course_content {
     width: 65%;
     margin: 3em auto;

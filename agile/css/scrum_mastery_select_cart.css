@@ -366,10 +366,19 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 
-
-
-
-
+/* PREVIOUS BUTTON RESTYLED ///////////// */
+#previous_page_btn {
+    font-weight: 700;
+    font-size: clamp(1.2em,2vw,1.5em) !important;
+    left: 4.5em;
+}
+#previous_page_btn i {
+    color: #000;
+}
+#previous_page_btn:hover i {
+    color: var(--primary_color_1);
+    transition: ease 200ms;
+}
 
 
 
@@ -378,8 +387,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
+    font-family: var(--primary_font_1) !important;
     width: 70%;
     margin: 10em auto 5em auto;
+}
+.select_cart_heading {
+    display: flex;
+    gap: 0.1em;
+    flex-direction: column;
 }
 .select_cart_heading p{
     color: rgba(102, 102, 102, 0.5);
@@ -459,6 +474,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .checkoutInfo_wrapper {
     border: 1px solid rgba(58, 61, 64, 0.5);
+    margin-bottom: 2em;
     box-shadow: 0 0 10px rgba(58, 61, 64, 0.6);
 }
 .box1 {
@@ -474,6 +490,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     align-items: center;
     font-weight: 600;
 }
+.remove_cart {
+    color: #000 !important;
+}
 .select_date {
     justify-content: end;
 }
@@ -487,7 +506,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .right {
     display: flex;
     justify-content: flex-end !important;
-    margin-right: 1em;
 }
 .standard {
     margin-top: -2.45em;
@@ -503,8 +521,50 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     /* border: 2px solid red; */
 }
 .checkoutInfo_checkbox {
-    font-size: min(0.7em,1em);
+    font-size: clamp(0.7em,1vw,1em) !important;
     /* border: 2px solid red; */
+}
+.promo_box_wrapper {
+    // border: 2px solid red;
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.promo_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: flex-end;
+    padding: 0.5em 0.8em;
+    // border-top: 1px solid rgba(58, 61, 64, 0.2);
+    box-shadow: 0 0 10px rgba(58, 61, 64, 0.1);
+}
+.promo_box p {
+    font-family: var(--primary_font_1);
+    font-weight: 600;
+    margin: 0;
+    padding: 0.3em 0;
+}
+.promo_box input {
+    padding: 0.2em 0.3em;
+    color: #3A3D40 !important;
+    border: 1px solid rgba(41, 50, 65, 0.2);
+    font-size: clamp(0.9em,1vw,1.2em);
+    text-align: end;
+    font-family: var(--primary_font_1);
+}
+.apply_discount_btn {
+    font-size: clamp(0.8em,1.2vw,1em);
+    background-color: var(--primary_color_1);
+    color: #F2F2F2;
+    width: 50%;
+    padding: 0.3em 0.6em;
+    border: none;
+    font-weight: 600;
+    font-family: var(--primary_font_1);
+    border-radius: 0.2em;
 }
 @media (max-width:900px) {
     .box1 {

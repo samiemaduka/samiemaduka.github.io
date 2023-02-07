@@ -365,7 +365,19 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 
-
+/* PREVIOUS BUTTON RESTYLED ///////////// */
+#previous_page_btn {
+    font-weight: 700;
+    font-size: clamp(1.2em,2vw,1.5em) !important;
+    left: 4.5em;
+}
+#previous_page_btn i {
+    color: #000;
+}
+#previous_page_btn:hover i {
+    color: var(--primary_color_1);
+    transition: ease 200ms;
+}
 
 
 
@@ -468,6 +480,24 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-size: min(0.7em,1em);
     color: #666666;
     background-color: #F0F0F0;
+}
+.selected_course_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.selected_course_wrapper p {
+    font-weight: 600;
+}
+.selected_course_wrapper ul {
+    padding-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0.5em 0 1em 0;
+}
+.selected_course_wrapper ul li {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .checkout_title, .remove_cart, .select_date {
     display: flex;
