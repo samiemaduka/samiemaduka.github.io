@@ -24,7 +24,7 @@
             </div>
             
             <div class="admin_dash_sidebar_links">
-                <a href="admin_dashboard.html">
+                <a href="admin_dashboard.html" class="active">
                     <i class="fa-solid fa-house"></i>
                     <p>Home</p>
                 </a>
@@ -57,9 +57,26 @@
                     <p>Inbox</p>
                 </a>
 
-                <a href="admin_dashboard_coupons.html">
+                <a class="dropdown-btn">
                     <i class="fa-solid fa-ticket"></i>
-                    <p>Coupons</p>
+                    <p class="mq_only">Coupons <i class="fa-solid fa-chevron-down"></i></p>
+                </a>
+                
+                <div class="dropdown-container">
+                    <a href="admin_dashboard_general_coupons.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>General Promo</b></p>
+                    </a>
+                    
+                    <a href="admin_dashboard_coursesPromo.html">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><b>Course Promo</b></p>
+                    </a>
+                </div>
+
+                <a href="admin_dashboard_partners.html">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p>Partners</p>
                 </a>
 
                 <a href="#">

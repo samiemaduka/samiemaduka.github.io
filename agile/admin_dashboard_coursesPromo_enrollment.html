@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#F3F3F3">
-    <link rel="stylesheet" href="css/admin_dashboard_generalDailyPromo.css">
+    <link rel="stylesheet" href="css/admin_dashboard_coursesPromo_enrollment.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -113,7 +113,7 @@
 
             <div class="admin_dash_content_box">
                 <div class="admin_dash_content_heading">
-                    <p><b>General Daily Promo</b></p>
+                    <p><b>Course Enrollment Promo</b></p>
 
                     <form action="">
                         <label for="search">
@@ -126,32 +126,19 @@
                     </form>
                 </div>
 
-                    <div onclick="openAddCouponForm()" class="add_btn">Create Daily Promo</div>
+                <div onclick="openAddCouponForm()" class="add_btn">Create Enrollment Promo</div>
+
+                <p class="courseTitle">Design Thinking & User Experience Research</p>
 
                 <div class="admin_dash_content_gridWrapper" id="activeUsers">
 
                     <div class="admin_dash_content_grid">
                          <div class="admin_dash_content_gridBox">
-                            <p>Easter Day Promo</p>
+                            <p>Flash Sale Promo</p>
  
                              <div class="btn_group">
                              
-                                <a href="#" onclick="openEditCouponForm()" class="editBtn">Edit Daily Promo</a>
- 
-                                <a href="#" class="deleteBtn">Delete Coupon</a>
-
-                                <a href="#" onclick="openviewCoupon()" class="viewBtn">View Coupon</a>
-                         
-                             </div>
-                         
-                         </div>
-
-                         <div class="admin_dash_content_gridBox">
-                            <p>Halloween Sale</p>
- 
-                             <div class="btn_group">
-                             
-                                <a href="#" onclick="openEditCouponForm()" class="editBtn">Edit Daily Promo</a>
+                                <a href="#" onclick="openEditCouponForm()" class="editBtn">Edit Enrollment Promo</a>
  
                                 <a href="#" class="deleteBtn">Delete Coupon</a>
 
@@ -196,7 +183,7 @@
             <div onclick="closeAddCouponForm()" class="close_btn">__</div>
 
             <div class="generic_popup_content">
-                <p>Add New Daily Promo</p>
+                <p>Add New Enrollment Promo</p>
                 <form action="">
                     <div class="popup_form_group">
                         <label for="newCouponID">Coupon ID:</label>
@@ -212,15 +199,9 @@
 
                     
                     <div class="popup_form_group">
-                        <label for="newStartTime">Start Time:</label>
+                        <label for="newEnrollmentNumber">No. of Allowable Enrollments:</label>
 
-                        <input type="time" name="newStartTime" id="newStartTime" required>
-                    </div>
-
-                    <div class="popup_form_group">
-                        <label for="newEndTime">End Time:</label>
-
-                        <input type="time" name="newEndTime" id="newEndTime" required>
+                        <input type="number" name="newEnrollmentNumber" id="newEnrollmentNumber">
                     </div>
 
                     <div class="popup_form_group">
@@ -255,7 +236,7 @@
             <div onclick="closeEditCouponForm()" class="close_btn">__</div>
 
             <div class="generic_popup_content">
-                <p>Edit Daily Promo</p>
+                <p>Edit Enrollment Promo</p>
                 <form action="">
                     <div class="popup_form_group">
                         <label for="couponID">Coupon ID:</label>
@@ -271,15 +252,9 @@
 
                     
                     <div class="popup_form_group">
-                        <label for="startTime">Start Time:</label>
+                        <label for="enrollmentNumber">No. of Allowable Enrollments:</label>
 
-                        <input type="time" name="startTime" id="startTime">
-                    </div>
-
-                    <div class="popup_form_group">
-                        <label for="endTime">End Time:</label>
-
-                        <input type="time" name="endTime" id="endTime">
+                        <input type="number" name="enrollmentNumber" id="enrollmentNumber">
                     </div>
 
                     <div class="popup_form_group">
@@ -329,15 +304,9 @@
                     </div>
 
                     <div class="popup_form_group borderBottom">
-                        <label for="couponValue">Start Time:</label>
+                        <label for="couponValue">No. of Allowable Enrollments:</label>
 
-                        <p>11:30</p>
-                    </div>
-
-                    <div class="popup_form_group borderBottom">
-                        <label for="couponValue">End Time:</label>
-
-                        <p>23:30</p>
+                        <p>15</p>
                     </div>
 
                     <div class="popup_form_group borderBottom">

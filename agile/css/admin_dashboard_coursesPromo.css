@@ -101,11 +101,11 @@ a:hover {
     background-color: var(--primary_color_2);
     position: fixed;
     top: 0;
+    overflow-y: scroll;
     left: 0;
     display: flex;
     flex-direction: column;
     gap: 2em;
-    overflow-y: scroll;
     width: 15%;
     bottom: 0;
 }
@@ -152,13 +152,17 @@ a:hover {
 .active-dropdown {
     color: white;
 }
+/* I Editted from here down for the sidebar ///// */
 .dropdown-btn p {
-    font-size: clamp(0.6em, 2vw, 1em);
+    font-size: clamp(0.6em, 2vw, 0.9em) !important;
+}
+.couponDropdown_container a p b{
+    font-size: clamp(0.6em, 2vw, 0.8em);
 }
 .dropdown-btn p i {
     font-size: clamp(0.6em, 2vw, 0.8em);
 }
-.dropdown-container {
+.dropdown-container, .couponDropdown_container {
     display: none;
     transition: 300ms ease;
     /* border: 2px solid red; */
@@ -169,17 +173,23 @@ a:hover {
     justify-content: center;
     margin-left: 0.8em;
 }
-.dropdown-container a {
+.couponDropdown_container {
+    display: flex !important;
+    margin-bottom: -1em;
+    margin-left: 1.3em;
+}
+.dropdown-container a, .couponDropdown_container a {
     display: flex;
     gap: 0.5em;
 }
-.dropdown-container a i {
-    font-size: clamp(0.6em, 2vw, 1em);
+.dropdown-container a i, .couponDropdown_container a i {
+    font-size: clamp(0.6em, 2vw, 0.8em);
     /* border: 2px solid; */
 }
-.dropdown-container a:hover {
+.dropdown-container a:hover, .couponDropdown_container a:hover {
     color: var(--primary_color_1);
 }
+
 
 
 
@@ -202,7 +212,7 @@ a:hover {
     padding: 0 6em;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
     margin: 3em auto;
 }
 .admin_dash_content_heading {
@@ -210,7 +220,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0em;
-    gap: 0;
+    gap: 1em;
 }
 .admin_dash_content_heading form {
     display: flex;
@@ -232,26 +242,13 @@ a:hover {
 .admin_dash_content_heading p {
     font-size: clamp(1.2em, 2.5vw, 1.8em) !important;
     color: var(--primary_color_1);
-}
-.addBtn {
-    width: 60% !important;
-    margin-top: 0;
-}
-.addbtn_group {
-    display: flex;
-    gap: 1.2em;
-    margin-top: -3em;
-    width: 70%;
-    justify-content: center;
+    margin: 0 !important;
 }
 .admin_dash_content_gridWrapper {
     margin: 0em 0 2em 0;
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-.pendingUsers {
-    margin-top: 3em;
 }
 /* .borderBottom {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -294,21 +291,26 @@ a:hover {
     gap: 1.2em;
     justify-content: center;
 }
-.moreBtn, .addBtn, .save_btn, .search_btn {
+.moreBtn, .add_btn, .search_btn {
     background-color: var(--primary_color_1);
     color: #fff;
     padding: 0.5em;
     border-radius: 5px;
     font-size: clamp(0.7em,1.2vw,1.2em);
     white-space: nowrap;
-    font-weight: 600;
-    width: 100%;
-    transition: ease 200ms;
     cursor: pointer;
+    font-weight: 600;
     border: none;
+    width: 100%;
     text-align: center;
 }
-.moreBtn:hover, .deleteBtn:hover, .addBtn:hover, .save_btn:hover, .search_btn:hover {
+.add_btn {
+    max-width: 30%;
+    padding: 0.5em 0.7em !important;
+    white-space: normal;
+    font-size: clamp(0.9em,1.5vw,1.3em) !important; 
+}
+.moreBtn:hover, .deleteBtn, .add_btn:hover, .search_btn:hover {
     background-color: var(--primary_color_2) !important;
     color: #fff !important;
 }
@@ -331,14 +333,6 @@ a:hover {
     .admin_dash_sidebar {
         width: 25%;
     }
-    .admin_dash_content_heading {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 1em;
-    }
-    .addbtn_group {
-        margin-top: -2em;
-    }
 }
 @media (max-width:950px) {
     .admin_dash_content_box {
@@ -350,7 +344,7 @@ a:hover {
     .admin_dash_content_gridBox {
         flex-direction: column;
     }
-    .btn_group, .addbtn_group {
+    .btn_group {
         justify-content: flex-start;
     }
 }
@@ -367,10 +361,6 @@ a:hover {
     .admin_dash_sidebar {
         width: 30%;
     }
-    .addbtn_group {
-        flex-wrap: wrap;
-        width: 100%;
-    }
 }
 @media (max-width:650px) {
     .admin_dash_content_grid {
@@ -380,7 +370,10 @@ a:hover {
     .admin_dash_content_gridBox {
         padding: 1em !important;
     }
-    
+    .admin_dash_content_heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .btn_group {
         flex-wrap: wrap;
     }
@@ -440,104 +433,7 @@ a:hover {
 
 
 
-/* THE POPUP STARTS ///////////////// */
-.generic_popup_wrapper {
-    display: none;
-    position: fixed !important;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* // border: 2px solid red; */
-    overflow-y: scroll;
-    z-index: 9999;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .close_btn {
-    align-self: flex-end;
-    cursor: pointer;
-    margin: 0 1em 0 0;
-    /* border: 2px solid indigo; */
-    font-size: min(2em,3.5em);
-  }
-  .generic_popup {
-    background-color: #fff;
-    /* border: 2px solid blue; */
-    width: clamp(70%,2vw,80%);
-    display: flex;
-    flex-direction: column;
-  }
-  .generic_popup_content {
-    display: flex;
-    gap: 0.3em;
-    justify-content: center;
-    padding-bottom: 1.5em;
-    padding: 1em;
-    flex-direction: column;
-  }
-  .generic_popup_content p {
-    font-size: clamp(1em,3vw,1.8em) !important;
-    font-weight: 600;
-    text-align: center;
-  }
 
-.generic_popup_content form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    /* border: 2px solid blue; */
-}
-.popup_form_group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
-.popup_form_group label {
-    font-size: clamp(0.8em, 2vw, 1.6em) !important;
-    font-weight: 600;
-    margin-left: 1em;
-}
-.popup_form_group input[type="file"] {
-    font-family: var(--primary_font_1) !important;
-    font-size: clamp(0.7em, 2vw, 1.3em);
-    padding: 0.4em;
-}
-.popup_form_group input[type="url"]  {
-    padding: 0.3em 0.6em;
-    color: #3A3D40 !important;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.05), -1px -2px 0 rgba(0, 0, 0, 0.05);
-    font-size: clamp(0.7em, 2vw, 1.3em);
-    font-family: var(--primary_font_1);
-}
-.save_btn {
-    width: 20%;
-    align-self: flex-end;
-}
-  /* THE POPUP ENDS ///////////////// */
-  
-@media (max-width:600px) {
-    .popup_form_group {
-        justify-content: center;
-    }
-    .popup_form_group label {
-        display: none !important;
-    }
-    .popup_form_group input {
-        margin-left: 5em;
-    }
-}
-@media (max-width:400px) {
-    .popup_form_group input {
-        margin-left: 3em;
-    }
-}
 
 /* PAGINATION STYLING //////////// */
 .pagination {

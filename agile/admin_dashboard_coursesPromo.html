@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#F3F3F3">
-    <link rel="stylesheet" href="css/admin_dashboard_course_pre-readings.css">
+    <link rel="stylesheet" href="css/admin_dashboard_coursesPromo.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -47,7 +47,7 @@
                 </div>
 
 
-                <a href="admin_dashboard_courses.html" class="active">
+                <a href="admin_dashboard_courses.html">
                     <i class="fa-solid fa-book"></i>
                     <p>Courses</p>
                 </a>
@@ -68,7 +68,7 @@
                         <p><b>General Promo</b></p>
                     </a>
                     
-                    <a href="admin_dashboard_coursesPromo.html">
+                    <a href="admin_dashboard_coursesPromo.html" class="active">
                         <i class="fa-solid fa-angle-right"></i>
                         <p><b>Course Promo</b></p>
                     </a>
@@ -108,12 +108,13 @@
         </script>
 
 
+
         <div class="admin_dash_content">
             <div class="admin_dash_section">Courses</div>
 
             <div class="admin_dash_content_box">
                 <div class="admin_dash_content_heading">
-                    <p><b>Course Pre-readings</b></p>
+                    <p><b>Current Courses</b></p>
 
                     <form action="">
                         <label for="search">
@@ -126,36 +127,66 @@
                     </form>
                 </div>
 
-                <div class="addbtn_group">
-                    <div onclick="openForm()" class="addBtn">Add Course Pre-reading File</div>
-
-                    <div onclick="openLinkForm()" class="addBtn">Add Course Pre-reading Link</div>
-                </div>
-
                 <div class="admin_dash_content_gridWrapper borderBottom" id="activeUsers">
 
                     <div class="admin_dash_content_grid">
-                        <div class="active_user_box admin_dash_content_gridBox">
-                            <p>Design Thinking & User Experience Research-1</p>
+                        <div class="admin_dash_content_gridBox">
+                            <p>Design Thinking & User Experience Research</p>
 
                             <div class="btn_group">
-                              <a href="#" class="moreBtn deleteBtn">Delete Course Pre-reading</a>
+                              <a href="admin_dashboard_coursesPromo_daily.html" class="moreBtn">Daily Promo</a>  
+
+                              <a href="admin_dashboard_coursesPromo_enrollment.html" class="moreBtn">Enrollment Promo</a>  
                             </div>
                         </div>
 
-                        <div class="active_user_box admin_dash_content_gridBox">
-                            <p>Design Thinking & User Experience Research-1</p>
+                        <div class="admin_dash_content_gridBox">
+                            <p>Scrum Mastery + AgileProduct Delivery</p>
 
                             <div class="btn_group">
-                              <a href="#" class="moreBtn deleteBtn">Delete Course Pre-reading</a>
+                                <a href="admin_dashboard_coursesPromo_daily.html" class="moreBtn">Daily Promo</a>  
+  
+                                <a href="admin_dashboard_coursesPromo_enrollment.html" class="moreBtn">Enrollment Promo</a>  
+                            </div>
+                        </div>
+                        
+                        <div class="admin_dash_content_gridBox">
+                            <p>Business Analyst <b>(Immersion)</b></p>
+
+                            <div class="btn_group">
+                                <a href="admin_dashboard_coursesPromo_daily.html" class="moreBtn">Daily Promo</a>  
+  
+                                <a href="admin_dashboard_coursesPromo_enrollment.html" class="moreBtn">Enrollment Promo</a>  
                             </div>
                         </div>
 
-                        <div class="active_user_box admin_dash_content_gridBox">
-                            <p>Design Thinking & User Experience Research-1</p>
+                        <div class="admin_dash_content_gridBox">
+                            <p>Data Analytics <b>(Immersion)</b></p>
 
                             <div class="btn_group">
-                              <a href="#" class="moreBtn deleteBtn">Delete Course Pre-reading</a>
+                                <a href="admin_dashboard_coursesPromo_daily.html" class="moreBtn">Daily Promo</a>  
+  
+                                <a href="admin_dashboard_coursesPromo_enrollment.html" class="moreBtn">Enrollment Promo</a>  
+                            </div>
+                        </div>
+
+                        <div class="admin_dash_content_gridBox">
+                            <p>Product Management <b>(Immersion)</b></p>
+
+                            <div class="btn_group">
+                                <a href="admin_dashboard_coursesPromo_daily.html" class="moreBtn">Daily Promo</a>  
+  
+                                <a href="admin_dashboard_coursesPromo_enrollment.html" class="moreBtn">Enrollment Promo</a>  
+                            </div>
+                        </div>
+
+                        <div class="admin_dash_content_gridBox">
+                            <p>Product Design & Development</p>
+
+                            <div class="btn_group">
+                                <a href="admin_dashboard_coursesPromo_daily.html" class="moreBtn">Daily Promo</a>  
+  
+                                <a href="admin_dashboard_coursesPromo_enrollment.html" class="moreBtn">Enrollment Promo</a>  
                             </div>
                         </div>
                     </div>
@@ -183,73 +214,5 @@
         </div>
     </div>
     
-
-        <!-- THE POPUP BEGINS ////////////////////// -->
-
-        <div class="generic_popup_wrapper" id="generic_popup">
-
-            <div class="generic_popup">
-                <div onclick="closeForm()" class="close_btn">__</div>
-    
-                <div class="generic_popup_content">
-                    <p>Add New Course Pre-reading</p>
-                    <form action="">
-                        <div class="popup_form_group">
-                            <label for="pre-reading">Add Course Pre-reading:</label>
-    
-                            <input type="file" name="pre-reading" id="pre-reading" required>
-                        </div>
-
-                        <button class="save_btn" type="submit">Add</button>
-                    </form>
-                </div>
-            
-            </div>
-    
-        </div>
-
-        <div class="generic_popup_wrapper" id="genericLink_popup">
-
-            <div class="generic_popup">
-                <div onclick="closeLinkForm()" class="close_btn">__</div>
-    
-                <div class="generic_popup_content">
-                    <p>Add New Course Pre-reading</p>
-                    <form action="">
-                        <div class="popup_form_group">
-                            <label for="urlInput">Add Course Pre-reading:</label>
-    
-                            <input type="url" name="urlInput" id="urlInput">
-                        </div>
-
-                        <button class="save_btn" type="submit">Add</button>
-                    </form>
-                </div>
-            
-            </div>
-    
-        </div>
-    
-        <script>
-            function openForm() {
-              document.getElementById("generic_popup").style.display = "flex";
-            }
-            
-            function closeForm() {
-              document.getElementById("generic_popup").style.display = "none";
-            }
-        </script>
-
-        <script>
-            function openLinkForm() {
-            document.getElementById("genericLink_popup").style.display = "flex";
-            }
-            
-            function closeLinkForm() {
-            document.getElementById("genericLink_popup").style.display = "none";
-            }
-        </script>
-    
-    <!-- THE POPUP ENDS ////////////////////// -->
 </body>
 </html>
