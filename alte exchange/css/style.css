@@ -755,7 +755,8 @@ header .swiper {
     width: clamp(0.6em, 2vw, 1.2em);
 }
 .trade_icon {
-    background-color: rgba(255, 204, 0, 0.4);
+    /* background-color: rgba(255, 204, 0, 0.4); */
+    background: linear-gradient(to left, rgba(254, 191, 1, 0.1), rgba(254, 119, 1, 0.1), rgba(161, 75, 0, 0.1), rgba(32, 15, 0, 0.1));
     padding: 0.5em 0.9em;
     border-radius: 50%;
 }
