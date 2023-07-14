@@ -648,6 +648,9 @@ header .swiper {
         padding: 4em 2em;
         flex-direction: column-reverse;
     }
+    .phone_content {
+        width: 100%;
+    }
 }
 @media (max-width:650px) {
     .phone_img_box {
