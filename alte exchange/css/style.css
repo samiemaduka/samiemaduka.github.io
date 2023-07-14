@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 :root {
     --hue: 185;
@@ -12,9 +13,13 @@
     --primary-color-1: #FEC001;
     --primary-font-1: 'Manrope';
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     /* background: #fff url(../img/backgroundmain.png) no-repeat fixed top/cover; */
     padding: 0;
+    scroll-behavior: smooth;
     margin: 0;
     font-family: var(--primary-font-1);
 }
@@ -47,7 +52,7 @@ body {
     background: transparent;
     border: none;
     position: relative;
-    color: #f0f0f0;
+    color: #fff !important;
     cursor: pointer;
     z-index: 1;
     padding: 10px 1.5em;
@@ -184,6 +189,20 @@ display:none !important;
     font-size: clamp(0.6em, 2vw, 1.1em);
     text-decoration: none;
     font-weight: 600;
+    position: relative;
+}
+.nav_links a::before {
+    content: "";
+    bottom: -0.2em;
+    clear: both;
+    width: 0%;
+    height: 5px;
+    transition: 200ms ease;
+    background-color: #000;
+    position: absolute;
+}
+.nav_links a:hover::before {
+    width: 100% !important;
 }
 .nav_button_group {
     display: flex;
@@ -240,7 +259,7 @@ display:none !important;
     bottom: 0;
     z-index: 9999999;
     width: 100%;
-    padding-top: 4.5em;
+    padding-top: 5.5em;
     font-size: clamp(0.7em,4vw, 0.9em);
     transform: translateX(100%);
     transition: 400ms ease-in-out;
@@ -264,6 +283,10 @@ display:none !important;
     align-items: center;
     cursor: pointer;
 }
+.sidebarMenuInner li:hover {
+    transform: scale(1.05);
+    transition: 200ms ease;
+}
 .sidebarMenuInner li span{
     display: block;
     font-size: 14px;
@@ -277,6 +300,10 @@ display:none !important;
     cursor: pointer;
     margin-left: 0.4em;
     text-decoration: none;
+}
+.sidebarMenuInner li i {
+    font-size: clamp(0.7em,4vw, 0.9em);
+    color: #000;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
@@ -405,7 +432,7 @@ header {
     -webkit-background-clip: text;
 }
 .header_content p {
-    font-size: clamp(0.6em, 2vw, 1.4em);
+    font-size: clamp(0.8em, 2vw, 1.4em);
 }
 .create_btn, .content p {
     background-color: #000;
@@ -413,7 +440,7 @@ header {
     padding: 0.5em 1em;
     margin-top: 1em;
     border: 1px solid black;
-    font-size: clamp(0.6em, 2vw, 1.4em);
+    font-size: clamp(0.8em, 2vw, 1.4em);
     text-decoration: none;
 }
 header .swiper {
@@ -468,8 +495,12 @@ header .swiper {
         justify-content: center ;
         height: auto;
     }
+    header {
+        background: url(../img/dreamstime_l_178512156.jpg) no-repeat scroll center/cover;
+    }
     .header_content {
         padding: 5em 3em;
+        backdrop-filter: blur(20px);
     }
     .header_content .button-86 {
         padding: 0.3em 0.8em !important;
@@ -503,7 +534,7 @@ header .swiper {
     width: 100%;
 }
 .about_content h2 {
-    font-size: clamp(1em, 2.5vw, 2em);
+    font-size: clamp(1.2em, 2.5vw, 2em);
     font-weight: 800;
 }
 .about_content h2 i {
@@ -514,7 +545,7 @@ header .swiper {
     -webkit-background-clip: text;
 }
 .about_content p {
-    font-size: clamp(0.7em, 1.5vw, 1.2em);
+    font-size: clamp(0.8em, 1.5vw, 1.2em);
 }
 .about {
     display: flex;
@@ -591,7 +622,7 @@ header .swiper {
     padding: 0.5em 0.9em;
 }
 .mySwiper_mission2 .swiper-slide p {
-    font-size: clamp(0.6em, 1.5vw, 1.2em) !important;
+    font-size: clamp(0.8em, 1.5vw, 1.2em) !important;
     font-weight: normal;
 }
 @media (max-width:800px) {
@@ -635,11 +666,11 @@ header .swiper {
     width: 80%;
 }
 .phone_content h3 {
-    font-size: clamp(0.8em, 3vw, 2.5em);
+    font-size: clamp(1em, 3vw, 2.5em);
     font-weight: 800;
 }
 .phone_content p {
-    font-size: clamp(0.6em, 2vw, 1.2em);
+    font-size: clamp(0.8em, 2vw, 1.2em);
 }
 @media (max-width:900px) {
     .phone_wrapper_inner {
@@ -686,7 +717,7 @@ header .swiper {
     -webkit-background-clip: text;
 }
 .trade_content p {
-    font-size: clamp(0.6em, 2vw, 1.2em);
+    font-size: clamp(0.8em, 2vw, 1.2em);
 }
 .trade_swiper_wrapper {
     display: flex;
@@ -708,11 +739,6 @@ header .swiper {
     /* border: 2px solid green; */
     align-items: center !important;
     justify-content: center !important;
-}
-.mySwiper_trade .swiper-button-next:after,.mySwiper_trade .swiper-button-prev:after {
-    font-size: 0.8em !important;
-    color: #3D3D3D;
-    background-color: #fff !important;
 }
 .mySwiper_trade .swiper-slide {
     display: flex;
@@ -739,7 +765,7 @@ header .swiper {
     align-items: center;
 }
 .trade_bold, .trade_opac {
-    font-size: clamp(0.6em, 1.5vw, 1.2em);
+    font-size: clamp(0.8em, 1.5vw, 1.2em);
     font-weight: bold;
 } 
 .trade_opac {
@@ -816,7 +842,7 @@ header .swiper {
     font-weight: 800;
 }
 .giftcard_content_box p {
-    font-size: clamp(0.7em, 2vw, 1.5em);
+    font-size: clamp(0.8em, 2vw, 1.5em);
 }
 .giftcard_content ul {
     display: flex;
@@ -832,7 +858,7 @@ header .swiper {
     display: flex;
     align-items: center;
     background: url(../img/backgroundmain.png) no-repeat scroll center/cover;
-    font-size: clamp(0.6em, 2vw, 1.3em);
+    font-size: clamp(0.8em, 2vw, 1.3em);
     justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
