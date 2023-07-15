@@ -880,7 +880,7 @@ header .swiper {
     padding: 0.7em 1em;
     display: flex;
     align-items: center;
-    background: url(../img/backgroundmain.png) no-repeat scroll center/cover;
+    background: url(../img/backgroundmain3.png) no-repeat scroll center/cover;
     font-size: clamp(0.8em, 2vw, 1.3em);
     justify-content: center;
     border-radius: 10px;
@@ -921,6 +921,7 @@ header .swiper {
     margin: 0 auto;
     padding: 1rem 4rem;
     grid-auto-columns: 40% 60%;
+    
 }
 .faq-section-box1{
     grid-area: box2;
@@ -939,8 +940,9 @@ header .swiper {
     justify-content: center;
 }
 .accordion-item {
-    background-color: var(--primary_color_4);
+    background-color: rgba(255, 255, 255, 0.3);
     color: black;
+    backdrop-filter: blur(20px);
     margin: 1rem 0;
     border: 1px solid black;
 }
@@ -1048,6 +1050,7 @@ header .swiper {
         grid-template-areas: 'box1' 'box2';
         grid-auto-columns: 1fr auto;
         grid-auto-rows: 1fr auto;
+        background: url(../img/backgroundmain2.png) no-repeat scroll left/cover;
         margin: -3em 0 0 0;
         padding: 1em 2em;
     }
