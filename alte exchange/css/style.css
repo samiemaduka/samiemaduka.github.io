@@ -431,8 +431,8 @@ header {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.header_content p {
-    font-size: clamp(1em, 2vw, 1.4em);
+.header_content p, .header_content .button-86 {
+    font-size: clamp(1em, 2vw, 1.4em) !important;
 }
 .create_btn, .content p {
     background-color: #000;
@@ -491,7 +491,7 @@ header .swiper {
         display: none !important;
     }
     header .button-86  {
-        width: 100% !important;
+        width: 95% !important;
     }
     .header_wrapper {
         display: flex;
