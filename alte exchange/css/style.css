@@ -421,7 +421,7 @@ header {
     align-items: flex-start;
 }
 .header_content h1 {
-    font-size: clamp(1.5em, 5vw, 4em);
+    font-size: clamp(2em, 5vw, 4em);
     font-weight: 900;
 }
 .header_content h1 i {
@@ -774,11 +774,7 @@ header .swiper {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< Updated upstream
-    padding: 0.7em 0.7em;
-=======
     padding: 0.8em 0.9em;
->>>>>>> Stashed changes
     border-radius: 50%;
 }
 .trade_img {
@@ -813,8 +809,8 @@ header .swiper {
     .trade_content h4, .trade_content P {
         width: 80%;
     }
-    .trade_img {
-        /* display: none; */
+    .trade_img img{
+        width: 100%;
     }
 }
 @media (max-width: 800px) {
