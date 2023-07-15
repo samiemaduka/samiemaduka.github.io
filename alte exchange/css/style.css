@@ -504,7 +504,7 @@ header .swiper {
     }
     .header_content {
         gap: 1em;
-        padding: 6em 3em 3em 3em;
+        padding: 6em 2em 3em 2em;
         backdrop-filter: blur(20px);
     }
     .header_content .button-86 {
