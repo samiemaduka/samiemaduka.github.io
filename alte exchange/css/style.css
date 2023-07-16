@@ -983,7 +983,7 @@ header .swiper {
 .accordion-item-body-content {
     padding: 1rem;
     line-height: 1.5rem;
-    font-size:clamp(0.65rem, 2.5vw, 0.875rem);
+    font-size:clamp(0.9em, 2.5vw, 1em);
     border-radius: 10px !important;
     background-color: rgba(255, 255, 255, 0.534);
 }
