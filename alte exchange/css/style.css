@@ -665,6 +665,9 @@ header .swiper {
     justify-content: center;
     align-items: center;
 }
+.phone_img_box img {
+    background-color: #fff;
+}
 .phone_content {
     display: flex;
     flex-direction: column;
