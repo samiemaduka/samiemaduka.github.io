@@ -79,9 +79,9 @@ body {
   .button-86::before {
     transform: translate(0%, 0%);
     width: 100%;
+    border-radius: 10px !important;
     height: 100%;
     background: #28282d;
-    /* border-radius: 10px; */
   }
   
 
@@ -107,6 +107,7 @@ body {
     transform: translate(0, 0) !important;
     width: 100% !important;
     height: 100% !important;
+    border-radius: 10px !important;
     background: #ffffff15;
   }
   .button-86:active::after {
@@ -156,6 +157,7 @@ display:none !important;
     left: 0;
     padding: 0.5em 2em;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .bg_nav .logo {
     display: flex;
@@ -401,7 +403,6 @@ header {
     height: 90vh;
     align-content: center;
     align-items: center;
-    /* backdrop-filter: blur(10px); */
     justify-items: center;
 }
 .atropos-scale, .atropos-rotate, .atropos-inner, header {
@@ -464,6 +465,7 @@ header .swiper {
   .content {
     background-color: transparent !important;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     height: 30%;
     position: absolute;
     left: 0;
@@ -506,6 +508,7 @@ header .swiper {
         gap: 1em;
         padding: 6em 2em 3em 2em;
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
     .header_content .button-86 {
         padding: 0.3em 0.8em !important;
@@ -530,7 +533,6 @@ header .swiper {
     grid-template-columns: 40% 60%;
     padding: 10em 4em 4em 3em;
     gap: 2em;
-    /* backdrop-filter: blur(30px); */
 }
 .about_content {
     display: flex;
@@ -570,7 +572,7 @@ header .swiper {
     padding: 1.5em 0.7em !important;
     align-items: center;
     width: 100%;
-    border-radius: 0px;
+    border-radius: 5px;
     background-color: #f5f5f5;
     gap: 2em !important;
 }
@@ -582,7 +584,7 @@ header .swiper {
     cursor: pointer;
     padding: 1em 0.8em;
     color: #000;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 .mySwiper_mission .swiper-slide p {
     font-size: clamp(0.8em, 2vw, 1em) !important;
@@ -656,7 +658,6 @@ header .swiper {
     grid-template-columns: 40% 60%;
     padding: 6em 2em 0 2em;
     align-items: center;
-    /* backdrop-filter: blur(3px); */
     justify-items: center;
 }
 .phone_img_box {
@@ -854,6 +855,7 @@ header .swiper {
     padding: 5em;
     gap: 2em;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .giftcard_content_box {
     display: flex;
@@ -918,6 +920,7 @@ header .swiper {
     grid-template-areas: 'box1 box2';
     gap: 1rem;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin: 0 auto;
     padding: 1rem 4rem;
     grid-auto-columns: 40% 60%;
@@ -943,7 +946,9 @@ header .swiper {
     background-color: rgba(255, 255, 255, 0.3);
     color: black;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     margin: 1rem 0;
+    border-radius: 10px;
     border: 1px solid black;
 }
 .accordion-item-header {
@@ -951,8 +956,8 @@ header .swiper {
     min-height: 3rem;
     line-height: 1.25rem;
     display: flex;
-    font-weight: 600;
-    font-size:clamp(0.8rem, 2.5vw, 1rem);
+    font-weight: 800;
+    font-size:clamp(1em, 2vw, 1.3em);
     text-transform: uppercase;
     align-items: center;
     position: relative;
@@ -979,6 +984,7 @@ header .swiper {
     padding: 1rem;
     line-height: 1.5rem;
     font-size:clamp(0.65rem, 2.5vw, 0.875rem);
+    border-radius: 10px !important;
     background-color: rgba(255, 255, 255, 0.534);
 }
 .accordion-item-body-content a{
@@ -1100,7 +1106,7 @@ header .swiper {
 .footer__head{
     font-size:clamp(0.8rem, 3vw, 1.6rem);
     font-weight: 700;
-    color: var(--primary_color_1);
+    color: var(--primary-color-1);
     font-family: var(--font-3-poppins);
     padding-bottom: 6px;
 }
