@@ -1294,8 +1294,9 @@ header .swiper {
     color: #000;
     background-color: white;
     border-radius: 50%;
-    display: grid;
-    place-items: center;    
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     font-size: clamp(1.2em, 2vw, 1.3em) !important;
 }
 @media (max-width:700px) {
