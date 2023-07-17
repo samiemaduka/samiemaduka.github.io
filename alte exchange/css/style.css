@@ -254,7 +254,6 @@ display:none !important;
 #sidebarMenu {
     position: fixed;
     right: 0;
-    height: 100%;
     top: -1em;
     display: none;
     overflow-y: scroll;
@@ -1086,11 +1085,11 @@ header .swiper {
 
 .footer-section{
     padding: 3rem 2rem;
-    background-color: var(--primary_color_4);
+    background-color: #000;
 }
 .footer{
     margin: 4em auto 0 auto;
-    color: black;
+    color: #fff;
     display: grid;
     grid-template-areas: 'box1 box3 box4';
     grid-auto-rows: 1fr 1fr 1fr;
@@ -1167,7 +1166,7 @@ header .swiper {
 }
 .footer-touch__text{
     font-size:clamp(0.9em, 1.5vw, 1.3em);
-    color: #000;
+    color: #fff;
     /* max-width: 30ch; */
 }
 .footer-location{
@@ -1201,13 +1200,13 @@ header .swiper {
 }
 .footer-link__list{
     font-size: clamp(1em, 2vw, 1.3em);
-    color: #000;
+    color: #fff;
     list-style: none;
     transition: 200ms ease-in-out;
     cursor: pointer;
 }
 .footer-link__list:hover{
-    color: #000;
+    color: var(--primary-color-1);
     text-decoration: underline;
 
 }
@@ -1237,7 +1236,8 @@ header .swiper {
 }
 @media (max-width:500px) {
     .footer-section{
-        padding:0 1rem 1rem;
+        padding: 0.1em 1rem !important;
+        margin: 2em 0 0 0;
     }
     .footer{
         grid-template-areas:  'box1' 'box3' 'box2' 'box4';
@@ -1269,12 +1269,12 @@ header .swiper {
     display: flex;
     justify-content: space-around;
     padding: 2em 1em 1em 1em;
-    background-color: var(--primary_color_4);
+    background-color: #000;
     align-items: center;
 }
 .copyright__text{
     font-size: clamp(0.8em, 2vw, 1.3em);
-    color: var(--primary_color_1);
+    color: #fff;
 }
 .copyright__link{
     color: inherit;
@@ -1291,7 +1291,7 @@ header .swiper {
 .copyright__icon{
     width: 1.6rem;
     height: 1.6rem;
-    color: var(--primary_color_1);
+    color: #000;
     background-color: white;
     border-radius: 50%;
     display: grid;
@@ -1303,6 +1303,8 @@ header .swiper {
         flex-direction: column;
         align-items: start;
         gap: 1rem;
+    }
+    .copyright__text {
         width: 80%;
     }
 }
