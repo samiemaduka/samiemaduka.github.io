@@ -1286,7 +1286,10 @@ header .swiper {
 }
 .copyright__icons{
     display: flex;
-    gap: .6rem;
+    gap: 1.2rem;
+}
+.copyright__icons a {
+    text-decoration: none;
 }
 .copyright__icon{
     width: 1.6rem;
