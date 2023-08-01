@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#085924">
+  <script src="https://kit.fontawesome.com/8923a9ad68.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" integrity="sha512-KMPrOyKoxZ63TdrHyYlRKwGX6eWGe98FYBjv65BWaH9E2GoE9VXY+Mmj3WKWwBTchwj64ZeDlYjEkN3A6uJyKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    $(window).on("load",function(){
+        $(".page_loader").fadeOut("slow");
+    });
+</script>
+  <title>Crypto FTM</title>
+  <link rel="icon" type="image/x-icon" href="img/2 (1).ico">
+</head>
+<body>
+
+<!--   
+<div class="page_loader" id="page_loader">
+  <div class="page_loader_anim">
+    <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+      <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+  </div>
+</div> -->
+
+<section class="blackrock">
+
+<!-- BEGGINING OF NAV SECTION///////////////////////////////// -->
+<section class="nav">
+    <div class="nav-box1">
+      <img src="img/logo3.png" alt="" class="nav__logo">
+      <p class="nav__text">Crypto FTM</p>
+    </div>
+
+  <div>
+    <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-headphones-simple nav__icon"></i></button>
+  </div>
+</section>
+<!-- END OF NAV SECTION/////////////////////////////////////// -->
+
+<!-- BEGGINING OF SIGNUP ///////////////////////////////////// -->
+<section class="signup">
+  <section class="earning-section">
+
+  <div class="earning">
+    <i class="fa-brands fa-bitcoin earning__icon"></i>
+  <div class="earning__desc">
+    <p class="earning__text1">Earning</p>
+    <p class="earning__text2">Mia from ZAMBIA has just Earned <b>$5000</b></p>
+  </div>
+  </div>
+
+  </section>
+  <div class="signup-box1">
+    <div class="signup__desc">
+      <h3 class="signup__head">invest crypto, make money! <br> dream it... achieve it</h3>
+      <p class="signup__text">User login to enjoy advanced market quotations. Easy access to a wide range of investment opportunities and Direct control over investments</p>
+    </div>
+    <!-- <div> <i class="fa-solid fa-bitcoin-sign signup__img"></i></div> -->
+  </div>
+  <div><a href=""><button class="signup__btn">sign in <i class="fa-solid fa-user-astronaut signup__icon"></i></button></a></div>
+</section>
+
+<!-- END OF SIGNUP///////////////////////////////////////// -->
+
+</section>
+
+<div class="trade">
+  <p class="trade__text">market</p>
+  <i class="fa-solid fa-chevron-down trade__icon"></i>
+  <p><a href="" class="trade__link">trade orders</a></p>
+</div>
+
+<!-- BEGGINING OF MARKET///////////////////////////////////// -->
+<section class="market">
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Financial Markets</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "12M",
+  "showChart": true,
+  "locale": "en",
+  "width": "100%",
+  "height": "100%",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showSymbolLogo": false,
+  "showFloatingTooltip": true,
+  "plotLineColorGrowing": "rgba(0, 0, 0, 1)",
+  "plotLineColorFalling": "rgba(255, 255, 255, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "rgba(106, 109, 120, 1)",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "FOREXCOM:SPXUSD",
+          "d": "S&P 500"
+        },
+        {
+          "s": "FOREXCOM:NSXUSD",
+          "d": "US 100"
+        },
+        {
+          "s": "FOREXCOM:DJI",
+          "d": "Dow 30"
+        },
+        {
+          "s": "INDEX:NKY",
+          "d": "Nikkei 225"
+        },
+        {
+          "s": "INDEX:DEU40",
+          "d": "DAX Index"
+        },
+        {
+          "s": "FOREXCOM:UKXGBP",
+          "d": "UK 100"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Futures",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "S&P 500"
+        },
+        {
+          "s": "CME:6E1!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Futures"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UB1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:FGBL1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:FBTP1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:FGBM1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD",
+          "d": "EUR/USD"
+        },
+        {
+          "s": "FX:GBPUSD",
+          "d": "GBP/USD"
+        },
+        {
+          "s": "FX:USDJPY",
+          "d": "USD/JPY"
+        },
+        {
+          "s": "FX:USDCHF",
+          "d": "USD/CHF"
+        },
+        {
+          "s": "FX:AUDUSD",
+          "d": "AUD/USD"
+        },
+        {
+          "s": "FX:USDCAD",
+          "d": "USD/CAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<!-- TESTIMONIALS BEGIN ////////////// -->
+<div class="testimonials">
+  <div class="swiper_testimonials_wrapper">
+    <div class="swiper mySwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slider_background slider_background1">
+            <div class="swiper_testimonials">
+              <p class="testimonial_box1">"Crypto FTM has exceeded my expectations in being reliable, consistent, and client-friendly. Relationship Managers also do their best to ensure client satisfaction.” 
+              </p>
+              <img src="test_img1.jpg" class="testimonial_box2">
+              <p class="testimonial_name testimonial_box3">joseph russo</p>
+              <p class="testimonial_occupation testimonial_box4">manager, randall installations</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider_background slider_background2">
+            <div class="swiper_testimonials">
+              <p class="testimonial_box1">“Crypto FTM Investment has an amazing team that worked relentlessly on our behalf to achieve a superior outcome for our practice. The Crypto FTM team delivered on the expectations set for us early on in our process. We are very thankful for their industry expertise and professionalism.”</p>
+              <img src="test_img8.jpg" class="testimonial_box2">
+              <p class="testimonial_name testimonial_box3">sandra parsons</p>
+              <p class="testimonial_occupation testimonial_box4">COO, dunn pharmaceuticals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider_background slider_background3">
+            <div class="swiper_testimonials">
+              <p class="testimonial_box1">The Crypto FTM Customer Service has been consistent in handling issues relating to my investments. They continue to cement their spot as an organized and well managed investment company.”</p>
+              <img src="test_img4.jpg" class="testimonial_box2">
+              <p class="testimonial_name testimonial_box3">david connally</p>
+              <p class="testimonial_occupation testimonial_box4">business owner</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider_background slider_background3">
+            <div class="swiper_testimonials">
+              <p class="testimonial_box1">“It’s been a satisfactory journey with Crypto FTM within the last year and a half and I still believe that this relationship will still be rewarding for us all in the years to come.”</p>
+              <img src="test_img3.jpg" class="testimonial_box2">
+              <p class="testimonial_name testimonial_box3">michael callahan</p>
+              <p class="testimonial_occupation testimonial_box4">chairman, callahan rentals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider_background slider_background3">
+            <div class="swiper_testimonials">
+              <p class="testimonial_box1">“You guys are really doing a good job. I am glad I decided to invest with you. Your use of modern technology is awesome, making it seamless to transact with you guys. Your homepage keeps me updated on market trend.”</p>
+              <img src="test_img7.jpg" class="testimonial_box2">
+              <p class="testimonial_name testimonial_box3">aaron reyes</p>
+              <p class="testimonial_occupation testimonial_box4">engineer, JIK constructions</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider_background slider_background3">
+            <div class="swiper_testimonials">
+                <p class="testimonial_box1">“I have been with the firm because of their exceptional relationship management, prompt response to my payments, satisfying technology and amazing customer service. I will to refer more persons to join me in enjoying the best products and services Crypto FTM offers-”</p>
+                <img src="test_img9.jpg" class="testimonial_box2">
+                <p class="testimonial_name testimonial_box3">donald leon</p>
+                <p class="testimonial_occupation testimonial_box4">manager, leon timber</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </div>
+</div>
+<!-- TESTIMONIALS END /////////////// -->
+
+
+</section>
+<!-- END OF MARKET//////////////////////////////////////////  -->
+
+<!-- BEGGINING OF BOTTOM-NAV //////////////////////////////// -->
+<section class="bottom-nav">
+  <div class="bottom-nav-box">
+    <a href="index.html" class="bottom-nav__icon active"><i class="fa-sharp fa-solid fa-house"></i><p class="bottom-nav__text">home</p></a>
+    <a href="news.html" class="bottom-nav__icon"><i class="fa-sharp fa-solid fa-newspaper"></i><p class="bottom-nav__text">news</p></a>
+    <a href="funding .html" class="bottom-nav__icon"><i class="fa-solid fa-money-bill-trend-up"></i><p class="bottom-nav__text">funding</p></a>
+    <a href="" class="bottom-nav__icon"><i class="fa-solid fa-user"></i><p class="bottom-nav__text">mine</p></a>
+  </div>
+</section>
+<!-- END OF BOTTOM-NAV ////////////////////////////////////-->
+
+<!-- BEGGINING OF POP-UP///////////////////////////////////// -->
+<div id="fade" class="overlay"></div>
+<div class="popup-box">
+  <div class="popup">
+    <h4 class="popup__head">platform announcement</h4>
+    <img class="popup__img" src="img/logo2.png" alt="">
+    <p class="popup__text">We help you select what truly satisfies your diversified finances
+      Demand for quality investment strategies, we provide you with investment full
+      Exclusive opportunities for the flagship products of the world's top asset management companies.</p>
+  </div>
+  <span class="span">x</span>
+</div>
+<!-- END OF POP-UP////////////////////////////////////// -->
+
+ <!-- BEGGINING OF CUSTOMER-CARE//////////////////////////// -->
+
+ <section id="customer" class="customer-care" >
+  <h4 class="customer__head">customer service</h4>
+  <div class="customer__desc">
+      <a class="customer__link" href=""><i class="fa-brands fa-whatsapp customer__icon"></i> <p>+44 7961 750697</p></a>
+      <a class="customer__link" href=""><i class="fa-brands fa-telegram customer__icon"></i> <p>+44 7961 750697</p></a>
+  </div>
+
+  <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">close </button>
+</section>
+
+<!-- END OF CUSTOMER-CARE///////////////////////////////// -->
+
+
+<script src="js/index.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+</body>
+</html>
