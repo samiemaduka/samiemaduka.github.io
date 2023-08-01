@@ -17,7 +17,7 @@ btnClose.onclick = function () {
 
 // sidebar javascript starts
 function openNav() {
-  document.getElementById("customer").style.height = "50vh";
+  document.getElementById("customer").style.height = "70vh";
   document.getElementById("main").style.marginBottom = "0";
 }
 function closeNav() {

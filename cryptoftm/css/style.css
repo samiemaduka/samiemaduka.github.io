@@ -305,7 +305,8 @@ body{
     background-color:white;
     background-image:linear-gradient(to right, #000000 , #0000009d, rgb(0, 0, 0) ), url(../img/hero_img5.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     transform: translateY(2rem);
 
 }
@@ -335,9 +336,11 @@ body{
     font-family:var(--font-3-Rajdhani);
     font-size: clamp(1.5rem, 4.4vw, 4.7rem);
     padding-top: .5rem;
+    /* border: 2px solid red; */
     padding-bottom: 1rem;
     line-height: 1;
     letter-spacing: 1px;
+    width: 80%;
 }
 .signup__text{
     color: rgb(211, 211, 211);
@@ -348,8 +351,8 @@ body{
     /* text-align: left; */
 }
 .signup__btn{
-    width:700px;
-    padding: .5rem .2rem;
+    width:100%;
+    padding: .5rem 2rem;
     align-self: center;
     background-color:#BF7E04;
     backdrop-filter: blur(2rem);
@@ -387,9 +390,9 @@ body{
     .signup__desc{
         padding-left: 1rem;
     }
-    .signup__head{
+    /* .signup__head{
         width: 11ch;
-    }
+    } */
     .signup__img{
         /* width: 85%; */
         height: auto;
@@ -686,7 +689,7 @@ body{
   margin: 0 auto 8rem;
 }
 .swiper_testimonials_wrapper{
-  width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   padding: 1em 0 1em;
   background-color: #000000;
