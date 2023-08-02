@@ -73,7 +73,7 @@
   }
   
   .page_loader svg.tea {
-      --secondary: #085924;
+      --secondary: #BF7E04;
     }
     .page_loader  svg.tea #teabag {
       transform-origin: top center;
@@ -395,3 +395,52 @@
 }
 /* END OF BOTTOM-NAV SECTION/////////////////////////////////// */
 
+.earning-section{
+  border: 1px solid white;
+  /* width: fit-content; */
+  /* margin: 0 auto; */
+  /* margin: 0 3rem; */
+  backdrop-filter: blur(3rem);
+  width: 100%;
+  /* position: fixed; */
+  /* z-index:2000; */
+  /* top: 4em; */
+  /* left: 2em; */
+}
+.earnSwiper {
+  width: 400px;
+  background-color: #000;
+  /* height: 200px; */
+  position: fixed !important;
+  z-index:2000;
+  top: 4em;
+  left: 2em;
+}
+.earning{
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-around; */
+  padding: .8rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.earning__icon{
+  color: var(--primary_color_3);
+  font-size: 2.8rem;
+}
+.earning__desc{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.earning__text1{
+  color: rgb(209, 209, 209);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-3-Rajdhani);
+}
+.earning__text2{
+  color: white;
+  font-size: 0.8rem;
+}

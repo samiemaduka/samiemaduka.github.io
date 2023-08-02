@@ -62,7 +62,7 @@ body{
 }
 
 .page_loader svg.tea {
-    --secondary: #085924;
+    --secondary: #BF7E04;
   }
   .page_loader  svg.tea #teabag {
     transform-origin: top center;

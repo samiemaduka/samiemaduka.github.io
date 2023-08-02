@@ -75,7 +75,7 @@ body{
   }
   
   .page_loader svg.tea {
-      --secondary: #085924;
+      --secondary: #BF7E04;
     }
     .page_loader  svg.tea #teabag {
       transform-origin: top center;
@@ -210,8 +210,8 @@ body{
     }
 
 .blackrock{
-    background-color: var(--primary_color_1);
-    background: linear-gradient(to bottom, #000000, #BF7E04);
+    /* background-color: var(--primary_color_1);
+    background: linear-gradient(to bottom, #000000, #BF7E04); */
     max-width: 60rem;
     margin: 0 auto;
 }
@@ -261,9 +261,22 @@ body{
   border: 1px solid white;
   /* width: fit-content; */
   /* margin: 0 auto; */
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
   backdrop-filter: blur(3rem);
-  max-width: 500px;
+  width: 100%;
+  /* position: fixed; */
+  /* z-index:2000; */
+  /* top: 4em; */
+  /* left: 2em; */
+}
+.earnSwiper {
+  width: 400px;
+  background-color: #000;
+  /* height: 200px; */
+  position: fixed !important;
+  z-index:2000;
+  top: 4em;
+  left: 2em;
 }
 .earning{
   display: flex;
@@ -450,12 +463,12 @@ body{
     background: linear-gradient(to top, #000000, #BF7E04 );
     
 }
-@media (max-width:500px) {
+/* @media (max-width:500px) {
     .market{
         
     }
     
-}
+} */
 
 /* END OF SIGNUP SECTION//////////////////////////////////////// */
 
@@ -473,6 +486,7 @@ body{
 .bottom-nav-box{
   display: flex;
   justify-content: space-between;
+  gap: 1em;
   background-color: white;
   padding: 1rem 2rem;
 }
@@ -568,6 +582,7 @@ body{
 .popup__img{
     width: 100%;
     height: auto;
+    background-color: #000;
     aspect-ratio: 2/1;
     object-fit: cover;
 }
@@ -711,13 +726,13 @@ body{
   justify-content: center;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.mySwiper .swiper-button-prev:after,.mySwiper .swiper-button-next:after {
   color: #fff !important;
   height: 1em !important;
   font-size: clamp(0.7em, 2vw, 1.5em) !important;
   width: 1em !important;
 }
-.swiper-button-prev:hover:after, .swiper-button-next:hover:after {
+.mySwiper .swiper-button-prev:hover:after,.mySwiper .swiper-button-next:hover:after {
   color: #000 !important;
   transition: 500ms ease-out;
 }
@@ -791,7 +806,7 @@ body{
   .swiper_testimonials {
       padding: 2em 1em;
   }
-  .swiper-button-prev:after, .swiper-button-next:after  {
+  .mySwiper .swiper-button-prev:after, .mySwiper .swiper-button-next:after  {
       display: none !important;
   }
 }
