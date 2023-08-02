@@ -14,6 +14,12 @@
             $(".page_loader").fadeOut("slow");
         });
 </script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <title>Crypto FTM</title>
 </head>
 <body>
@@ -374,6 +380,25 @@
 
 <!-- END OF CUSTOMER-CARE///////////////////////////////// -->
 
+<script>
+    var mySwiper = new Swiper(".earnSwiper", {
+      spaceBetween: 30,
+    direction: 'horizontal',
+      // effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 <script src="js/index.js"></script>
 </body>
 </html>

@@ -445,13 +445,12 @@ body{
   /* left: 2em; */
 }
 .earnSwiper {
-  width: 400px;
+  width: 300px;
   background-color: #000;
-  /* height: 200px; */
   position: fixed !important;
   z-index:2000;
   top: 4em;
-  left: 2em;
+  left: 1em;
 }
 .earning{
   display: flex;
