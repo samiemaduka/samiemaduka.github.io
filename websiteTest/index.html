@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Los Angeles Mountains</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <nav class="header_nav">
+            <a href="index.html" class="logo_wrapper">
+                <img src="img/Logo.png" alt="Logo">
+            </a>
+
+            <div class="nav_links_container">
+                <div class="nav_link">
+                    <a href="#history">01. History</a>
+                </div>
+
+                <div class="nav_link">
+                    <a href="#">02. Team</a>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <img src="img/Hero_Img.png" class="hero_img" alt="Hero Image">
+        </header>
+
+        <nav class="sticky">
+            <div class="stickyInner_wrapper">
+                <a href="index.html" class="logo_wrapper">
+                    <img src="img/alt_Logo.png" alt="Logo" class="logo">
+                    <img src="img/Logo.png" alt="Responsive Logo" class="responsiveLogo">
+                </a>
+    
+    
+                <div class="nav_links_container">
+                    <div class="nav_link">
+                        <a href="#history">01. History</a>
+                    </div>
+    
+                    <div class="nav_link">
+                        <a href="#">02. Team</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="history_wrapper">
+            <div class="history_wrapper_inner" id="history">
+                <div class="historyContent_wrapper">
+                    <div class="historyContent_heading">
+                        <p class="number">01.</p>
+                        <p class="title">History</p>
+                    </div>
+    
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus harum. Praesentium mollitia fugiat excepturi in nemo rem consequuntur odio, reprehenderit corrupti accusamus error natus doloremque atque, provident quidem sint!</p>
+                </div>
+
+
+                <div class="carousel_container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img1.png" alt="Man on a cliff">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img2.png" alt="Mountains">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img1.png" alt="Man on a cliff">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img2.png" alt="Mountains">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img1.png" alt="Man on a cliff">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img2.png" alt="Mountains">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img1.png" alt="Man on a cliff">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img2.png" alt="Mountains">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img1.png" alt="Man on a cliff">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/landscape_img2.png" alt="Mountains">
+                            </div>
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="climb_wrapper">
+            <div class="climb_wrapper_inner">
+                <div class="climb_content_wrapper">
+                    <div class="climb_content_wrapper_inner">
+                        <div class="climb_header">
+                            <p class="number">02.</p>
+                            <p class="title">Climb</p>
+                        </div>
+    
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus harum. Praesentium mollitia fugiat excepturi in nemo rem consequuntur odio.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer></footer>
+
+    </div>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 4,
+            spaceBetween: 10,
+            // loop: true,
+            // If we need pagination
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                50: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                },
+                340: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                },
+                500: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                },
+                750: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
