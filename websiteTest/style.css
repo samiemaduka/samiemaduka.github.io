@@ -111,7 +111,7 @@ nav {
 }
 @media (max-width:1130px) {
     header {
-        height: clamp(50vh, 50vw, 85vh);
+        height: clamp(40vh, 40vw, 85vh);
     }
     .stickyNav .logo_wrapper img {
         margin-left: 0;
@@ -423,14 +423,18 @@ nav {
         width: 100%;
     }
     .climbContent_wrapper {
-        padding: 1em;
+        padding: 1em 1em 2em 1em;
     }
     .climbContentInner_wrapper {
         width: 90%;
         margin: 0 auto;
     }
-    .mountainSwiper2 .mountain_slide, .mountainSwiper .swiper-wrapper  {
+    .mountainSwiper .swiper-wrapper  {
         width: 90%;
+    }
+    .mountainSwiper2 .mountain_slide {
+        width: 90%;
+        margin-top: 3em;
     }
 }
 @media (max-width:600px) {
@@ -487,6 +491,5 @@ footer {
     .footerInner_wrapper {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.5em;
     }
 }
