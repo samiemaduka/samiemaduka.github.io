@@ -58,6 +58,7 @@ nav {
     text-transform: uppercase;
     color: #fefeff !important;
     font-weight: 900;
+    text-decoration: none;
     font-style: italic;
     font-family: var(--primary_font_1);
 }
