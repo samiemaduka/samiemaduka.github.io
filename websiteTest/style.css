@@ -182,7 +182,7 @@ nav {
 .historyContent_heading .title {
     font-weight: 800;
     transform: scaleX(30deg);
-    margin: 0 0 1em -0.77em;
+    margin: 0 0 1em -0.76em;
     position: relative;
     bottom: 0.8em;
     color: #414f6b;
@@ -305,7 +305,7 @@ nav {
 .climbContent_heading .title {
     font-weight: 800;
     transform: scaleX(30deg);
-    margin: 0 0 0 -0.77em;
+    margin: 0 0 0 -0.76em;
     position: relative;
     bottom: 0.8em;
     color: #414f6b;
