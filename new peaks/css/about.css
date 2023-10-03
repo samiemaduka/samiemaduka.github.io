@@ -339,7 +339,7 @@
 .slide__head1{
     text-transform: capitalize;
     font-size:clamp(1.9rem, 4vw, 2.9rem);
-    font-family: var(--font-3-poppins);
+    font-family: 'Della Respira';
     line-height: 1;
     max-width: 20ch;
     color: var(--primary_color_1);
@@ -372,7 +372,7 @@
 .slide__head{
     text-transform: capitalize;
     font-size:clamp(1.9rem, 4vw, 2.9rem);
-    font-family: var(--font-3-poppins);
+    font-family: 'Della Respira';
     line-height: 1;
     max-width: 40ch;
     color: var(--primary_color_1);
@@ -554,7 +554,7 @@
     color: var(--primary_color_1);
     max-width: fit-content;
     margin-bottom: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .company p{
     line-height: 1.4;
@@ -597,6 +597,8 @@
         max-width: 100%;
         margin-top: 0;
         display: block;
+        position: relative !important;
+        top: auto;
     }
     .aside__head{
         max-width: fit-content;
@@ -624,10 +626,6 @@
     .slide-container{
         height: 20rem;
     }
-.aside{
-position: relative;
-top:0;
-}
 }
 /* END OF NEWS //////////////////////// */
 
@@ -744,8 +742,8 @@ hr{
     font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 .overview__head{
-    font-family: var(--font-3-poppins);
-    text-transform: capitalize;
+    font-family: 'Della Respira';
+    text-transform: uppercase;
     font-size:clamp(1.7rem, 4vw, 2.3rem);
     position: relative;
     max-width: fit-content;
@@ -802,7 +800,7 @@ hr{
 .regulation__head{
     align-self: center;
     font-size: clamp(1.8rem, 3vw, 2.4rem);
-    font-family: var(--font-3-poppins);
+    font-family: 'Della Respira';
     position: relative;
     max-width: fit-content;
 }
