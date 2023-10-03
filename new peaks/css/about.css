@@ -624,6 +624,10 @@
     .slide-container{
         height: 20rem;
     }
+.aside{
+position: relative;
+top:0;
+}
 }
 /* END OF NEWS //////////////////////// */
 
