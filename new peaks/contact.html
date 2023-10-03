@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/8923a9ad68.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
+   
+<!-- //////////////// THINGS TO TAKE BEGINNING /////////////////////// -->
+
+  <link rel="stylesheet" href="css/nav_bar.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Varta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(window).on('load',function(){
+        $(".loading").fadeOut(1000);
+    });
+  </script>
+
+  <meta name="theme-color" content="#012169">
+
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+      
+  <title>Quantum Peaks</title>
+
+<!-- ////////////// THINGS TO TAKE BEGINNING  /////////////////////// -->
+
+    
+</head>
+<body>
+  
+  
+    <!-- NAV SECTION /////////////////////////////////// -->
+
+    <nav class="nav bg_screen">
+      <div class="nav__logo">
+        <a href="index.html">
+          <img class="nav-logo-img" src="icon/logo.svg" alt="">
+          <p>Quantum Peaks</p>
+        </a>
+      </div>
+      <ul class="nav__menu">
+          <a class="nav__link" href="index.html"><li class="nav__list">home</li></a>
+          <a class="nav__link" href="about.html"><li class="nav__list">how it works?</li></a>
+          <a class="nav__link" href="investment-plans.html"><li class="nav__list">our services</li></a>
+          <a class="nav__link" href="https://dashboard.merrillfederalunion.com/register"><li class="nav__list">get started</li></a>
+      </ul>
+    </nav>
+
+
+
+    <!--  ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+      <nav>
+
+        <div class="nav_header">
+          <img src="icon/logo.svg" alt="">
+        </div>
+        
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+  
+        <div id="sidebarMenu">
+          <ul class="sidebarMenuInfo">
+              <li><i class="fa-solid fa-location-dot top-nav__icon"></i>321 E Daugherty Drive, Garland, TX 75041.</li>
+  
+              <li><i class="fa-solid fa-phone top-nav__icon"></i> +1 (802) 331-0244</li>
+  
+              <li class="translate"><i class="fa-brands fa-google"></i><div id="google_translate_element"></div></li>
+          </ul>
+  
+  
+          <ul class="sidebarMenuLogo">
+              <img src="icon/logo.svg" alt="">
+          </ul>
+  
+  
+          <ul class="sidebarMenuInner">
+            <li><i class="fa-solid fa-archway"></i><a href="index.html">Home</a></li>
+            <li><i class="fa-solid fa-question"></i><a href="about.html">How it works?</a></li>
+            <li><i class="fa-solid fa-money-bill-1"></i><a href="investment-plans.html">our services</a></li>
+            <li><i class="fa-solid fa-person-running"></i><a href="https://dashboard.merrillfederalunion.com/register">Get Started</a></li>
+          </ul>
+        </div>
+  
+      </nav>
+    <!-- ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+
+
+
+
+  <!-- END OF NAV SECTION /////////////////////////// -->
+
+
+
+
+
+    <!-- BEGGINING OF INVEST //////////////////////////-->
+<section class="invest-background">
+        <div class="invest">
+            <div class="invest__desc">
+                <p class="invest__text"><a class="invest__link" href="index.html">home</a></p>
+                <i class="fa-solid fa-angle-right invest__icon"></i>
+                <p class="invest__text">contact</p>
+            </div>
+            <h1 class="invest__head">contact</h1>
+        </div>
+</section>
+<!-- END OF INVEST /////////////////////////// -->
+
+<!-- BEGGINING OF CONTACT /////////////////////// -->
+<section class="contact">
+
+    <div class="contact-box1">
+       
+        <div class="contact__desc">
+            <h2 class="contact-box1__head">Contact details</h2>
+            <div class="contact-box1-desc"><i class="fa-solid fa-location-pin contact__icon"></i><p>321 E Daugherty Drive, Garland, TX 75041.. 2794 Rockwell Lane, North Carolina, NC 27850 US.</p></div>
+            <div class="contact-box1-desc"><i class="fa-solid fa-phone contact__icon"></i><p>+1 (802) 331-0244</p></div>
+            <div class="contact-box1-desc"><i class="fa-solid fa-envelope contact__icon"></i><p>support@Merrill-investment.com</p></div>
+        </div>
+        <p class="contact-box1__text">Please let us know if you have a question, want to leave a comment, or would like further information about investment.</p>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/moqbvpkz" method="POST">
+
+    <label for=""><input required placeholder="first name*" name="firstname" class="contact__form1" type="text"></label>
+    <label for=""><input placeholder="title" class="contact__form1" name="title" type="text"></label>
+    <label for=""><input placeholder="company/position" class="contact__form1" name="company" type="text"></label>
+    <label for=""><input placeholder="email*" required class="contact__form1" name="email" type="email"></label>
+    <label for=""><select class="contact__form1" name="reason-for-contact">
+        <option >Reason for contact</option>
+        <option value="inquiries">Inquiries</option>
+        <option value="queries">Queries</option>
+      </select>
+    </label>
+    <label for=""><select  required class="contact__form1"  name="area-of-interest">
+        <option >Area of interest*</option>
+        <option value="investment">Investment</option>
+        <option value="partnership">Partnership</option>
+      </select>
+    </label>
+    <label  for=""><input placeholder="subject" class="contact__form1" name="subject" type="text"></label>
+    <label for=""><textarea placeholder="your message" class="contact__form1" name="your-message" type="text"></textarea></label>
+    <label for=""><button class="form__btn" type="submit" >submit<i class="fa-solid fa-paper-plane form__icon"></i></button></label>
+    </form>
+</section>
+
+<!-- END OF CONTACT ///////////////////////////// -->
+
+
+
+
+<!-- BEGGINING OF FOOTER ///////////////////// -->
+
+<footer class="footer-section">
+
+  <div class="footer">
+
+    <div class="footer-about footer-box1">
+      <h2 class="footer__head">About company</h2>
+      <img class="footer-about__img1" src="icon/logo.svg" alt="">
+      <p class="footer-about__text">We offer the best investment plan leverage your funds to yield maximum returns in no time.</p>
+      <img class="footer-about__img2" src="icon/logo3.png" alt="">
+    </div>
+
+    <div class="footer-touch footer-box3">
+      <h2 class="footer__head">Get in touch</h2>
+      <div class="footer-location"><i class="fa-solid fa-location-dot footer-touch__icon"></i><p class="footer-touch__text">321 E Daugherty Drive, Garland, TX 75041. </p></div>
+      <p class="footer-touch__text"><i class="fa-solid fa-mobile-screen-button footer-touch__icon"></i>Call +1 (802) 331-0244</p>
+      <p class="footer-touch__text2"><i class="fa-regular fa-envelope footer-touch__icon"></i>support@merrillfederalunion.com</p>
+    </div>
+
+    <div class="footer-link footer-box4">
+      <h2 class="footer__head">Useful links</h2>
+      <div class="footer__menu">
+      <ul class="footer-link__menu">
+        <a href="index.html"><li class="footer-link__list">home</li></a>
+        <a href="investment-plans.html"><li class="footer-link__list">our services</li></a>
+        <a href="about.html"><li class="footer-link__list">how it works?</li></a>
+        <a href="#"><li class="footer-link__list">get started</li></a>
+        
+      </ul>
+      </div>
+    </div>
+  </div>
+ 
+</footer>
+<div class="copyright">
+  <p class="copyright__text">Copyright © 2003-2022. All rights reserved by <a class="copyright__link" href="index.html">Quantum Peaks </a></p>
+  <div class="copyright__icons">
+    <i class="fa-brands fa-facebook-f copyright__icon"></i>
+    <i class="fa-brands fa-twitter copyright__icon"></i>
+    <i class="fa-brands fa-instagram copyright__icon"></i>
+    <i class="fa-brands fa-google copyright__icon"></i>
+  </div>
+</div>
+
+<!-- END OF FOOTER //////////////////////////// -->
+
+
+
+
+
+
+<!-- //////////////////////////////////////////LOADER ////////////////////////////// -->
+
+<!-- <div class="loading">
+  <div class="scene">
+    <div class="plane">
+      <div class="cube cube--0">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--0"></div>
+      <div class="cube cube--1">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--1"></div>
+      <div class="cube cube--2">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--2"></div>
+      <div class="cube cube--3">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--3"></div>
+      <div class="cube cube--4">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--4"></div>
+      <div class="cube cube--5">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--5"></div>
+      <div class="cube cube--6">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--6"></div>
+      <div class="cube cube--7">
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+        <div class="cube__side"></div>
+      </div>
+      <div class="shadow shadow--7"></div>
+    </div>
+  </div>
+</div> -->
+
+<!-- //////////////////////////////////////////LOADER ////////////////////////////// -->
+
+
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+          <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script type="text/javascript" src="js/sidebar.js"></script>
+          <!-- <script src="js/main.js"></script> -->
+          <script src="//code.tidio.co/rbn1kipbzxbl5ohuu3cxiisl3aagjnjj.js" async></script>
+          
+</body>
+</html>
