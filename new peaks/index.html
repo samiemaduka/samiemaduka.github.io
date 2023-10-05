@@ -521,7 +521,7 @@ Bitcoin mining is the process of using powerful computers to validate transactio
 
 
     <!-- BEGGINIING OF SUSCRIBE /////////////////// -->
-
+<!-- 
     <section class="suscribe-section">
 
       <div class="suscribe-container">
@@ -536,7 +536,42 @@ Bitcoin mining is the process of using powerful computers to validate transactio
 
       </div>
 
-  </section>
+  </section> -->
+
+
+  <section class="contact">
+
+    <div class="contact-box1">
+       
+        <div class="contact__desc">
+            <h2 class="contact-box1__head">Contact details</h2>
+        </div>
+        <p class="contact-box1__text">Please let us know if you have a question, want to leave a comment, or would like further information about investment.</p>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/moqbvpkz" method="POST">
+
+    <label for=""><input required placeholder="first name*" name="firstname" class="contact__form1" type="text"></label>
+    <label for=""><input placeholder="title" class="contact__form1" name="title" type="text"></label>
+    <label for=""><input placeholder="company/position" class="contact__form1" name="company" type="text"></label>
+    <label for=""><input placeholder="email*" required class="contact__form1" name="email" type="email"></label>
+    <label for=""><select class="contact__form1" name="reason-for-contact">
+        <option >Reason for contact</option>
+        <option value="inquiries">Inquiries</option>
+        <option value="queries">Queries</option>
+      </select>
+    </label>
+    <label for=""><select  required class="contact__form1"  name="area-of-interest">
+        <option >Area of interest*</option>
+        <option value="investment">Investment</option>
+        <option value="partnership">Partnership</option>
+      </select>
+    </label>
+    <label  for=""><input placeholder="subject" class="contact__form1" name="subject" type="text"></label>
+    <label for=""><textarea placeholder="your message" class="contact__form1" name="your-message" type="text"></textarea></label>
+    <label for=""><button class="form__btn" type="submit" >submit<i class="fa-solid fa-paper-plane form__icon"></i></button></label>
+    </form>
+</section>
 
 
 <!-- BEGGINING OF FOOTER ///////////////////// -->

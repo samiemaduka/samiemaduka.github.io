@@ -1001,6 +1001,7 @@ header {
     gap: .7rem;
     flex-direction: column;
     color: black;
+    margin-bottom: -1em;
 }
 .idea-desc1{
     font-size: clamp(1rem, 2.5vw, 1.3125rem);
@@ -1244,7 +1245,7 @@ header {
     font-family: 'Della Respira';
     font-size:clamp(1.6rem, 4vw, 2.25rem);
     color: var(--primary_color_1);
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .wrapper {
     background-color:rgba(255, 255, 255, 0.10196078431372549) ;
@@ -1599,6 +1600,102 @@ button#prev{
 /* END OF SUSCRIBE /////////////////////// */
 
 
+
+.contact{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+.contact-box1__head{
+    font-family: 'Della Respira';
+    color: var(--primary_color_1);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact-box1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-box1__text{
+    text-align: center;
+    font-weight: 600;
+    font-size:clamp(0.8rem, 2.5vw, 1rem)
+}
+.contact__desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size:clamp(0.75rem, 2.5vw, 0.9rem);
+}
+.contact-box1-desc{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.contact__icon{
+    color: var(--primary_color_3);
+    font-size: inherit;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: 2rem; */
+    margin: 2rem auto 2rem;
+    max-width: 50rem;
+}
+.contact__form1{
+    width: 100%;
+    padding: .7rem 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    border-radius: 0px;
+    border: none;
+    outline: 2px solid silver;
+    background-color: #f2f2f2;
+    background-color: #F5F5F5;
+    font-family: var(--font-3-poppins);
+    transition: 200ms ease-in-out;
+}
+.form__btn{
+    width: 100%;
+    padding: .7rem 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    border: none;
+    color: var(--primary_color_3);
+    outline: 2px solid var(--primary_color_3);
+    /* background-color: #f2f2f2; */
+    background-color: #fff;
+    font-family: var(--font-3-poppins);
+    transition: 200ms ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.form__icon{
+    margin-left: 6px;
+    color: var(--primary_color_3);
+    font-size: inherit;
+    transition: 200ms ease-in-out;
+}
+.form__btn:hover .form__icon {
+    color: white;
+}
+.form__btn:hover{
+    background-color: var(--primary_color_3);
+    outline: 2px solid var(--primary_color_3);
+    color: white;
+}
+.contact__form1::placeholder{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.contact__form1:focus{
+    outline: 2px solid var(--primary_color_1);
+    background-color: white;
+}
+
+/* END OF CONTACT ///////////////////////// */
 
 
 
@@ -1968,6 +2065,7 @@ button#prev{
     color: var(--primary_color_1);
     font-size: clamp(1.7rem, 3vw, 2.4rem);
     text-align: center;
+    text-transform: uppercase;
 }
 .map p {
     font-size: clamp(1em, 1.5vw, 1.5em);
