@@ -257,8 +257,8 @@
 
 /* BEGGINING OF SLIDE SECTION ////////////////////// */
 header {
-    padding: 6em 1em 3em 1em;
-    background: url(../image/wave-haikei.svg) no-repeat scroll center/cover;
+    padding: 6em 1em 7em 1em;
+    background: url(../image/wave-haikei.svg) no-repeat scroll bottom/cover;
 }
 .headerInner {
     display: grid;
@@ -444,25 +444,6 @@ header {
         height:27rem ;
     }
 }
-@media (max-width:430px) {
-    .headerInner {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .mining_img {
-        width: 80%;
-    }
-    .headerContent {
-        margin: 0;
-    }
-    header {
-        padding-bottom: 5em;
-        height: 90vh;
-    }
-    .button-87 {
-        width: 80%;
-    }
-}
 @media (max-width:600px) {
     .swiper{
         height: 25rem;
@@ -487,13 +468,27 @@ header {
         align-self: center;
     }
 }
-
+@media (max-width:430px) {
+    .headerInner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mining_img {
+        width: 80%;
+    }
+    .headerContent {
+        margin: 0;
+    }
+    header {
+        padding-bottom: 5em;
+    }
+    .button-87 {
+        width: 100%;
+    }
+}
 @media (max-width:300px) {
     .swiper{
         height: 30rem;
-    }
-    header {
-        height: 80vh;
     }
 }
 
