@@ -627,8 +627,8 @@ header {
     .slide1 img, .slide3 img, .slide5 img {
         width: 65%;
     }
-    .swiper {
-        width: 95%;
+    .mySwiper {
+        width: 95% !important;
     }
     .swiper-button-next, .swiper-button-prev {
         height: 15px !important;
@@ -647,16 +647,14 @@ header {
         font-size: min(1em, 1.3em);
     }
     .sideBox {
-        width: 4em;
+        /* width: 4em; */
+        display: none;
     }
     .headerContent .input_box {
         width: 80% !important;
     }
     .headerContent_inner {
-        width: 80% !important;
-    }
-    .mySwiper {
-        width: 70% !important;
+        width: 100% !important;
     }
 }
 
@@ -961,6 +959,9 @@ header {
     }
     .servicesInner {
         padding: 2em 1em;
+    }
+    .servicesImg img {
+        height: auto !important;
     }
 }
 
