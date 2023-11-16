@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/Iron Work.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <script src="js/mapdata.js"></script>
+    <script src="js/worldmap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg_screen">
+        <div class="nav_logo">
+            <img src="img/Iron Work.png" alt="logo">
+        </div>
+
+        <div class="nav_link_wrapper">
+            <a href="index.html" class="nav_link">home</a>
+
+            <a href="about.html" class="nav_link">about us</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Service <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="service.html">Service 1</a>
+                  <a href="service.html">Service 2</a>
+                  <a href="service.html">Service 3</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="nav_link">contact us</a>
+        </div>
+    </nav>
+
+    <nav class="sidebar">
+        <!--  ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+   
+           <div class="nav_header">
+                <img src="img/Iron Work.png" alt="logo">
+           </div>
+           
+           <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+           <label for="openSidebarMenu" class="sidebarIconToggle">
+             <div class="spinner diagonal part-1"></div>
+             <div class="spinner horizontal"></div>
+             <div class="spinner diagonal part-2"></div>
+           </label>
+     
+            <div id="sidebarMenu">
+   
+               <!-- <a href="index.html" class="sidebarMenuLogo">
+                    <div class="nav_logo">
+                        <img src="img/altLogo.png" alt="CS logo">
+                        <p>Scrap Metal</p>
+                    </div>
+               </a> -->
+   
+             <!-- <ul class="sidebarMenuInfo">
+                 <li class="translate"><i class="fa-brands fa-google"></i><div id="google_translate_element"></div></li>
+             </ul> -->
+     
+     
+             <ul class="sidebarMenuInner">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                
+                <li>
+                    <a href="service.html">services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">contact us</a>
+                </li>
+             </ul>
+           </div>
+       <!-- ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+   
+    </nav>
+
+
+
+
+
+
+    
+    <!-- BEGGINING OF INVEST //////////////////////////-->
+    <section class="invest-background">
+        <div class="invest">
+            <div class="invest__desc">
+                <p class="invest__text"><a class="invest__link" href="index.html">home</a></p>
+                <i class="fa-solid fa-angle-right invest__icon"></i>
+                <p class="invest__text">contact</p>
+            </div>
+            <h1 class="invest__head">contact</h1>
+        </div>
+    </section>
+    <!-- END OF INVEST /////////////////////////// -->
+
+    <!-- BEGGINING OF CONTACT /////////////////////// -->
+    <section class="contact">
+        <div class="contact-box1">
+        
+            <div class="contact__desc">
+                <h2 class="contact-box1__head">Contact details</h2>
+                <div class="contact-box1-desc"><i class="fa-solid fa-location-pin contact__icon"></i><p>Lagos, Nigeria.</p></div>
+                <div class="contact-box1-desc"><i class="fa-solid fa-phone contact__icon"></i><p>080999999999</p></div>
+                <div class="contact-box1-desc"><i class="fa-solid fa-envelope contact__icon"></i><p>support@ironworks.com</p></div>
+            </div>
+            <p class="contact-box1__text">Please let us know if you have a question, want to leave a comment, or would like further information about investment.</p>
+        </div>
+
+        <form class="contact-form" action="/" method="POST">
+            <label for=""><input required placeholder="first name*" name="firstname" class="contact__form1" type="text"></label>
+            <label for=""><input placeholder="title" class="contact__form1" name="title" type="text"></label>
+            <label for=""><input placeholder="company/position" class="contact__form1" name="company" type="text"></label>
+            <label for=""><input placeholder="email*" required class="contact__form1" name="email" type="email"></label>
+            <label for=""><select class="contact__form1" name="reason-for-contact">
+                <option >Reason for contact</option>
+                <option value="inquiries">Inquiries</option>
+                <option value="queries">Queries</option>
+            </select>
+            </label>
+            <label for=""><select  required class="contact__form1"  name="area-of-interest">
+                <option >Area of interest*</option>
+                <option value="investment">Buying</option>
+                <option value="partnership">Partnership</option>
+            </select>
+            </label>
+            <label  for=""><input placeholder="subject" class="contact__form1" name="subject" type="text"></label>
+            <label for=""><textarea placeholder="your message" class="contact__form1" name="your-message" type="text"></textarea></label>
+            <label for=""><button class="form__btn" type="submit" >submit<i class="fa-solid fa-paper-plane form__icon"></i></button></label>
+        </form>
+    </section>
+    <!-- END OF CONTACT ///////////////////////////// -->
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footerInner_wrapper">
+            <div class="footerMain_grid_box">
+                <div class="footer_logo_box">
+                    <img src="img/Iron Work.png" alt="">
+                </div>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, molestias unde? Sed aliquam, iste dolore ipsa recusandae, nulla laboriosam sin.</p>
+    
+    
+                <div class="footerSocials_wrapper">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+    
+    
+            <div class="footerLink_grid_box">
+                <p class="bold">Useful Links</p>
+
+                <div class="footerLink_gridBox_group">
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="#">business</a>
+                    <a href="contact.html">contact us</a>
+                </div>
+            </div>
+    
+    
+            <!-- <div class="footerLink_grid_box">
+                <p class="bold">Support</p>
+                
+                <div class="footerLink_gridBox_group">
+                    <a href="faq.html">FAQ</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div> -->
+    
+    
+            <div class="footerLink_grid_box">
+                <p class="bold">Get In Touch</p>
+                
+                <div class="footerLink_gridBox_group">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+234 0987654321</p>
+                    </a>
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@Scrap Metal.com</p>
+                    </a>
+        
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>24/7 Victoria Island Lagos, Nigeria</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright_wrapper">
+            <p>Copyright 2021 Scrap Metal. All rights reserved.</p>
+        </div>
+    </footer>  
+    
+</body>
+</html>

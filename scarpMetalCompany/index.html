@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/Iron Work.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg_screen">
+        <div class="nav_logo">
+            <img src="img/Iron Work.png" alt="logo">
+        </div>
+
+        <div class="nav_link_wrapper">
+            <a href="index.html" class="nav_link">home</a>
+
+            <a href="about.html" class="nav_link">about us</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Service <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="service.html">Service 1</a>
+                  <a href="service.html">Service 2</a>
+                  <a href="service.html">Service 3</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="nav_link">contact us</a>
+        </div>
+    </nav>
+
+    <nav class="sidebar">
+        <!--  ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+   
+           <div class="nav_header">
+                <img src="img/Iron Work.png" alt="logo">
+           </div>
+           
+           <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+           <label for="openSidebarMenu" class="sidebarIconToggle">
+             <div class="spinner diagonal part-1"></div>
+             <div class="spinner horizontal"></div>
+             <div class="spinner diagonal part-2"></div>
+           </label>
+     
+            <div id="sidebarMenu">
+   
+               <!-- <a href="index.html" class="sidebarMenuLogo">
+                    <div class="nav_logo">
+                        <img src="img/altLogo.png" alt="CS logo">
+                        <p>Scrap Metal</p>
+                    </div>
+               </a> -->
+   
+             <!-- <ul class="sidebarMenuInfo">
+                 <li class="translate"><i class="fa-brands fa-google"></i><div id="google_translate_element"></div></li>
+             </ul> -->
+     
+     
+             <ul class="sidebarMenuInner">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                
+                <li>
+                    <a href="service.html">services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">contact us</a>
+                </li>
+             </ul>
+           </div>
+       <!-- ///////////////////////THE SIDEBAR WE ARE TAKING //////////////// -->
+   
+    </nav>
+
+
+
+
+    <div class="wrapper">
+        <main>
+            <header>
+                <div class="headerContent">
+                    <div class="headerContent_inner">
+                        <p class="sub">we provide</p>
+
+                        <h1>more accurate scrap prices</h1>
+
+                        <p>We are the world's leading provider of scrap prices data and market intelligence. Our robust methodologies ensure delivery of the industry's most accurate scrap prices.</p>
+                    </div>
+                    
+
+
+                    <form action="">
+                        <p class="formHeader">Request a Demo</p>
+
+                        <div class="input_box">
+                            <input type="email" name="email" id="email" placeholder="Email Address*">
+
+                            <button type="submit">send</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="headerVideo">
+                    <iframe src="https://www.youtube.com/embed/eVoa0pdAXj4" title="Scrap Metal Recycling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </header>
+
+            <div class="community_section">
+                <p class="sub">Our clients</p>
+        
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide1">
+                        <img src="img/slide1.png" alt="HSBC logo">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img src="img/slide2.png" alt="Hudson's Bay logo">
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <img src="img/slide3.png" alt="CIBC logo">
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <img src="img/slide4.png" alt="Roger's logo">
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <img src="img/slide5.jpg" alt="First Canadaian Title logo">
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <img src="img/slide6.png" alt="First Canadaian Title logo">
+                    </div>
+        
+                    </div>
+                </div>
+            </div>
+
+            <div class="sideBox"></div>
+        </main>
+
+        <section class="coverageWrapper">
+            <div class="coverageInner">
+                <p class="sub">metal prices with</p>
+
+                <h2>global coverage</h2>
+
+                <p>We publish more than 1,400 proprietary price indexes in 81 countries, as well as metals futures prices and other reference data.</p>
+            </div>
+
+
+            <div class="indexWrapper">
+                <div class="indexInner">
+                    <h3>metal indexes</h3>
+
+                    <p>Prices are Subject to change daily</p>
+                </div>
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container mobileNone">
+                    <div class="tradingview-widget-container__widget"></div>
+
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                    {
+                        "symbols": [
+                        {
+                            "description": "Aluminium",
+                            "proName": "NCDEX:ALUMINIUM"
+                        },
+                        {
+                            "description": "Metal",
+                            "proName": "BSE:METAL"
+                        },
+                        {
+                            "description": "Steel",
+                            "proName": "NCDEX:STEEL"
+                        },
+                        {
+                            "description": "Mining",
+                            "proName": "SPARKS:MINING"
+                        }
+                        ],
+                        "colorTheme": "light",
+                        "isTransparent": true,
+                        "showSymbolLogo": true,
+                        "locale": "en"
+                    }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+
+                <div class="tradingViewMobile">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                        "symbols": [
+                        {
+                            "description": "Aluminium",
+                            "proName": "NCDEX:ALUMINIUM"
+                        },
+                        {
+                            "description": "Metal",
+                            "proName": "BSE:METAL"
+                        },
+                        {
+                            "description": "Steel",
+                            "proName": "NCDEX:STEEL"
+                        },
+                        {
+                            "description": "Mining",
+                            "proName": "SPARKS:MINING"
+                        }
+                        ],
+                        "showSymbolLogo": true,
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "displayMode": "adaptive",
+                        "locale": "en"
+                    }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            </div>
+        </section>
+
+        <section class="whoWrapper">
+            <div class="whoInner">
+                <div class="whoInnerHeader">
+                    <p class="sub">who can</p>
+                
+                    <h4>utilize our indexes</h4>
+                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in molestiae corrupti.</p>
+                </div>
+
+
+                <div class="whoGridWrapper">
+                    <div class="whoGrid">
+                        <img src="img/factory.png" alt="factory image">
+                        <p class="whoHeader">manufacturers</p>
+                        <p>For sales cotracts of the scrap generated during the making of any metal intensive products</p>
+                    </div>
+
+                    <div class="whoGrid">
+                        <img src="img/recycling.png" alt="factory image">
+                        <p class="whoHeader">Recyclers</p>
+                        <p>For use to enter supply contracts with mills and smelters.</p>
+                    </div>
+
+                    <div class="whoGrid">
+                        <img src="img/anvil.png" alt="factory image">
+                        <p class="whoHeader">Mills & Smeltors</p>
+                        <p>For use to enter supply contracts with their raw material suppliers and/or end consumers</p>
+                    </div>
+
+                    <div class="whoGrid">
+                        <img src="img/infographics.png" alt="factory image">
+                        <p class="whoHeader">Equity analysts</p>
+                        <p>For use in margin and trend analysis.</p>
+                    </div>
+
+                    <div class="whoGrid">
+                        <img src="img/document.png" alt="factory image">
+                        <p class="whoHeader">Importers, Exporters, & Traders</p>
+                        <p>Stay informed of markets in various countries they are active in.</p>
+                    </div>
+
+                    <div class="whoGrid">
+                        <img src="img/government.png" alt="factory image">
+                        <p class="whoHeader">Governments</p>
+                        <p>For the use in tax and duty bench-marking.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sideBox"></div>
+        </section>
+
+        <section class="platformWrapper">
+            <div class="platformInner">
+                <p class="sub">delivery through</p>
+
+                <h4>multiple platforms</h4>
+
+                <p>Our price data, analysis and news is  available through a highly customizable web platform, twice-daily reports and mobile apps</p>
+            </div>
+
+            <div class="platformGrid">
+                <div class="platformBox">
+                    <p class="platformHeader">web</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate minus cum ut numquam eaque sed animi.</p>
+
+                    <a href="#" class="requestBtn">request demo</a>
+                </div>
+
+                <div class="platformBox">
+                    <p class="platformHeader">on-site</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate minus cum ut numquam eaque sed animi.</p>
+                </div>
+
+                <div class="platformBox">
+                    <p class="platformHeader">daily updates</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate minus cum ut numquam eaque sed animi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicesWrapper">
+            <div class="servicesInner">
+                <div class="servicesHeader">
+                    <p class="sub">our services</p>
+            
+                    <h4>Why Choose Us?</h4>
+                
+                    <p>Discover what sets us apart as a top-tier scrap metal company.</p>  
+                </div>
+                    
+                <div class="serviceBox">
+                    <p class="number">01</p>
+
+                    <p class="service">Eco-Friendly Recycling</p>
+                </div>
+
+                <div class="serviceBox">
+                    <p class="number">02</p>
+                    
+                    <p class="service">Fair Pricing</p>
+                </div>
+
+                <div class="serviceBox">
+                    <p class="number">03</p>
+                    
+                    <p class="service">Efficient Pickup</p>
+                </div>
+
+                <div class="serviceBox">
+                    <p class="number">04</p>
+                    
+                    <p class="service">Compliance & Safety</p>
+                </div>
+            </div>
+
+            <div class="servicesImg">
+                <img src="img/evan-demicoli-HGCqL-tRcac-unsplash.jpg" alt="">
+            </div>
+
+            <div class="sideBox"></div>
+        </section>
+        
+        <section class="customerReviewWrapper">
+            <div class="customerReviewInner">
+                <p class="sub">our history</p>
+            
+                <h4>What Our Clients Say</h4>
+            
+                <p>Read what our satisfied clients have to say about their experiences with our services and see how many we have Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            
+
+            <div class="swiper customers_swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper customers_section_wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="clients_remark">
+                            <div class="client_img">
+                                <img src="img/pexels-anna-tarazevich-4927361.jpg" alt="Client's Image">
+                            </div>
+                            <div class="client_name">Hannah Schmitt</div>
+                            <div class="client_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="client_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa hic totam voluptates delectus amet architecto excepturi ad cupiditate esse officia animi odio vitae, autem culpa. Architecto corrupti necessitatibus minus!</div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="swiper-slide">
+                        <div class="clients_remark">
+                            <div class="client_img">
+                                <img src="img/pexels-cottonbro-studio-5119214.jpg" alt="Client's Image">
+                            </div>
+                            <div class="client_name">Hannah Schmitt</div>
+                            <div class="client_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="client_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa hic totam voluptates delectus amet architecto excepturi ad cupiditate esse officia animi odio vitae, autem culpa. Architecto corrupti necessitatibus minus!</div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="swiper-slide">
+                        <div class="clients_remark">
+                            <div class="client_img">
+                                <img src="img/pexels-mateus-souza-3586798.jpg" alt="Client's Image">
+                            </div>
+                            <div class="client_name">Hannah Schmitt</div>
+                            <div class="client_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="client_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa hic totam voluptates delectus amet architecto excepturi ad cupiditate esse officia animi odio vitae, autem culpa. Architecto corrupti necessitatibus minus!</div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="swiper-pagination"></div>
+    
+            
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev client_btn"></div>
+                <div class="swiper-button-next client_btn"></div> -->
+            </div>
+        </section>   
+
+
+        <section class="teamWrapper">
+            <div class="teamWrapperInner">
+                <div class="teamWrapperHeader">
+                    <p class="sub">experts that make</p>
+                
+                    <h4>Our Team</h4>
+                
+                    <p>We are an independent entity and has no financial interest in the price indexes it publishes. The objective is to ensure every index is an accurate reflection of the material being transacted.</p>
+                </div>
+
+                <div class="teamGridWrapper">
+                    <div class="teamGrid">
+                        <img src="img/pexels-key-notez-1334945.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-kelly-3030332.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-ali-pazani-2681751.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-ali-pazani-2887718.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-keith-lobo-3854982.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-dave-buxton-3549893.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-mateus-souza-3586798.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="teamGrid">
+                        <img src="img/pexels-sueda-dilli-18960523.jpg" alt="Team Member">
+                        <div class="teamPosition">
+                            <p class="bold">name</p>
+                            <p>designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="counter-background">
+                <div class="counter-container">
+                    <div class="counter counter-box1">
+                    <span class="num" data-val="11321">000</span>
+                    <span class="counter__text1">executed sales</span>
+                    <p class="counter__text2">Lorem ipsum dolor sit</p>
+                    </div>
+
+                    <div class="counter counter-box2">
+                    <span class="num" data-val="7">000</span>
+                    <span class="counter__text1">years of experience</span>
+                    <p class="counter__text2">Lorem ipsum dolor sit</p>
+                    </div>
+
+                    <div class="counter counter-box3">
+                    <span class="num" data-val="3">000</span>
+                    <span class="counter__text1">awards winning</span>
+                    <p class="counter__text2">As a notable brand</p>
+                    </div>
+
+                    <div class="counter counter-box4">
+                    <span class="num" data-val="425">000</span>
+                    <span class="counter__text1">satisfied customers</span>
+                    <p class="counter__text2">From all around Nigeria</p>
+                    </div>
+                </div>
+                <script src="js/main.js"></script>
+            </div> -->
+
+            <div class="sideBox"></div>
+        </section>
+
+
+        <section class="contactWrapper">
+            <div class="customerHeader">
+                <p class="sub">drop by</p>
+            
+                <h4>contact us</h4>
+            
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi voluptas rem eos, dicta illo officiis? Temporibus quod adipisci natus illum veritatis dolor blanditiis ad neque.</p>
+            </div>
+
+            <form action="">
+                <div class="input_box">
+                    <label for="fullName">name <i>*</i></label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                
+                <div class="input_box">
+                    <label for="email">email <i>*</i></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                
+                <div class="input_box">
+                    <label for="company">company <i>*</i></label>
+                    <input type="text" name="company" id="company">
+                </div>
+                
+                <div class="input_box">
+                    <label for="phoneNumber">phone number <i>*</i></label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                </div>
+                
+                <div class="input_box">
+                    <textarea name="message" id="message" placeholder="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">send</button>
+            </form>
+        </section>  
+    </div>
+
+
+    <footer>
+        <div class="footerInner_wrapper">
+            <div class="footerMain_grid_box">
+                <div class="footer_logo_box">
+                    <img src="img/Iron Work.png" alt="">
+                </div>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, molestias unde? Sed aliquam, iste dolore ipsa recusandae, nulla laboriosam sin.</p>
+    
+    
+                <div class="footerSocials_wrapper">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+    
+    
+            <div class="footerLink_grid_box">
+                <p class="bold">Useful Links</p>
+
+                <div class="footerLink_gridBox_group">
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="#">business</a>
+                    <a href="contact.html">contact us</a>
+                </div>
+            </div>
+    
+    
+            <!-- <div class="footerLink_grid_box">
+                <p class="bold">Support</p>
+                
+                <div class="footerLink_gridBox_group">
+                    <a href="faq.html">FAQ</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div> -->
+    
+    
+            <div class="footerLink_grid_box">
+                <p class="bold">Get In Touch</p>
+                
+                <div class="footerLink_gridBox_group">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+234 0987654321</p>
+                    </a>
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@Scrap Metal.com</p>
+                    </a>
+        
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>24/7 Victoria Island Lagos, Nigeria</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright_wrapper">
+            <p>Copyright 2021 Scrap Metal. All rights reserved.</p>
+        </div>
+    </footer>  
+
+
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        freeMode: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false,
+        },
+        speed: 5000,
+        freeModeMomentum: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+    </script>
+
+
+    <script>
+        let customers_swiper = new Swiper('.customers_swiper', {
+        // Optional parameters
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        direction: 'horizontal',
+        // loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            240: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            },
+            560: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            },
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
+</body>
+</html>
