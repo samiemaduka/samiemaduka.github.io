@@ -459,7 +459,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media (max-width:950px) {
     .invest-background{
-        margin-top: 3em;
+        margin-top: 0;
     }
 }
 @media (max-width:500px) {
