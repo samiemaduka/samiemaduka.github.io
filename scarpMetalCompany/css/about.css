@@ -444,7 +444,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     background-color: white;
     /* padding: 0 1rem; */
     margin: -3rem auto 2rem;
-    max-width: 80rem;
+    max-width: 200rem;
     z-index: 4;
     border-top: 4px solid #EE6C4D;
     
@@ -452,7 +452,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .whole-page-margin{
     margin: 0 2rem;
 }
-
+@media (max-width:550px) {
+    .whole-page-margin {
+        margin: 0 1rem;
+    }
+}
 .section-1{
     display: grid;
     grid-template-areas: 'box1 box2';
@@ -808,6 +812,7 @@ footer {
    .footerInner_wrapper {
         display: flex;
         gap: 4em;
+        padding: 3em 1em 1em 1em;
         flex-direction: column;
    } 
 }

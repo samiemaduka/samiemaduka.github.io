@@ -706,6 +706,7 @@ footer {
    .footerInner_wrapper {
         display: flex;
         gap: 4em;
+        padding: 3em 1em 1em 1em;
         flex-direction: column;
    } 
 }

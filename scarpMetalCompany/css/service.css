@@ -451,6 +451,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .office-margin{
     margin: 0 2rem;
 }
+@media (max-width:550px) {
+    .office-margin{
+        margin: 0 1rem;
+    }
+}
 .office{
     font-family: var(--primary_font_2);
     text-align: center;
@@ -581,7 +586,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 @media (max-width:530px) {
     
     .section-service{
-        padding: 2rem;
+        padding: 2rem 1em;
     }
     .service{
         grid-template-areas: 'cont1' 'cont2';
@@ -792,6 +797,7 @@ footer {
    .footerInner_wrapper {
         display: flex;
         gap: 4em;
+        padding: 3em 1em 1em 1em;
         flex-direction: column;
    } 
 }
