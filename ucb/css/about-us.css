@@ -186,10 +186,10 @@ nav{
 }
 .about-ceo{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 2em;
+    padding: 2em 1em;
 }
 .about-ceo p{
-    font-size: clamp(1.2em,1.3vw,1.5em);
+    font-size: clamp(1em,1.2vw,1.5em);
 }
 .about-ceo p i {
     font-weight: 600;
@@ -448,9 +448,6 @@ footer{
     }
     .about-us-header{
         padding: 4em 0 4em 0;
-    }
-    .about-ceo p{
-        text-align: justify;
     }
     .ceo-details-div{
         padding: 1em;
