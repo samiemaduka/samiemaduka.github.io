@@ -183,6 +183,7 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 0.3em;
+    justify-content: center;
 }
 .login p{
     font-weight: 600;
@@ -437,7 +438,7 @@ footer{
         height: auto;
     }
     .login {
-        margin-top: 2em;
+        margin-top: 0em;
     }
     .login p{
         font-size: clamp(1.5em,1vw,1em);

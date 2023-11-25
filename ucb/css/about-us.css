@@ -181,7 +181,7 @@ nav{
     color: #fff;
     width: 100%;
     font-weight: 700;
-    font-size: clamp(1.2em,2.5vw,2.5em) !important;
+    font-size: clamp(1.3em,2.5vw,2.5em) !important;
     font-family: Arial, Helvetica, sans-serif;
 }
 .about-ceo{
@@ -189,7 +189,7 @@ nav{
     padding: 2em;
 }
 .about-ceo p{
-    font-size: clamp(1em,1.3vw,1.4em);
+    font-size: clamp(1.2em,1.3vw,1.5em);
 }
 .about-ceo p i {
     font-weight: 600;
@@ -208,17 +208,21 @@ nav{
     text-align: left;
     width: 50%;
     font-weight: 600;
-    font-size: clamp(0.9em,1.2vw,1.2em);
+    font-size: clamp(1em,1.4vw,1.4em);
 }
 .ceo-details h4{
     font-weight: 500;
     color: #E61B20;
-    font-size: clamp(0.8em,1vw,1em);
+    font-size: clamp(1.2em,1.4vw,1em);
 }
 .ceo-details h6{
-    font-size: clamp(0.6em,1vw,1em);
+    font-size: clamp(1.2em,1.4vw,1em);
 }
-
+@media (max-width:500px) {
+    .ceo-details-div p {
+        width: 80%;
+    }
+}
 
 
 
@@ -298,7 +302,7 @@ footer{
     align-items: center;
     padding: 1.5em 0;
     margin-top: 2em;
-    font-size: clamp(0.45em,1vw,1em);
+    font-size: clamp(0.7em,1.1vw,1.2em);
     color: #fff;
 }
 .contentFoot {
@@ -445,11 +449,7 @@ footer{
     .about-us-header{
         padding: 4em 0 4em 0;
     }
-    .about-us-header p{
-        font-size: clamp(1.4em,1vw,1em);
-    }
     .about-ceo p{
-        font-size: clamp(1.2em,1vw,1em);
         text-align: justify;
     }
     .ceo-details-div{
@@ -461,13 +461,6 @@ footer{
     }
     .ceo-details-div p{
         padding-top: 0;
-        font-size: clamp(0.9em,1vw,1em);
-    }
-    .ceo-details h4{
-        font-size: clamp(1.2em,1vw,1em);
-    }
-    .ceo-details h6{
-        font-size: clamp(1em,1vw,1em);
     }
     footer{
         gap: 0;
@@ -476,45 +469,22 @@ footer{
         width: 60px;
         height: 60px;
     }
-    .socials a{
-        font-size: clamp(1em,1vw,1em);
-    }
     .footer-div2{
         grid-template-columns: auto;
         gap: 1em;
-    }
-    .footer-details h4{
-        font-size: clamp(1em,1vw,1em);
-    }
-    .footer-details a{
-        font-size: clamp(0.8em,1vw,1em);
-    }
-    .sub-footer{
-        font-size: clamp(0.7em,1vw,1em);
-
     }
 }
 @media (max-width: 375px){
     .about-us-header{
         padding: 6em 0 2em 0;
     }
-    .about-ceo{
-        font-size: clamp(0.5em,1vw,1em);
-    }
     .ceo-details-div{
         gap: 1em;
         padding: 1.5em 0.5em;
     }
     .ceo-details-div p{
-        font-size: clamp(0.5em,1vw,1em);
         padding-top: 0.3em;
     }   
-    .ceo-details h4{
-        font-size: clamp(1.2em,1vw,1em);
-    }
-    .ceo-details h6{
-        font-size: clamp(1em,1vw,1em);
-    }
 }
 
 
