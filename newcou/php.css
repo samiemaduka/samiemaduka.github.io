@@ -818,7 +818,7 @@ li::selection {
 
 .foot{
     /* padding: 4rem  2rem 2rem; */
-    background-color: #fff;
+    background-color: #000;
 
 }
 .footer{
@@ -826,11 +826,11 @@ li::selection {
     padding: 4rem  2rem 2rem;
     /* display: flex; */
     justify-content: space-around;
-    background-color: #fff;
-    border-top: 2px solid #251E1E;
+    background-color: #000;
+    border-top: 2px solid #ADD8E6;
     gap: 2rem;
     grid-template-areas: 'box1 box2 box3';
-    color: black !important;
+
 }
 .footer__box1{
     grid-area: box1;
@@ -845,10 +845,11 @@ li::selection {
     max-width: 20ch;
     text-transform: uppercase;
     font-family: var(--head__font);
-    font-size:clamp(1.3rem, 2.5vw, 2.3rem) ;
-    border-right: 1px solid black;
+    font-size:clamp(1.3rem, 2.5vw, 1.8rem) ;
+    border-right: 1px solid #ADD8E6;
     align-self: center;
     padding: 2rem 0;
+    color: #fff;
 }
 .footer__head span{
     font-family: inherit;
@@ -866,7 +867,7 @@ li::selection {
     text-transform: uppercase;
     font-family: var(--head__font);
     font-weight: 600;
-    font-size:clamp(1.1rem, 2vw, 1.9rem);
+    font-size:clamp(1.1rem, 2vw, 1.4rem);
     color: #D84801;
     position: relative;
     /* border-bottom: 3px solid #251E1E; */
@@ -900,10 +901,10 @@ li::selection {
 }
 .footer-info__link{
     text-decoration: none;
-    color:black;
+    color:white;
     text-transform: capitalize;
     font-weight: 600;
-    font-size:clamp(0.7rem, 1.5vw, 1.4rem);
+    font-size:clamp(0.7rem, 1.5vw, 0.9rem);
     transition: 100ms ease-in-out;
 }
 .footer-info__link:hover{
@@ -919,7 +920,7 @@ li::selection {
     text-transform: uppercase;
     font-family: var(--head__font);
     font-weight: 600;
-    font-size:clamp(1.1rem, 2vw, 1.9rem);
+    font-size:clamp(1.1rem, 2vw, 1.4rem);
     color: #D84801;
 }
 .footer-contact__menu{
@@ -933,9 +934,11 @@ li::selection {
     margin-bottom: 1rem;
     font-family: var(--head__font);
     font-variant: small-caps;
+    color: #fff;
 }
 .footer-contact__info{
-    font-size:clamp(0.7rem, 1.5vw, 1.4rem);
+    font-size:clamp(0.7rem, 1.5vw, 0.9rem);
+    color: #fff;
     font-weight: 600;
 }
 .footer-contact__icon{
@@ -945,21 +948,22 @@ li::selection {
 .hr-2{
     margin: 1rem auto;
     max-width: 85%;
-    border-color: 2px solid black;
+    border-color: 2px solid #ADD8E6;
     border: none;
-    background-color: black;
+    background-color: #ADD8E6;
     padding: .02rem;
 }
 .footer-copyright{
     display: flex;
     justify-content: space-around;
     padding: 0rem 2rem 1rem ;
+    background-color: #000;
 }
 .footer-copyright__text{
     text-transform: capitalize;
-    font-size:clamp(.7rem, 2vw, 1.4rem);
+    font-size:clamp(.7rem, 2vw, .9rem);
     align-self: center ;
-    color: black !important;
+    color: #fff;
 }
 .footer-copyright__text span{
     font-weight: 600;
@@ -972,7 +976,7 @@ li::selection {
     justify-content: space-around;
 }
 .footer__icon{
-    font-size:clamp(0.8rem, 1vw, 1.7rem) ;
+    font-size:clamp(0.8rem, 1vw, 1.2rem) ;
     color: var(--primary_color_1);
     background-color: #251E1E;
     padding: .5rem;

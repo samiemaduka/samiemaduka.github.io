@@ -819,7 +819,7 @@ li::selection {
 
 .foot{
     /* padding: 4rem  2rem 2rem; */
-    background-color: #ADD8E6;
+    background-color: #000;
 
 }
 .footer{
@@ -827,10 +827,8 @@ li::selection {
     padding: 4rem  2rem 2rem;
     /* display: flex; */
     justify-content: space-around;
-    background-color:#ADD8E696;
-    background-color: #ADD8E68e;
-    background-color: #ADD8E6;
-    border-top: 2px solid #251E1E;
+    background-color: #000;
+    border-top: 2px solid #ADD8E6;
     gap: 2rem;
     grid-template-areas: 'box1 box2 box3';
 
@@ -849,9 +847,10 @@ li::selection {
     text-transform: uppercase;
     font-family: var(--head__font);
     font-size:clamp(1.3rem, 2.5vw, 1.8rem) ;
-    border-right: 1px solid black;
+    border-right: 1px solid #ADD8E6;
     align-self: center;
     padding: 2rem 0;
+    color: #fff;
 }
 .footer__head span{
     font-family: inherit;
@@ -903,7 +902,7 @@ li::selection {
 }
 .footer-info__link{
     text-decoration: none;
-    color:black;
+    color:white;
     text-transform: capitalize;
     font-weight: 600;
     font-size:clamp(0.7rem, 1.5vw, 0.9rem);
@@ -936,9 +935,11 @@ li::selection {
     margin-bottom: 1rem;
     font-family: var(--head__font);
     font-variant: small-caps;
+    color: #fff;
 }
 .footer-contact__info{
     font-size:clamp(0.7rem, 1.5vw, 0.9rem);
+    color: #fff;
     font-weight: 600;
 }
 .footer-contact__icon{
@@ -948,21 +949,22 @@ li::selection {
 .hr-2{
     margin: 1rem auto;
     max-width: 85%;
-    border-color: 2px solid black;
+    border-color: 2px solid #ADD8E6;
     border: none;
-    background-color: black;
+    background-color: #ADD8E6;
     padding: .02rem;
 }
 .footer-copyright{
     display: flex;
     justify-content: space-around;
     padding: 0rem 2rem 1rem ;
+    background-color: #000;
 }
 .footer-copyright__text{
     text-transform: capitalize;
     font-size:clamp(.7rem, 2vw, .9rem);
     align-self: center ;
-
+    color: #fff;
 }
 .footer-copyright__text span{
     font-weight: 600;
