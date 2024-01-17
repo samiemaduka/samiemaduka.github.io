@@ -126,12 +126,12 @@ li::selection {
 }
 .sidebar {
     height: 0;
-    width:0;
+    width: 100vw;
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
-    bottom:0 ;
+    right: 0;
     display: none;
     display: flex;
     flex-direction: column;
@@ -146,10 +146,9 @@ li::selection {
 }
 .sidebar::-webkit-scrollbar{
     display: none;
-}  
-.sidebar a {
+} 
+  .sidebar a {
     padding: 0px 8px 8px 32px;
-    /* border-bottom: 1px solid black; */
     text-decoration: none;
     text-transform: uppercase;
     font-size: clamp(0.8rem, 2vw, 1.1rem);
@@ -158,10 +157,10 @@ li::selection {
     display: block;
     margin-top: 2rem;
     transition: 0.3s;
-}
-.sidebar a:hover {
+  }
+  .sidebar a:hover {
     color:var(--primary_color_1) ;
-}
+  }
 .openbtn{
     display: none;
     cursor: pointer;
