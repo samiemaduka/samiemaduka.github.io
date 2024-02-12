@@ -318,7 +318,7 @@ a {
 }
 .sidebarMenuInner{
     margin:0 0 3.5em 0;
-    padding:0;
+    padding:1em 0;
     border-top: 1px solid #c8d0e2;
 }
 .sidebarMenuLogo {
@@ -784,7 +784,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .cgp-plan--container{
     display: grid;
-    grid-template-areas: 'box1 box2 box3';
+    grid-template-areas: 'box1 box2' 'box3 box4';
     gap: 2rem;
 }
 .cgp-plan-box1{
@@ -891,7 +891,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 @media (max-width:1030px) {
     .cgp-plan--container{
-        grid-template-areas: 'box1 box2' 'box3';
         gap: 1rem;
     }
 }

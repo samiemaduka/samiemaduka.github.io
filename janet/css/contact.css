@@ -318,7 +318,7 @@ a {
 }
 .sidebarMenuInner{
     margin:0 0 3.5em 0;
-    padding:0;
+    padding:1em 0;
     border-top: 1px solid #c8d0e2;
 }
 .sidebarMenuLogo {
@@ -511,7 +511,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 .nav_bar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 0.5em 2em;
     gap: 3em;
     position: fixed;
@@ -539,7 +539,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     /* border: 2px solid red; */
     padding: 0 !important;
     margin: 0;
-    width: clamp(40%, 20vw, 50%);
+    width: clamp(50%, 20vw, 70%);
 }
 .nav_bar_links {
     display: flex;
